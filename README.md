@@ -3,7 +3,8 @@
 ### Descrizione
 
 ```text
-Scarica l'ultimo bollettino di criticità idrogeologica e idraulica dal sito del Dipartimento della Protezione Civile.
+Scarica l'ultimo bollettino di criticità idrogeologica e idraulica 
+dal sito del Dipartimento della Protezione Civile.
 ```
 
 ### Compilazione
@@ -27,7 +28,8 @@ Flags:
   -h, --help           mostra queste informazioni
   -r, --round string   specifica l'intervallo di tempo per la modalità'service';
                        di default usa '0 16 * * *', ovvero alle 16:00,
-                       vedi le note del DPC github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica,
+                       vedi le note del DPC al link
+					   github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica,
                        Il valore viene espresso con la grammatica per cron;
                        aiutati con https://crontab.guru in caso di necessità (default "0 16 * * *")
   -s, --service        rimane attivo dopo l'esecuzione, eseguendo un nuovo
