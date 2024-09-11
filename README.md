@@ -2,12 +2,13 @@
 
 ### Descrizione
 
-```text
-Scarica l'ultimo bollettino di criticità idrogeologica e idraulica 
+Esegue il download  dell'ultimo bollettino di criticità idrogeologica e idraulica 
 dal sito del Dipartimento della Protezione Civile.
-```
 
-### Compilazione
+L'applicazione è [disponibile](https://scm.code.telecomitalia.it/02069823/allerte-dpc/-/releases) come eseguibile compilato per sistemi Windows amd64 a questo [link](https://scm.code.telecomitalia.it/02069823/allerte-dpc/-/releases) 
+
+
+### Compilazione (opzionale)
 
 ```bash
 $> go install github.com/go-task/task/v3/cmd/task@latest
