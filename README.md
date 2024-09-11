@@ -53,6 +53,7 @@ Flags:
 # con grammatica cron, usa https://crontab.guru per aiutarti
 > alert.exe -s -r "* */4 * * *"
 
-# scarica il file delle 14 per la giornata
+# elabora un file zip locale
+# questi file provengono dal repository del DPC, e sono nella cartella files/xml/
 > alert.exe -f 20240909_1459.zip
 
