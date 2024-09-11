@@ -18,6 +18,7 @@ import (
 
 var url = repo + path
 
+// download scarica i dati da DPC
 func download() ([]byte, error) {
 	resp, err := http.Get(url)
 	if err != nil {
@@ -31,6 +32,7 @@ func download() ([]byte, error) {
 	return body, nil
 }
 
+// unzip scompatta il pacchetto ed estra l'unico file di interesse
 func unzip(in []byte) ([]byte, error) {
 	zipReader, err := zip.NewReader(bytes.NewReader(in), int64(len(in)))
 	if err != nil {
@@ -51,6 +53,8 @@ func unzip(in []byte) ([]byte, error) {
 	}
 	return out, nil
 }
+
+// parse esegue parsing XML
 func parse(in []byte) ([]event, error) {
 	var rr result
 	if err := xml.Unmarshal(in, &rr); err != nil {
@@ -83,7 +87,6 @@ func jobManager() error {
 // job esegue le operazioni di recupero dei dati e
 // salva l'esito nel file generato con path e suffix
 func job() error {
-	// prima di eseguire le richieste HTTP, assicurati di poter scrivere su disco.
 	suffix := time.Now().Format("200601021504")
 	if local != "" {
 		ss := strings.Split(local, "/")[len(strings.Split(local, "/"))-1]
@@ -91,6 +94,7 @@ func job() error {
 		suffix = ss
 	}
 	filename := filepath.Join(dest, fileprefix) + "-" + suffix + ".txt"
+	// prima di eseguire le richieste HTTP, assicurati di poter scrivere su disco.
 	file, err := os.Create(filename)
 	if err != nil {
 		return err
