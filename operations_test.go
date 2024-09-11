@@ -13,8 +13,8 @@ func TestDownload(t *testing.T) {
 }
 
 func TestJob(t *testing.T) {
-	dest = "./tmp"
-	local = "20240909_1459.zip"
+	// dest = "./bin/tmp"
+	// local = "./bin/xml/20240908_1524.zip"
 	err := job()
 	assert.Nil(t, err)
 }

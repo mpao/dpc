@@ -85,6 +85,11 @@ func jobManager() error {
 func job() error {
 	// prima di eseguire le richieste HTTP, assicurati di poter scrivere su disco.
 	suffix := time.Now().Format("200601021504")
+	if local != "" {
+		ss := strings.Split(local, "/")[len(strings.Split(local, "/"))-1]
+		ss = strings.Split(ss, ".")[0]
+		suffix = ss
+	}
 	filename := filepath.Join(dest, fileprefix) + "-" + suffix + ".txt"
 	file, err := os.Create(filename)
 	if err != nil {
