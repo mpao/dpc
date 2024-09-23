@@ -1,11 +1,12 @@
-version: '3'
+version: "3"
 
 silent: true
 
 env:
-  name: alert
+  name: dpc
+  version: v1.0
   buildversion:
-    sh: 'git rev-parse --short main'
+    sh: "git rev-parse --short main"
 tasks:
   test:
     cmds:
@@ -15,17 +16,36 @@ tasks:
       - golangci-lint cache clean && golangci-lint run ./...
   linux:
     cmds:
-      - GOOS=linux go build -ldflags "-s -w" -o bin/{{.name}}-build.{{.buildversion}} ./
+      # multiline command vedi https://github.com/go-task/task/issues/274#issuecomment-565876913
+      - |
+        GOOS=linux go build \
+        -ldflags="-s -w -X main.applicationVersion={{.version}} -X main.applicationName={{.name}}" \
+        -o bin/{{.name}}-build.{{.buildversion}} ./
   windows:
     cmds:
-      - GOOS=windows go build -ldflags "-s -w" -o bin/{{.name}}-build.{{.buildversion}}.exe ./
+      # multiline command vedi https://github.com/go-task/task/issues/274#issuecomment-565876913
+      - |
+        GOOS=windows go build \
+        -ldflags="-s -w -X main.applicationVersion={{.version}} -X main.applicationName={{.name}}" \
+        -o bin/{{.name}}-build.{{.buildversion}}.exe ./
+  macos:
+    cmds:
+      # multiline command vedi https://github.com/go-task/task/issues/274#issuecomment-565876913
+      - |
+        GOOS=darwin GOARCH=arm64 go build \
+        -ldflags="-s -w -X main.applicationVersion={{.version}} -X main.applicationName={{.name}}" \
+        -o bin/{{.name}}-build.{{.buildversion}}-arm64 ./
   build:
     cmds:
       - task: test
       - task: windows
       - task: linux
+      - task: macos
   release:
     cmds:
       - go mod tidy
-      - go build -ldflags "-s -w" -o bin/{{.name}}.exe ./
-      - echo "Fatto! Applicazione salvata nella directory bin/"
+      - |
+        go build \
+        -ldflags="-s -w -X main.applicationVersion={{.version}} -X main.applicationName={{.name}}" \
+        -o bin/{{.name}}.exe ./
+      - echo "Fatto! Applicazione salvata nella subdirectory bin/"

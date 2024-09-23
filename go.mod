@@ -1,4 +1,4 @@
-module am
+module dpc
 
 go 1.23.0
 

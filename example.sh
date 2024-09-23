@@ -10,7 +10,6 @@ fi
 for file in "$1"/*; do
   # Controlla se è un file
   if [ -f "$file" ]; then
-    #echo "./bin/alert.exe -f $file -d ./bin/tmp"
-	./bin/alert.exe -f "$file" -d ./bin/tmp
+	./bin/dpc.exe -f "$file" -d ./bin/tmp
   fi
 done
