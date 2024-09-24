@@ -24,9 +24,9 @@ const (
 )
 
 var (
-	howto              = applicationName + " meteo --help\n" + applicationName + " allerte --help"
-	service            bool
-	dest, local, round string
+	howto                     = applicationName + " meteo --help\n" + applicationName + " allerte --help"
+	service                   bool
+	dest, local, round, proxy string
 	//go:embed help.template
 	helpTemplate string
 )
@@ -72,8 +72,9 @@ var allerte = &cobra.Command{
 }
 
 func init() {
-	root.Flags().BoolP("help", "h", false, helpMessage)
-	root.Flags().BoolP("version", "v", false, "versione dell'applicazione")
+	root.PersistentFlags().BoolP("help", "h", false, helpMessage)
+	root.PersistentFlags().BoolP("version", "v", false, "versione dell'applicazione")
+	root.PersistentFlags().StringVarP(&proxy, "proxy", "p", "", "specifica il proxy da utilizzare")
 	root.AddCommand(meteo)
 	root.AddCommand(allerte)
 	root.CompletionOptions.DisableDefaultCmd = true
@@ -86,7 +87,6 @@ func init() {
 }
 
 func init() {
-	meteo.Flags().BoolP("help", "h", false, helpMessage)
 	meteo.Flags().StringVarP(&dest, "dest", "d", "./", destMessage)
 	meteo.Flags().StringVarP(&local, "file", "f", "", localMessage)
 	meteo.Flags().StringVarP(&round, "round", "r", "0 16 * * *", roundMessage)
@@ -96,7 +96,6 @@ func init() {
 }
 
 func init() {
-	allerte.Flags().BoolP("help", "h", false, helpMessage)
 	allerte.Flags().StringVarP(&dest, "dest", "d", "./", destMessage)
 	allerte.Flags().StringVarP(&local, "file", "f", "", localMessage)
 	allerte.Flags().StringVarP(&round, "round", "r", "0 16 * * *", roundMessage)

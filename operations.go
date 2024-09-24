@@ -3,11 +3,13 @@ package main
 import (
 	"archive/zip"
 	"bytes"
+	"crypto/tls"
 	"encoding/csv"
 	"encoding/xml"
 	"io"
 	"log/slog"
 	"net/http"
+	"net/url"
 	"os"
 	"path/filepath"
 	"regexp"
@@ -28,6 +30,20 @@ type target struct {
 	url  string
 }
 
+func httpClient() *http.Client {
+	client := &http.Client{
+		Timeout: 10 * time.Second,
+	}
+	if proxy != "" {
+		u, _ := url.Parse(proxy)
+		client.Transport = &http.Transport{
+			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+			Proxy:           http.ProxyURL(u),
+		}
+	}
+	return client
+}
+
 // download scarica i dati da DPC
 func download(t target) ([]byte, error) {
 	var url string
@@ -37,7 +53,7 @@ func download(t target) ([]byte, error) {
 	} else {
 		url = t.url
 	}
-	resp, err := http.Get(url)
+	resp, err := httpClient().Get(url)
 	if err != nil {
 		return nil, err
 	}
