@@ -30,8 +30,9 @@ Comandi disponibili:
   meteo       Scarica i bollettini DPC di vigilanza meteorologica
 
 Opzioni:
-  -h, --help      mostra queste informazioni
-  -v, --version   versione dell'applicazione
+  -h, --help           mostra queste informazioni
+  -p, --proxy string   specifica il proxy da utilizzare
+  -v, --version        versione dell'applicazione
 
 Usa "dpc [comando] --help" per maggiori informazioni sul comando.
 ```
