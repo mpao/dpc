@@ -20,7 +20,7 @@ const (
 		"aiutati con https://crontab.guru in caso di necessità"
 	serviceMessage = "rimane attivo dopo l'esecuzione, eseguendo un nuovo\n" +
 		"download ad ogni intervallo specificato [vedi --round]"
-	localMessage = "specifica un file zip locale da cui estrarre i dati"
+	localMessage = "specifica un file zip locale, o una URL da cui estrarre i dati"
 )
 
 var (
@@ -88,18 +88,18 @@ func init() {
 
 func init() {
 	meteo.Flags().StringVarP(&dest, "dest", "d", "./", destMessage)
-	meteo.Flags().StringVarP(&local, "file", "f", "", localMessage)
+	meteo.Flags().StringVarP(&local, "from", "f", "", localMessage)
 	meteo.Flags().StringVarP(&round, "round", "r", "0 16 * * *", roundMessage)
 	meteo.Flags().BoolVarP(&service, "service", "s", false, serviceMessage)
-	meteo.MarkFlagsMutuallyExclusive("file", "round")
-	meteo.MarkFlagsMutuallyExclusive("file", "service")
+	meteo.MarkFlagsMutuallyExclusive("from", "round")
+	meteo.MarkFlagsMutuallyExclusive("from", "service")
 }
 
 func init() {
 	allerte.Flags().StringVarP(&dest, "dest", "d", "./", destMessage)
-	allerte.Flags().StringVarP(&local, "file", "f", "", localMessage)
+	allerte.Flags().StringVarP(&local, "from", "f", "", localMessage)
 	allerte.Flags().StringVarP(&round, "round", "r", "0 16 * * *", roundMessage)
 	allerte.Flags().BoolVarP(&service, "service", "s", false, serviceMessage)
-	allerte.MarkFlagsMutuallyExclusive("file", "round")
-	allerte.MarkFlagsMutuallyExclusive("file", "service")
+	allerte.MarkFlagsMutuallyExclusive("from", "round")
+	allerte.MarkFlagsMutuallyExclusive("from", "service")
 }

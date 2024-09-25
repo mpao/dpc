@@ -48,9 +48,12 @@ func httpClient() *http.Client {
 func download(t target) ([]byte, error) {
 	var url string
 	today := time.Now()
-	if t.repo == repoMeteo {
+	switch {
+	case local != "":
+		url = local
+	case t.repo == repoMeteo:
 		url = t.url + today.Format("20060102") + ".zip"
-	} else {
+	default:
 		url = t.url
 	}
 	resp, err := httpClient().Get(url)
@@ -158,7 +161,7 @@ func job(t target) error {
 	// ottieni i dati
 	var events []event
 	if local != "" {
-		events, err = fromLocal(local)
+		events, err = fromLocal(t)
 	} else {
 		events, err = fromNetwork(t)
 	}
@@ -189,10 +192,11 @@ func fromNetwork(t target) ([]event, error) {
 	return parse(in)
 }
 
-func fromLocal(filename string) ([]event, error) {
-	in, err := os.ReadFile(filename)
+func fromLocal(t target) ([]event, error) {
+	in, err := os.ReadFile(local)
 	if err != nil {
-		return nil, err
+		t.url = local
+		return fromNetwork(t)
 	}
 	in, err = unzip(in)
 	if err != nil {

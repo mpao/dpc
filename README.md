@@ -5,6 +5,9 @@
 Esegue il download  degli ultimi bollettini sugli allarmi metereologici e criticità idrogeologica
 dal sito del Dipartimento della Protezione Civile.
 
+* https://github.com/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica
+* https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica
+
 ### Compilazione (opzionale)
 
 ```bash
@@ -53,7 +56,6 @@ Usa "dpc [comando] --help" per maggiori informazioni sul comando.
 # con grammatica cron, usa https://crontab.guru per aiutarti
 > dpc.exe [comando] -s -r "* */4 * * *"
 
-# elabora un file zip locale
-# questi file provengono dal repository del DPC, e sono nella cartella files/xml/
+# elabora un file zip locale o una URL
 > dpc.exe [comando] -f 20240909_1459.zip
 ```
