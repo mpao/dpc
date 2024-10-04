@@ -63,7 +63,7 @@ func download(t target) ([]byte, error) {
 	defer resp.Body.Close()
 	if resp.StatusCode == http.StatusNotFound {
 		url = t.url + today.AddDate(0, 0, -1).Format("20060102") + ".zip"
-		resp, err = http.Get(url) //nolint //bodyclose line 33
+		resp, err = httpClient().Get(url) //nolint //bodyclose line 33
 		if err != nil {
 			return nil, err
 		}
