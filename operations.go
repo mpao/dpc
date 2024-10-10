@@ -3,7 +3,6 @@ package main
 import (
 	"archive/zip"
 	"bytes"
-	"crypto/tls"
 	"encoding/csv"
 	"encoding/xml"
 	"io"
@@ -37,8 +36,7 @@ func httpClient() *http.Client {
 	if proxy != "" {
 		u, _ := url.Parse(proxy)
 		client.Transport = &http.Transport{
-			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
-			Proxy:           http.ProxyURL(u),
+			Proxy: http.ProxyURL(u),
 		}
 	}
 	return client
