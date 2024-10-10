@@ -37,6 +37,7 @@ func TestFixUTC(t *testing.T) {
 	}{
 		{name: "+01", in: []byte("+01</"), want: "+01:00</"},
 		{name: "+02", in: []byte("+02</"), want: "+02:00</"},
+		{name: "two", in: []byte("+01</foo+02</"), want: "+01:00</foo+02:00</"},
 		{name: "+02:00", in: []byte("+02:00</"), want: "+02:00</"},
 		{name: "invalid", in: []byte("+0A</"), want: "+0A</"},
 	}
