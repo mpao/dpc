@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 	"slices"
 	"strconv"
 	"strings"
@@ -38,20 +39,23 @@ type comune struct {
 	pop    int
 }
 
-// equal l'ugualianza tra i nomi dei comuni è problematica; i dati arrivano da due fonti diverse,
-// alcuni nomi sono completamente differenti (~200) e la fonte DPC ha problemi coi caratteri UTF8
-func (c *comune) equal(s string) bool {
-	s1 := strings.ToLower(c.name)
-	s2 := strings.ToLower(s)
-	for _, c := range []string{"à", "á", "ä", "è", "é", "ë", "ò", "ó", "ö", "ù", "ú", "ü"} {
-		s1 = strings.ReplaceAll(s1, c, "")
-		s2 = strings.ReplaceAll(s2, c, "")
-	}
-	return strings.EqualFold(s1, s2)
-}
-
 func (c *comune) addPopulation(m map[string]int) {
 	c.pop = m[c.id]
+}
+
+func (c *comune) addEvent(m map[string]evento) {
+	// l'ugualianza tra i nomi dei comuni è problematica; i dati arrivano da due fonti diverse,
+	// alcuni nomi sono completamente differenti (~200) e la fonte DPC ha problemi coi caratteri UTF8.
+	// Uso quindi una stringa ricavata dal vero nome del comune per fare la ricerca nella map proveniente
+	// da DPC
+	s := strings.ToLower(c.name)
+	for _, char := range []string{"à", "á", "ä", "è", "é", "ë", "ì", "í", "ï", "ò", "ó", "ö", "ù", "ú", "ü"} {
+		s = strings.ReplaceAll(s, char, "")
+	}
+	c.zone = m[s].zona
+	c.data = time.Now()
+	c.evento = m[s].evento
+	c.data = m[s].data
 }
 
 func (c *comune) CSV() []string {
@@ -71,14 +75,16 @@ func (c *comune) CSV() []string {
 }
 
 type evento struct {
+	data   time.Time
 	name   string
 	zona   string
 	evento string
 }
 
 // extract estrae la lista dei nomi dei comuni con il relativo evento metereologico
-func extract(b []byte) (out []evento) {
+func extract(b []byte) map[string]evento {
 	type events struct {
+		day                  time.Time
 		NomeZona             string   `json:"Nome_Zona"`
 		QuantitativiPrevisti string   `json:"Quantitativi_previsti"`
 		Comuni               []string `json:"comuni"`
@@ -92,27 +98,31 @@ func extract(b []byte) (out []evento) {
 	}
 	var data []events
 	_ = json.Unmarshal(b, &jsonStruct)
-	for _, v := range jsonStruct.Objects {
+	for k, v := range jsonStruct.Objects {
 		for _, h := range v.Geometries {
+			d, err := time.Parse("20060102150405", k)
+			if err != nil {
+				log.Fatal(err)
+			}
+			h.Properties.day = d
 			data = append(data, h.Properties)
 		}
 	}
 	slices.SortFunc(data, func(a, b events) int {
 		return strings.Compare(a.NomeZona, b.NomeZona)
 	})
-	for _, hh := range data {
-		for _, v := range hh.Comuni {
-			out = append(out, evento{
+	out := make(map[string]evento, 10_000)
+	for _, ev := range data {
+		for _, v := range ev.Comuni {
+			out[strings.ToLower(v)] = evento{
 				name:   v,
-				zona:   hh.NomeZona,
-				evento: hh.QuantitativiPrevisti,
-			})
+				zona:   ev.NomeZona,
+				evento: ev.QuantitativiPrevisti,
+				data:   ev.day,
+			}
 		}
 	}
-	slices.SortFunc(out, func(a, b evento) int {
-		return strings.Compare(a.name, b.name)
-	})
-	return
+	return out
 }
 
 // infoComuni ricava la lista dei comuni italiani da un flusso di dati
@@ -176,5 +186,3 @@ func popolazione(b []byte) map[string]int {
 	}
 	return out
 }
-
-func join() {}

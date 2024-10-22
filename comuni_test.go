@@ -6,7 +6,6 @@ import (
 	"net/http"
 	"os"
 	"testing"
-	"time"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -31,29 +30,6 @@ func Test_GetInfoComuni(t *testing.T) {
 	b, _ := io.ReadAll(r.Body)
 	err = os.WriteFile("testdata/comuni.csv", b, 0666)
 	assert.NoError(t, err)
-}
-
-func Test_Equal(t *testing.T) {
-	cases := []struct {
-		name   string
-		comune string
-		want   bool
-	}{
-		{name: "Citt Sant'Angelo", comune: "Città Sant'Angelo", want: true},
-		{name: "Città Sant'Angelo", comune: "Città Sant'Angelo", want: true},
-		{name: "foobar", comune: "Città Sant'Angelo", want: false},
-		{name: "foobar", comune: "foobarbaz", want: false},
-		{name: "foobarbaz", comune: "foobar", want: false},
-		{name: "Ceva", comune: "Cave", want: false},
-		{name: "Ctt Pi Bll ", comune: "Cïttà Più BèllÖ Ü", want: false},
-	}
-	for _, test := range cases {
-		t.Run(test.name, func(t *testing.T) {
-			c := comune{name: test.name}
-			got := c.equal(test.comune)
-			assert.Equal(t, test.want, got)
-		})
-	}
 }
 
 func Test_Extract(t *testing.T) {
@@ -91,7 +67,7 @@ func Test_AddPopulation(t *testing.T) {
 	}
 }
 
-func Test_Join(t *testing.T) {
+func Test_OperazionComuni(t *testing.T) {
 	b, _ := os.ReadFile("testdata/comuni.csv")
 	comuni := infoComuni(b)
 	b, _ = os.ReadFile("testdata/popolazione_2021.csv")
@@ -101,38 +77,28 @@ func Test_Join(t *testing.T) {
 		comuni[i] = c
 	}
 	b, _ = os.ReadFile("testdata/topo.json")
-	ee := extract(b)
-	var foo []comune
-	for _, c := range comuni {
-		for _, e := range ee {
-			if c.equal(e.name) {
-				c.zone = e.zona
-				ff := comune{
-					data:   time.Now(),
-					evento: e.evento,
-				}
-				foo = append(foo, ff)
-				break
-			}
-		}
-		if c.zone == "" {
-			c.zone = "---"
-			ff := comune{
-				data:   time.Now(),
-				evento: "ND",
-			}
-			foo = append(foo, ff)
-		}
+	events := extract(b)
+
+	for i, c := range comuni {
+		c.addEvent(events)
+		comuni[i] = c
 	}
-	file, _ := os.Create("out.csv")
+	file, _ := os.Create("testdata/out.csv")
 	w := csv.NewWriter(file)
 	w.UseCRLF = true
 	w.Comma = separator
-
 	_ = w.Write(headerComuni)
-	for _, ev := range foo {
+	for _, ev := range comuni {
 		_ = w.Write(ev.CSV())
 	}
 	w.Flush()
-	t.Log("done")
+	var notfound int
+	for _, c := range comuni {
+		if c.evento == "" {
+			notfound++
+		}
+	}
+	assert.Equal(t, 7904, len(comuni))
+	assert.Equal(t, 111, notfound)
+	t.Log("file creato correttamente in testdata")
 }
