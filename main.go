@@ -11,12 +11,7 @@ import (
 	"gopkg.in/natefinch/lumberjack.v2"
 )
 
-const (
-	repoMeteo = "https://github.com/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica"
-	repoAlert = "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica"
-	path      = "/raw/master/files/all/"
-	separator = '\t' // separatore per il CSV
-)
+const separator = '\t' // separatore per il CSV
 
 var (
 	applicationName    = "dpc"  // valore di fallback, usa il Taskfile per la definizione

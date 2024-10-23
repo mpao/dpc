@@ -7,6 +7,7 @@ dal sito del Dipartimento della Protezione Civile.
 
 * https://github.com/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica
 * https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica
+* https://github.com/opendatasicilia/comuni-italiani
 
 ### Compilazione (opzionale)
 
@@ -27,9 +28,11 @@ Uso:
 Esempi:
 dpc meteo --help
 dpc allerte --help
+dpc comuni --help
 
 Comandi disponibili:
   allerte     Scarica i bollettini DPC di criticità idrogeologica e idraulica
+  comuni      Scarica i bollettini DPC meteo per ogni comune italiano
   meteo       Scarica i bollettini DPC di vigilanza meteorologica
 
 Opzioni:

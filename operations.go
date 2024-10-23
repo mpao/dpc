@@ -24,9 +24,10 @@ import (
 // se le informazioni odierne non sono ancora presenti sul
 // repository.
 type target struct {
-	name string
-	repo string
-	url  string
+	filename func() string
+	fallback func() string
+	name     string
+	url      string
 }
 
 func httpClient() *http.Client {
@@ -44,15 +45,9 @@ func httpClient() *http.Client {
 
 // download scarica i dati da DPC
 func download(t target) ([]byte, error) {
-	var url string
-	today := time.Now()
-	switch {
-	case local != "":
+	var url = t.url + t.filename()
+	if local != "" {
 		url = local
-	case t.repo == repoMeteo:
-		url = t.url + today.Format("20060102") + ".zip"
-	default:
-		url = t.url
 	}
 	resp, err := httpClient().Get(url)
 	if err != nil {
@@ -60,7 +55,7 @@ func download(t target) ([]byte, error) {
 	}
 	defer resp.Body.Close()
 	if resp.StatusCode == http.StatusNotFound {
-		url = t.url + today.AddDate(0, 0, -1).Format("20060102") + ".zip"
+		url = t.url + t.fallback()
 		resp, err = httpClient().Get(url) //nolint //bodyclose line 33
 		if err != nil {
 			return nil, err
@@ -122,6 +117,10 @@ func fixUTC(in []byte) []byte {
 // jobManager esegue job() secondo i parametri passati
 // a linea di comando dall'utente
 func jobManager(t target) error {
+	var job = jobAllarmi
+	if t.name == "comuni" {
+		job = jobComuni
+	}
 	if service {
 		f := func() {
 			if err := job(t); err != nil {
@@ -140,9 +139,9 @@ func jobManager(t target) error {
 	return nil
 }
 
-// job esegue le operazioni di recupero dei dati e
+// jobAllarmi esegue le operazioni di recupero dei dati e
 // salva l'esito nel file generato con path e suffix
-func job(t target) error {
+func jobAllarmi(t target) error {
 	suffix := time.Now().Format("200601021504")
 	if local != "" {
 		ss := strings.Split(local, "/")[len(strings.Split(local, "/"))-1]

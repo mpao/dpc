@@ -40,7 +40,7 @@ type event struct {
 
 func (e event) CSV() []string {
 	return []string{
-		e.Date.Format("2006-01-02 15:04:05"),
+		e.Date.Format("2006-01-02"),
 		e.Event,
 		e.Area,
 		e.Code,

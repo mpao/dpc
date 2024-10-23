@@ -1,15 +1,24 @@
 package main
 
 import (
+	_ "embed"
+	"encoding/csv"
 	"encoding/json"
 	"fmt"
 	"log"
+	"os"
+	"path/filepath"
 	"slices"
 	"strconv"
 	"strings"
 	"time"
 )
 
+//go:embed testdata/comuni.csv
+var comuniData []byte
+
+//go:embed testdata/popolazione_2021.csv
+var popolazioneData []byte
 var headerComuni = []string{
 	"Data",
 	"Evento",
@@ -185,4 +194,45 @@ func popolazione(b []byte) map[string]int {
 		out[s] = value
 	}
 	return out
+}
+
+func jobComuni(t target) error {
+	suffix := time.Now().Format("200601021504")
+	if local != "" {
+		ss := strings.Split(local, "/")[len(strings.Split(local, "/"))-1]
+		ss = strings.Split(ss, ".")[0]
+		suffix = ss
+	}
+	filename := filepath.Join(dest, t.name) + "-" + suffix + ".txt"
+	// prima di eseguire le richieste HTTP, assicurati di poter scrivere su disco.
+	file, err := os.Create(filename)
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+	comuni := infoComuni(comuniData)
+	pop := popolazione(popolazioneData)
+	for i, c := range comuni {
+		c.addPopulation(pop)
+		comuni[i] = c
+	}
+	b, err := download(t)
+	if err != nil {
+		return err
+	}
+	events := extract(b)
+	for i, c := range comuni {
+		c.addEvent(events)
+		comuni[i] = c
+	}
+	// scrivi i dati
+	w := csv.NewWriter(file)
+	w.UseCRLF = true
+	w.Comma = separator
+	_ = w.Write(headerComuni)
+	for _, ev := range comuni {
+		_ = w.Write(ev.CSV())
+	}
+	w.Flush()
+	return nil
 }

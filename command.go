@@ -2,6 +2,7 @@ package main
 
 import (
 	_ "embed"
+	"time"
 
 	"github.com/spf13/cobra"
 )
@@ -9,11 +10,12 @@ import (
 const (
 	message = "Scarica dai repositories ufficiali del Dipartimento di Protezione Civile gli ultimi\n" +
 		"dati disponibili sugli allarmi metereologici e criticità idrogeologica."
-	messageAlert = "Scarica i bollettini DPC di criticità idrogeologica e idraulica"
-	messageMeteo = "Scarica i bollettini DPC di vigilanza meteorologica"
-	helpMessage  = "mostra queste informazioni"
-	destMessage  = "indica la directory in cui salvare il risultato"
-	roundMessage = "specifica l'intervallo di tempo per la modalità'service';\n" +
+	messageAlert  = "Scarica i bollettini DPC di criticità idrogeologica e idraulica"
+	messageMeteo  = "Scarica i bollettini DPC di vigilanza meteorologica"
+	messageComuni = "Scarica i bollettini DPC meteo per ogni comune italiano"
+	helpMessage   = "mostra queste informazioni"
+	destMessage   = "indica la directory in cui salvare il risultato"
+	roundMessage  = "specifica l'intervallo di tempo per la modalità'service';\n" +
 		"di default usa '0 16 * * *', ovvero alle 16:00,\n" +
 		"vedi le note del DPC github.com/pcm-dpc.\n" +
 		"Il valore viene espresso con la grammatica per cron;\n" +
@@ -24,7 +26,9 @@ const (
 )
 
 var (
-	howto                     = applicationName + " meteo --help\n" + applicationName + " allerte --help"
+	howto = applicationName + " meteo --help\n" +
+		applicationName + " allerte --help\n" +
+		applicationName + " comuni --help"
 	service                   bool
 	dest, local, round, proxy string
 	//go:embed help.template
@@ -48,8 +52,15 @@ var meteo = &cobra.Command{
 	RunE: func(cmd *cobra.Command, args []string) error {
 		t := target{
 			name: "meteo",
-			repo: repoMeteo,
-			url:  repoMeteo + path,
+			url:  "https://github.com/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica/raw/master/files/all/",
+			filename: func() string {
+				today := time.Now()
+				return today.Format("20060102") + ".zip"
+			},
+			fallback: func() string {
+				today := time.Now()
+				return today.AddDate(0, 0, -1).Format("20060102") + ".zip"
+			},
 		}
 		return jobManager(t)
 	},
@@ -64,8 +75,36 @@ var allerte = &cobra.Command{
 	RunE: func(cmd *cobra.Command, args []string) error {
 		t := target{
 			name: "allerte",
-			repo: repoAlert,
-			url:  repoAlert + path + "latest_all.zip",
+			url:  "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/files/all/",
+			filename: func() string {
+				return "latest_all.zip"
+			},
+			fallback: func() string {
+				return "latest_all.zip"
+			},
+		}
+		return jobManager(t)
+	},
+}
+
+var comuni = &cobra.Command{
+	Use:           "comuni",
+	Short:         messageComuni,
+	Long:          messageComuni,
+	SilenceErrors: true,
+	SilenceUsage:  true,
+	RunE: func(cmd *cobra.Command, args []string) error {
+		t := target{
+			name: "comuni",
+			url:  "https://github.com/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica/raw/master/files/topojson/",
+			filename: func() string {
+				today := time.Now()
+				return today.Format("20060102") + "_oggi.json"
+			},
+			fallback: func() string {
+				today := time.Now()
+				return today.AddDate(0, 0, -1).Format("20060102") + "_oggi.json"
+			},
 		}
 		return jobManager(t)
 	},
@@ -77,6 +116,7 @@ func init() {
 	root.PersistentFlags().StringVarP(&proxy, "proxy", "p", "", "specifica il proxy da utilizzare")
 	root.AddCommand(meteo)
 	root.AddCommand(allerte)
+	root.AddCommand(comuni)
 	root.CompletionOptions.DisableDefaultCmd = true
 	root.Example = howto
 	root.SetHelpTemplate(helpTemplate)
@@ -102,4 +142,10 @@ func init() {
 	allerte.Flags().BoolVarP(&service, "service", "s", false, serviceMessage)
 	allerte.MarkFlagsMutuallyExclusive("from", "round")
 	allerte.MarkFlagsMutuallyExclusive("from", "service")
+}
+
+func init() {
+	comuni.Flags().StringVarP(&dest, "dest", "d", "./", destMessage)
+	comuni.Flags().StringVarP(&round, "round", "r", "0 16 * * *", roundMessage)
+	comuni.Flags().BoolVarP(&service, "service", "s", false, serviceMessage)
 }

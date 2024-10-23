@@ -9,8 +9,10 @@ import (
 func TestDownload(t *testing.T) {
 	tt := target{
 		name: "allerte",
-		repo: repoAlert,
-		url:  repoAlert + path + "latest_all.zip",
+		url:  "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/files/all/",
+		filename: func() string {
+			return "latest_all.zip"
+		},
 	}
 	f, err := download(tt)
 	assert.Nil(t, err)
@@ -22,10 +24,12 @@ func TestJob(t *testing.T) {
 	// local = "./bin/xml/20240908_1524.zip"
 	tt := target{
 		name: "allerte",
-		repo: repoAlert,
-		url:  repoAlert + path + "latest_all.zip",
+		url:  "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/files/all/",
+		filename: func() string {
+			return "latest_all.zip"
+		},
 	}
-	err := job(tt)
+	err := jobAllarmi(tt)
 	assert.Nil(t, err)
 }
 

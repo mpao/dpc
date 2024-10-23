@@ -35,7 +35,7 @@ func Test_GetInfoComuni(t *testing.T) {
 func Test_Extract(t *testing.T) {
 	b, _ := os.ReadFile("testdata/topo.json")
 	list := extract(b)
-	assert.Equal(t, 10843, len(list))
+	assert.Equal(t, 8048, len(list))
 }
 
 func Test_InfoComuni(t *testing.T) {
@@ -67,16 +67,14 @@ func Test_AddPopulation(t *testing.T) {
 	}
 }
 
-func Test_OperazionComuni(t *testing.T) {
-	b, _ := os.ReadFile("testdata/comuni.csv")
-	comuni := infoComuni(b)
-	b, _ = os.ReadFile("testdata/popolazione_2021.csv")
-	pop := popolazione(b)
+func Test_OperationComuni(t *testing.T) {
+	comuni := infoComuni(comuniData)
+	pop := popolazione(popolazioneData)
 	for i, c := range comuni {
 		c.addPopulation(pop)
 		comuni[i] = c
 	}
-	b, _ = os.ReadFile("testdata/topo.json")
+	b, _ := os.ReadFile("testdata/topo.json")
 	events := extract(b)
 
 	for i, c := range comuni {
