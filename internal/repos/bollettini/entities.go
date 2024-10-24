@@ -1,24 +1,9 @@
-package main
+package bollettini
 
 import (
 	"encoding/xml"
 	"time"
 )
-
-var header = []string{
-	"Date",
-	"Event",
-	"Area",
-	"Code",
-	"OnSet",
-	"Expires",
-	"Category",
-	"ResponseType",
-	"Urgency",
-	"Severity",
-	"Certainty",
-	"SenderName",
-}
 
 // event rappresenta un evento di criticità idrogeologica o idraulica
 // all'interno della applicazione. Viene costruito dopo il parsing XML

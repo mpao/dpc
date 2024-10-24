@@ -11,13 +11,6 @@ import (
 	"gopkg.in/natefinch/lumberjack.v2"
 )
 
-const separator = '\t' // separatore per il CSV
-
-var (
-	applicationName    = "dpc"  // valore di fallback, usa il Taskfile per la definizione
-	applicationVersion = "v0.0" // valore di fallback, usa il Taskfile per la definizione
-)
-
 func init() {
 	l := &lumberjack.Logger{
 		Filename:   applicationName + ".log",

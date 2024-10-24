@@ -4,7 +4,14 @@ import (
 	_ "embed"
 	"time"
 
+	"dpc/internal/ops"
+
 	"github.com/spf13/cobra"
+)
+
+var (
+	applicationName    = "dpc"  // valore di fallback, usa il Taskfile per la definizione
+	applicationVersion = "v0.0" // valore di fallback, usa il Taskfile per la definizione
 )
 
 const (
@@ -29,8 +36,6 @@ var (
 	howto = applicationName + " meteo --help\n" +
 		applicationName + " allerte --help\n" +
 		applicationName + " comuni --help"
-	service                   bool
-	dest, local, round, proxy string
 	//go:embed help.template
 	helpTemplate string
 )
@@ -50,14 +55,14 @@ var meteo = &cobra.Command{
 	SilenceErrors: true,
 	SilenceUsage:  true,
 	RunE: func(cmd *cobra.Command, args []string) error {
-		t := target{
-			name: "meteo",
-			url:  "https://github.com/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica/raw/master/files/all/",
-			filename: func() string {
+		t := ops.Target{
+			Name: "meteo",
+			URL:  "https://github.com/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica/raw/master/files/all/",
+			Filename: func() string {
 				today := time.Now()
 				return today.Format("20060102") + ".zip"
 			},
-			fallback: func() string {
+			Fallback: func() string {
 				today := time.Now()
 				return today.AddDate(0, 0, -1).Format("20060102") + ".zip"
 			},
@@ -73,13 +78,13 @@ var allerte = &cobra.Command{
 	SilenceErrors: true,
 	SilenceUsage:  true,
 	RunE: func(cmd *cobra.Command, args []string) error {
-		t := target{
-			name: "allerte",
-			url:  "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/files/all/",
-			filename: func() string {
+		t := ops.Target{
+			Name: "allerte",
+			URL:  "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/files/all/",
+			Filename: func() string {
 				return "latest_all.zip"
 			},
-			fallback: func() string {
+			Fallback: func() string {
 				return "latest_all.zip"
 			},
 		}
@@ -94,14 +99,14 @@ var comuni = &cobra.Command{
 	SilenceErrors: true,
 	SilenceUsage:  true,
 	RunE: func(cmd *cobra.Command, args []string) error {
-		t := target{
-			name: "comuni",
-			url:  "https://github.com/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica/raw/master/files/topojson/",
-			filename: func() string {
+		t := ops.Target{
+			Name: "comuni",
+			URL:  "https://github.com/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica/raw/master/files/topojson/",
+			Filename: func() string {
 				today := time.Now()
 				return today.Format("20060102") + "_oggi.json"
 			},
-			fallback: func() string {
+			Fallback: func() string {
 				today := time.Now()
 				return today.AddDate(0, 0, -1).Format("20060102") + "_oggi.json"
 			},
@@ -113,7 +118,7 @@ var comuni = &cobra.Command{
 func init() {
 	root.PersistentFlags().BoolP("help", "h", false, helpMessage)
 	root.PersistentFlags().BoolP("version", "v", false, "versione dell'applicazione")
-	root.PersistentFlags().StringVarP(&proxy, "proxy", "p", "", "specifica il proxy da utilizzare")
+	root.PersistentFlags().StringVarP(&ops.Proxy, "proxy", "p", "", "specifica il proxy da utilizzare")
 	root.AddCommand(meteo)
 	root.AddCommand(allerte)
 	root.AddCommand(comuni)
@@ -127,25 +132,25 @@ func init() {
 }
 
 func init() {
-	meteo.Flags().StringVarP(&dest, "dest", "d", "./", destMessage)
-	meteo.Flags().StringVarP(&local, "from", "f", "", localMessage)
-	meteo.Flags().StringVarP(&round, "round", "r", "0 16 * * *", roundMessage)
-	meteo.Flags().BoolVarP(&service, "service", "s", false, serviceMessage)
+	meteo.Flags().StringVarP(&ops.Dest, "dest", "d", "./", destMessage)
+	meteo.Flags().StringVarP(&ops.Local, "from", "f", "", localMessage)
+	meteo.Flags().StringVarP(&ops.Round, "round", "r", "0 16 * * *", roundMessage)
+	meteo.Flags().BoolVarP(&ops.Service, "service", "s", false, serviceMessage)
 	meteo.MarkFlagsMutuallyExclusive("from", "round")
 	meteo.MarkFlagsMutuallyExclusive("from", "service")
 }
 
 func init() {
-	allerte.Flags().StringVarP(&dest, "dest", "d", "./", destMessage)
-	allerte.Flags().StringVarP(&local, "from", "f", "", localMessage)
-	allerte.Flags().StringVarP(&round, "round", "r", "0 16 * * *", roundMessage)
-	allerte.Flags().BoolVarP(&service, "service", "s", false, serviceMessage)
+	allerte.Flags().StringVarP(&ops.Dest, "dest", "d", "./", destMessage)
+	allerte.Flags().StringVarP(&ops.Local, "from", "f", "", localMessage)
+	allerte.Flags().StringVarP(&ops.Round, "round", "r", "0 16 * * *", roundMessage)
+	allerte.Flags().BoolVarP(&ops.Service, "service", "s", false, serviceMessage)
 	allerte.MarkFlagsMutuallyExclusive("from", "round")
 	allerte.MarkFlagsMutuallyExclusive("from", "service")
 }
 
 func init() {
-	comuni.Flags().StringVarP(&dest, "dest", "d", "./", destMessage)
-	comuni.Flags().StringVarP(&round, "round", "r", "0 16 * * *", roundMessage)
-	comuni.Flags().BoolVarP(&service, "service", "s", false, serviceMessage)
+	comuni.Flags().StringVarP(&ops.Dest, "dest", "d", "./", destMessage)
+	comuni.Flags().StringVarP(&ops.Round, "round", "r", "0 16 * * *", roundMessage)
+	comuni.Flags().BoolVarP(&ops.Service, "service", "s", false, serviceMessage)
 }

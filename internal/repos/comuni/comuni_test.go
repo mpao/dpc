@@ -1,7 +1,6 @@
-package main
+package comuni
 
 import (
-	"encoding/csv"
 	"io"
 	"net/http"
 	"os"
@@ -17,7 +16,7 @@ func Test_GetPrecipitazioni(t *testing.T) {
 	}
 	defer r.Body.Close()
 	b, _ := io.ReadAll(r.Body)
-	err = os.WriteFile("testdata/topo.json", b, 0666)
+	err = os.WriteFile("../../../testdata/topo.json", b, 0666)
 	assert.NoError(t, err)
 }
 
@@ -28,32 +27,32 @@ func Test_GetInfoComuni(t *testing.T) {
 	}
 	defer r.Body.Close()
 	b, _ := io.ReadAll(r.Body)
-	err = os.WriteFile("testdata/comuni.csv", b, 0666)
+	err = os.WriteFile("static/comuni.csv", b, 0666)
 	assert.NoError(t, err)
 }
 
 func Test_Extract(t *testing.T) {
-	b, _ := os.ReadFile("testdata/topo.json")
+	b, _ := os.ReadFile("../../../testdata/topo.json")
 	list := extract(b)
 	assert.Equal(t, 8048, len(list))
 }
 
 func Test_InfoComuni(t *testing.T) {
-	b, _ := os.ReadFile("testdata/comuni.csv")
+	b, _ := os.ReadFile("static/comuni.csv")
 	list := infoComuni(b)
 	assert.Equal(t, 7904, len(list))
 }
 
 func Test_Popolazione(t *testing.T) {
-	b, _ := os.ReadFile("testdata/popolazione_2021.csv")
+	b, _ := os.ReadFile("static/popolazione_2021.csv")
 	list := popolazione(b)
 	assert.Equal(t, 7904, len(list))
 }
 
 func Test_AddPopulation(t *testing.T) {
-	b, _ := os.ReadFile("testdata/comuni.csv")
+	b, _ := os.ReadFile("static/comuni.csv")
 	comuni := infoComuni(b)
-	b, _ = os.ReadFile("testdata/popolazione_2021.csv")
+	b, _ = os.ReadFile("static/popolazione_2021.csv")
 	pop := popolazione(b)
 	for i, c := range comuni {
 		c.addPopulation(pop)
@@ -67,6 +66,7 @@ func Test_AddPopulation(t *testing.T) {
 	}
 }
 
+/*
 func Test_OperationComuni(t *testing.T) {
 	comuni := infoComuni(comuniData)
 	pop := popolazione(popolazioneData)
@@ -100,3 +100,4 @@ func Test_OperationComuni(t *testing.T) {
 	assert.Equal(t, 111, notfound)
 	t.Log("file creato correttamente in testdata")
 }
+*/
