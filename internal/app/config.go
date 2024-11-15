@@ -10,8 +10,6 @@ import (
 )
 
 var (
-	Name     = "dpc"  // Name valore di fallback, usa il Taskfile per la definizione
-	Version  = "v0.0" // Version valore di fallback, usa il Taskfile per la definizione
 	Dest     string   // Dest config vedi -d
 	Proxy    string   // Proxy config vedi -p
 	Original bool     // Original config vedi -o
