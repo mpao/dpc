@@ -27,8 +27,24 @@ type Comune struct {
 	Pop   int
 }
 
-// Comuni restituisce la lista di tutti i comuni italiani e i loro attributi
-func Comuni() []Comune {
+// ForeignKey estra un valore, considerato come chiave, che possa essere usato per
+// aggregare i dati dei comuni italiani con i dati della protezione civile. Tale
+// valore per ora può essere solo il nome del comune, facendo attenzione che i dati
+// provenienti da DPC hanno parecchie criticità, primo su tutti la codifica non UTF8
+func (c *Comune) ForeignKey() string {
+	// l'ugualianza tra i nomi dei comuni è problematica; i dati arrivano da due fonti diverse,
+	// alcuni nomi sono completamente differenti (~200) e la fonte DPC ha problemi coi caratteri UTF8.
+	// Uso quindi una stringa ricavata dal vero nome del comune per fare la ricerca nella map proveniente
+	// da DPC
+	s := strings.ToLower(c.Name)
+	for _, char := range []string{"à", "á", "ä", "è", "é", "ë", "ì", "í", "ï", "ò", "ó", "ö", "ù", "ú", "ü"} {
+		s = strings.ReplaceAll(s, char, "")
+	}
+	return s
+}
+
+// GetAll restituisce la lista di tutti i comuni italiani e i loro attributi
+func GetAll() []Comune {
 	comuni := comuni(comuniData)
 	pop := popolazione(popolazioneData)
 	for i, c := range comuni {

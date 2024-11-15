@@ -20,7 +20,7 @@ func Test_Popolazione(t *testing.T) {
 }
 
 func TestComuni(t *testing.T) {
-	c := Comuni()
+	c := GetAll()
 	assert.Equal(t, 7904, len(c))
 	for _, v := range c {
 		switch v.Name {
