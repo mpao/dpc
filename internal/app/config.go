@@ -10,11 +10,11 @@ import (
 )
 
 var (
-	Dest     string   // Dest config vedi -d
-	Proxy    string   // Proxy config vedi -p
-	Original bool     // Original config vedi -o
-	Join     bool     // Join config vedi -j
-	Interval string   // Interval config vedi -i
+	Dest     string // Dest config vedi -d
+	Proxy    string // Proxy config vedi -p
+	Original bool   // Original config vedi -o
+	Join     bool   // Join config vedi -j
+	Interval string // Interval config vedi -i
 )
 
 // ParseDayParam controlla e valida le date di input
