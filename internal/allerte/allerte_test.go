@@ -38,21 +38,21 @@ func TestTopojsonList(t *testing.T) {
 
 // TestGetTopojson lettura di un bollettino giornaliero
 func TestTopojson(t *testing.T) {
-	url := domain + "git/blobs/f705402c27a5bd13c646adf97902afd63ab83f96"
+	url := "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/"
 	cases := []struct {
 		name    string
 		url     string
 		content string
 	}{
-		{name: "OK", url: url, content: "Firenze"},
+		{name: "OK", url: url + "files/topojson/20200101_1530_today.json", content: "Firenze"},
 		{name: "KO", url: "", content: "unsupported protocol scheme"},
-		{name: "Empty", url: "https://go.dev", content: ""},
+		{name: "Empty", url: "https://go.dev", content: "<!DOCTYPE html>"},
 	}
 	for _, test := range cases {
 		t.Run(test.name, func(t *testing.T) {
 			n := node{
 				date: time.Now(),
-				URL:  test.url,
+				url:  test.url,
 			}
 			b, err := topojson(n)
 			switch test.name {
@@ -68,42 +68,68 @@ func TestTopojson(t *testing.T) {
 }
 
 func TestExtract(t *testing.T) {
+	url := "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/"
 	n := node{
 		date: time.Now(),
-		URL:  domain + "git/blobs/bd879058416a9d53dbf03a6e7c4ea83ae8d9ad52",
+		url:  url + "files/topojson/20200101_1530_today.json",
 	}
 	b, _ := topojson(n)
 	// _ = os.WriteFile("topo.json", b, 0666)
 	got := extract(b, n.date)
-	assert.Equal(t, 7893, len(got))
+	assert.Equal(t, 7952, len(got))
 }
 
 func TestEvents(t *testing.T) {
-	day, _ := time.Parse("02012006", "13112024")
-	n := node{
-		date: day,
-		URL:  domain + "git/blobs/bd879058416a9d53dbf03a6e7c4ea83ae8d9ad52",
+	url := "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/"
+	// il problema degli accenti è più grosso di quanto sembrasse:
+	// nel 2020 - e quindi penso anche successivamente - la codifica era corretta
+	// come UTF8, poi non si sa perché, la situazione cambia.
+	cases := []struct {
+		name    string
+		date    time.Time
+		file    string
+		allarme string
+	}{
+		{
+			name:    "01012020",
+			date:    time.Date(2020, 1, 1, 0, 0, 0, 0, time.Local),
+			file:    "files/topojson/20200101_1530_today.json",
+			allarme: "NESSUNA ALLERTA",
+		},
+		{
+			name:    "13112024",
+			date:    time.Date(2024, 11, 13, 0, 0, 0, 0, time.Local),
+			file:    "files/topojson/20241113_1521_today.json",
+			allarme: "ARANCIONE",
+		},
 	}
-	out := events(n)
-	var cornercases []event
-	var emptyComuni int
-	for _, v := range out {
-		// controlla correzione lettere accentate, zona alluvionata il 13.11.2024
-		// e un nome con due parole
-		if slices.Contains([]string{"Forlì", "Giarre", "Nocera Umbra"}, v.name) {
-			cornercases = append(cornercases, v)
-		}
-		// nel topojson ci sono molti comuni aggregati insieme, oppure
-		// con il nome bilingue; mi perdo l'informazione di circa 140 comuni
-		// Gli devo ignorare, l'aggregazione può essere fatta sulla zona di allerta
-		if v.Idrogeologico == "" {
-			emptyComuni++
-		}
+	for _, test := range cases {
+		t.Run(test.name, func(t *testing.T) {
+			n := node{
+				date: test.date,
+				url:  url + test.file,
+			}
+			out := events(n)
+			var cornercases []event
+			var emptyComuni int
+			for _, v := range out {
+				// controlla correzione lettere accentate, zona alluvionata il 13.11.2024
+				// e un nome con due parole
+				if slices.Contains([]string{"Forlì", "Giarre", "Nocera Umbra"}, v.name) {
+					cornercases = append(cornercases, v)
+				}
+				// nel topojson ci sono molti comuni aggregati insieme, oppure
+				// con il nome bilingue; mi perdo l'informazione di circa 140 comuni
+				// Gli devo ignorare, l'aggregazione può essere fatta sulla zona di allerta
+				if v.Idrogeologico == "" {
+					emptyComuni++
+				}
+			}
+			assert.Equal(t, 3, len(cornercases))
+			assert.Equal(t, 0, emptyComuni)
+			assert.Contains(t, cornercases[2].Idrogeologico, test.allarme)
+		})
 	}
-	assert.Equal(t, 3, len(cornercases))
-	assert.Equal(t, 0, emptyComuni)
-	assert.Contains(t, cornercases[2].Idrogeologico, "ARANCIONE")
-	t.Log()
 }
 
 func TestFilterNodes(t *testing.T) {

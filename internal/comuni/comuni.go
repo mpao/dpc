@@ -27,18 +27,23 @@ type Comune struct {
 	Pop   int
 }
 
-// ForeignKey estra un valore, considerato come chiave, che possa essere usato per
+// SetWrongUTF8 estra un valore, considerato come chiave, che possa essere usato per
 // aggregare i dati dei comuni italiani con i dati della protezione civile. Tale
 // valore per ora può essere solo il nome del comune, facendo attenzione che i dati
 // provenienti da DPC hanno parecchie criticità, primo su tutti la codifica non UTF8
-func (c *Comune) ForeignKey() string {
+func SetWrongUTF8(s string) string {
 	// l'ugualianza tra i nomi dei comuni è problematica; i dati arrivano da due fonti diverse,
 	// alcuni nomi sono completamente differenti (~200) e la fonte DPC ha problemi coi caratteri UTF8.
 	// Uso quindi una stringa ricavata dal vero nome del comune per fare la ricerca nella map proveniente
 	// da DPC
-	s := strings.ToLower(c.Name)
-	for _, char := range []string{"à", "á", "ä", "è", "é", "ë", "ì", "í", "ï", "ò", "ó", "ö", "ù", "ú", "ü"} {
-		s = strings.ReplaceAll(s, char, "")
+	for _, char := range []string{
+		"à", "á", "ä", "â",
+		"è", "é", "ë", "ê",
+		"ì", "í", "ï", "î",
+		"ò", "ó", "ö", "ô",
+		"ù", "ú", "ü", "û",
+	} {
+		s = strings.ReplaceAll(s, char, "�")
 	}
 	return s
 }

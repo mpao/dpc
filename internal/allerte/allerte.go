@@ -1,7 +1,6 @@
 package allerte
 
 import (
-	"encoding/base64"
 	"encoding/json"
 	"errors"
 	"io"
@@ -19,7 +18,10 @@ import (
 	"github.com/spf13/cobra"
 )
 
-const domain = "https://api.github.com/repos/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/"
+const (
+	domain  = "https://api.github.com/repos/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/"
+	fileURL = "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/"
+)
 
 // tree è la struttura del json restituito dalla API di github che descrive
 // i files presenti nel repository
@@ -34,7 +36,7 @@ type tree struct {
 type node struct {
 	date     time.Time
 	Filename string `json:"path"`
-	URL      string `json:"url"`
+	url      string // non usare la URL della API! vedi topojsonList()
 }
 
 // addDate aggiunge a node la data di pubblicazione
@@ -69,6 +71,15 @@ func topojsonList() ([]node, error) {
 	for _, v := range t.Tree {
 		if rx.MatchString(v.Filename) {
 			v.addDate()
+			// se importo la URL dal nodo originale, questo comporta un utilizzo delle API
+			// che hanno un rate-limit spiegato qui: https://shorturl.at/Uk0E5
+			// Poiché il numero di chiamate superano abbondantemente il limite imposto,
+			// la soluzione è effettuare solo la chiamata per il tree main per ottenere
+			// i nomi dei files, per poi accederci direttamente dal repository.
+			// Ti ricordo che senza sapere il nome dei files non li troverai mai visto
+			// che vengono pubblicati con nome variabile a seconda dell'orario;
+			// ecco il perché ti tutto questo giro
+			v.url = fileURL + v.Filename
 			files = append(files, v)
 		}
 	}
@@ -109,10 +120,7 @@ func dayEqual(date1, date2 time.Time) bool {
 
 // topojson scarica il topojson
 func topojson(n node) ([]byte, error) {
-	var response struct {
-		Content string
-	}
-	r, err := http.Get(n.URL)
+	r, err := http.Get(n.url)
 	if err != nil {
 		return nil, err
 	}
@@ -121,9 +129,11 @@ func topojson(n node) ([]byte, error) {
 	if r.StatusCode != http.StatusOK {
 		return nil, errors.New(string(body))
 	}
-	_ = json.Unmarshal(body, &response)
-	b, _ := base64.StdEncoding.DecodeString(response.Content)
-	return b, nil
+	// se non è un json restituisci slice vuota
+	if body[0] != byte('{') {
+		return []byte{}, nil
+	}
+	return body, nil
 }
 
 func extract(b []byte, d time.Time) map[string]event {
@@ -154,6 +164,9 @@ func extract(b []byte, d time.Time) map[string]event {
 	slices.SortFunc(entries, func(a, b entry) int {
 		return strings.Compare(a.NomeZona, b.NomeZona)
 	})
+	// la struttura map è l'unica che garantisce prestazioni decenti
+	// nella join con le informazioni comunali, garantite dall'accesso
+	// O(1) degli elementi.
 	events := make(map[string]event, 10_000)
 	// per ogni zona raccogli tutti i comuni. qui è obbligatorio un doppio loop
 	// ma sono circa 7906 iterazioni costanti, ovvero il numero dei comuni italiani
@@ -162,8 +175,7 @@ func extract(b []byte, d time.Time) map[string]event {
 		for _, c := range entry.Comuni {
 			// i nomi dei comuni non hanno codifica corretta vedi issue
 			// https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/issues/10
-			c = strings.ReplaceAll(c, "�", "")
-			events[strings.ToLower(c)] = event{
+			events[c] = event{
 				name:          c,
 				zona:          entry.NomeZona,
 				Temporali:     entry.Temporali,
@@ -246,9 +258,14 @@ func events(n node) []event {
 	cities := comuni.GetAll()
 	out := make([]event, 0, len(rawmap))
 	for _, c := range cities {
-		// nel topojson ci sono molti comuni aggregati insieme per comodità, oppure
-		// con il nome bilingue; mi perdo l'informazione di circa 140 comuni
-		key := c.ForeignKey()
+		// match con nomi corretti
+		if ev, ok := rawmap[c.Name]; ok {
+			ev.addInfo(c)
+			out = append(out, ev)
+			continue
+		}
+		// match con nomi accenti sbagliati
+		key := comuni.SetWrongUTF8(c.Name)
 		if ev, ok := rawmap[key]; ok {
 			ev.addInfo(c)
 			out = append(out, ev)
