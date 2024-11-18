@@ -31,7 +31,7 @@ type Comune struct {
 // aggregare i dati dei comuni italiani con i dati della protezione civile. Tale
 // valore per ora può essere solo il nome del comune, facendo attenzione che i dati
 // provenienti da DPC hanno parecchie criticità, primo su tutti la codifica non UTF8
-func SetWrongUTF8(s string) string {
+func SetWrongUTF8(s, replacewith string) string {
 	// l'ugualianza tra i nomi dei comuni è problematica; i dati arrivano da due fonti diverse,
 	// alcuni nomi sono completamente differenti (~200) e la fonte DPC ha problemi coi caratteri UTF8.
 	// Uso quindi una stringa ricavata dal vero nome del comune per fare la ricerca nella map proveniente
@@ -43,7 +43,7 @@ func SetWrongUTF8(s string) string {
 		"ò", "ó", "ö", "ô",
 		"ù", "ú", "ü", "û",
 	} {
-		s = strings.ReplaceAll(s, char, "�")
+		s = strings.ReplaceAll(s, char, replacewith)
 	}
 	return s
 }

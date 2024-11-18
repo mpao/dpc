@@ -38,9 +38,10 @@ import (
 )
 
 const (
-	domain    = "https://api.github.com/repos/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/"
-	fileURL   = "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/"
-	dateLimit = "01012020" // data minima per richiesta dati, formato ddmmyyyy
+	domain         = "https://api.github.com/repos/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/"
+	fileURL        = "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/"
+	dateLimit      = "01012020" // data minima per richiesta dati, formato ddmmyyyy
+	utf8Laceholder = "�"        // il dataset utilizza questo carattere come carattere UTF8 non identificato
 )
 
 // Get comando per il download delle allerte DPC
@@ -241,7 +242,7 @@ func events(n node) []event {
 			continue
 		}
 		// match con nomi accenti sbagliati
-		key := comuni.SetWrongUTF8(c.Name)
+		key := comuni.SetWrongUTF8(c.Name, utf8Laceholder)
 		if ev, ok := rawmap[key]; ok {
 			ev.addInfo(c)
 			out = append(out, ev)
