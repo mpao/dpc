@@ -14,7 +14,7 @@ func TestParseDates(t *testing.T) {
 		want string
 	}{
 		{name: ""},
-		{name: "20101010-20101111", want: "specificare una data successiva al 01/01/2020"},
+		{name: "20101010-20101111", want: "specificare una data successiva al 01012020"},
 		{name: "01012024", want: ""},
 		{name: "01012024-32122024", want: msg},
 		{name: "20241201-20241231", want: msg},

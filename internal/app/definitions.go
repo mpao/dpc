@@ -23,6 +23,10 @@ var (
 func ParseDayParam(s, limit string) (from, to time.Time, err error) {
 	msg := "specificare il giorno nel formato ddmmyyyy oppure un intervallo ddmmyyyy-ddmmyyyy"
 	arr := strings.Split(s, "-")
+	dateLimit, err := time.Parse("02012006", limit)
+	if err != nil {
+		return time.Time{}, time.Time{}, err
+	}
 	if s == "" {
 		return time.Time{}, time.Time{}, nil
 	}
@@ -32,6 +36,9 @@ func ParseDayParam(s, limit string) (from, to time.Time, err error) {
 	if from, err = time.Parse("02012006", arr[0]); err != nil {
 		return time.Time{}, time.Time{}, errors.New(msg)
 	}
+	if from.Before(dateLimit) {
+		return time.Time{}, time.Time{}, errors.New("specificare una data successiva al " + limit)
+	}
 	if len(arr) == 1 {
 		return from, from, nil
 	}
@@ -40,13 +47,6 @@ func ParseDayParam(s, limit string) (from, to time.Time, err error) {
 	}
 	if from.After(to) {
 		return time.Time{}, time.Time{}, errors.New("specificare prima la data inferiore")
-	}
-	dateLimit, err := time.Parse("02012006", limit)
-	if err != nil {
-		return time.Time{}, time.Time{}, err
-	}
-	if from.Before(dateLimit) {
-		return time.Time{}, time.Time{}, errors.New("specificare una data successiva al 01/01/2020")
 	}
 	return from, to, nil
 }
