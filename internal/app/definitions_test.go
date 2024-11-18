@@ -25,7 +25,7 @@ func TestParseDates(t *testing.T) {
 	for _, test := range cases {
 		t.Run(test.name, func(t *testing.T) {
 			var got string
-			_, _, err := ParseDayParam(test.name)
+			_, _, err := ParseDayParam(test.name, "01012020")
 			if err != nil {
 				got = err.Error()
 			}

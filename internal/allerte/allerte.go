@@ -38,8 +38,9 @@ import (
 )
 
 const (
-	domain  = "https://api.github.com/repos/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/"
-	fileURL = "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/"
+	domain    = "https://api.github.com/repos/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/"
+	fileURL   = "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/"
+	dateLimit = "01012020" // data minima per richiesta dati, formato ddmmyyyy
 )
 
 // Get comando per il download delle allerte DPC
@@ -64,7 +65,7 @@ func Get(cmd *cobra.Command, args []string) error {
 // dall'utente. Se nessuna data è stata specificata, restituisce la più recente.
 func filterNodes(interval string, nodes []node) ([]node, error) {
 	var out []node
-	from, to, err := app.ParseDayParam(interval)
+	from, to, err := app.ParseDayParam(interval, dateLimit)
 	if err != nil {
 		return nil, err
 	}
