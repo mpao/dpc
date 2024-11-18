@@ -5,6 +5,7 @@ import (
 
 	"dpc/internal/allerte"
 	"dpc/internal/app"
+	"dpc/internal/meteo"
 
 	"github.com/spf13/cobra"
 )
@@ -20,7 +21,7 @@ const (
 	dayMessage   = "specifica un intervallo di date da scaricare:\nusa il formato ddmmyyyy per un singolo giorno\n" +
 		"oppure ddmmyyyy-ddmmyyyy per un intervallo, estremi inclusi."
 	joinMessage     = "in caso di richiesta di più giorni, salva in un unico file"
-	originalMessage = "restituisce i topojson originali"
+	originalMessage = "restituisce i topojson originali; è incompatibile con -j"
 )
 
 var (
@@ -38,7 +39,7 @@ var root = &cobra.Command{
 	SilenceUsage:  true,
 }
 
-var alert = &cobra.Command{
+var alertCmd = &cobra.Command{
 	Use:           "allerte",
 	Short:         messageAlert,
 	Long:          messageAlert,
@@ -47,12 +48,22 @@ var alert = &cobra.Command{
 	RunE:          allerte.Get,
 }
 
+var meteoCmd = &cobra.Command{
+	Use:           "meteo",
+	Short:         messageMeteo,
+	Long:          messageMeteo,
+	SilenceErrors: true,
+	SilenceUsage:  true,
+	RunE:          meteo.Get,
+}
+
 func init() {
 	root.PersistentFlags().BoolP("help", "h", false, helpMessage)
 	root.PersistentFlags().BoolP("version", "v", false, "versione dell'applicazione")
 	root.PersistentFlags().StringVarP(&app.Proxy, "proxy", "p", "", proxyMessage)
 	root.PersistentFlags().StringVarP(&app.Dest, "dest", "d", "./", destMessage)
-	root.AddCommand(alert)
+	root.AddCommand(alertCmd)
+	root.AddCommand(meteoCmd)
 	root.CompletionOptions.DisableDefaultCmd = true
 	root.Example = howto
 	root.SetHelpTemplate(helpTemplate)
@@ -63,8 +74,15 @@ func init() {
 }
 
 func init() {
-	alert.Flags().StringVar(&app.Interval, "day", "", dayMessage)
-	alert.Flags().BoolVarP(&app.Original, "original", "o", false, originalMessage)
-	alert.Flags().BoolVarP(&app.Join, "join", "j", false, joinMessage)
-	alert.MarkFlagsMutuallyExclusive("join", "original")
+	alertCmd.Flags().StringVar(&app.Interval, "day", "", dayMessage)
+	alertCmd.Flags().BoolVarP(&app.Original, "original", "o", false, originalMessage)
+	alertCmd.Flags().BoolVarP(&app.Join, "join", "j", false, joinMessage)
+	alertCmd.MarkFlagsMutuallyExclusive("join", "original")
+}
+
+func init() {
+	meteoCmd.Flags().StringVar(&app.Interval, "day", "", dayMessage)
+	meteoCmd.Flags().BoolVarP(&app.Original, "original", "o", false, originalMessage)
+	meteoCmd.Flags().BoolVarP(&app.Join, "join", "j", false, joinMessage)
+	meteoCmd.MarkFlagsMutuallyExclusive("join", "original")
 }
