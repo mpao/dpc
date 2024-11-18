@@ -52,7 +52,7 @@ func (n *node) addDate() {
 // topojsonList scarica la lista di files topojson dal repository github
 func topojsonList() ([]node, error) {
 	url := domain + "git/trees/master?recursive=1"
-	r, err := http.Get(url)
+	r, err := app.HTTPClient().Get(url)
 	if err != nil {
 		return nil, err
 	}
@@ -120,7 +120,7 @@ func dayEqual(date1, date2 time.Time) bool {
 
 // topojson scarica il topojson
 func topojson(n node) ([]byte, error) {
-	r, err := http.Get(n.url)
+	r, err := app.HTTPClient().Get(n.url)
 	if err != nil {
 		return nil, err
 	}

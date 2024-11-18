@@ -3,6 +3,8 @@ package app
 import (
 	"encoding/csv"
 	"errors"
+	"net/http"
+	"net/url"
 	"os"
 	"path/filepath"
 	"strings"
@@ -71,4 +73,18 @@ func SaveBytes(filename string, payload []byte) error {
 	defer file.Close()
 	_, _ = file.Write(payload)
 	return nil
+}
+
+// HTTPClient restituisce il client HTTP per l'applicazione
+func HTTPClient() *http.Client {
+	client := &http.Client{
+		Timeout: 20 * time.Second,
+	}
+	if Proxy != "" {
+		u, _ := url.Parse(Proxy)
+		client.Transport = &http.Transport{
+			Proxy: http.ProxyURL(u),
+		}
+	}
+	return client
 }
