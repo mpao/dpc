@@ -4,7 +4,7 @@ silent: true
 
 env:
   name: dpc
-  version: v1.0
+  version: v0.1
   buildversion:
     sh: "git rev-parse --short main"
 tasks:
@@ -19,21 +19,21 @@ tasks:
       # multiline command vedi https://github.com/go-task/task/issues/274#issuecomment-565876913
       - |
         GOOS=linux go build \
-        -ldflags="-s -w -X app.Version={{.version}} -X app.Name={{.name}}" \
+        -ldflags="-s -w -X main.appVersion={{.version}} -X main.appName={{.name}}" \
         -o bin/{{.name}}-build.{{.buildversion}} ./cmd
   windows:
     cmds:
       # multiline command vedi https://github.com/go-task/task/issues/274#issuecomment-565876913
       - |
         GOOS=windows go build \
-        -ldflags="-s -w -X app.Version={{.version}} -X app.Name={{.name}}" \
+        -ldflags="-s -w -X main.appVersion={{.version}} -X main.appName={{.name}}" \
         -o bin/{{.name}}-build.{{.buildversion}}.exe ./cmd
   macos:
     cmds:
       # multiline command vedi https://github.com/go-task/task/issues/274#issuecomment-565876913
       - |
         GOOS=darwin GOARCH=arm64 go build \
-        -ldflags="-s -w -X app.Version={{.version}} -X app.Name={{.name}}" \
+        -ldflags="-s -w -X main.appVersion={{.version}} -X main.appName={{.name}}" \
         -o bin/{{.name}}-build.{{.buildversion}}-arm64 ./cmd
   build:
     cmds:
