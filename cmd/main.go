@@ -12,7 +12,7 @@ var (
 
 func main() {
 	if err := root.Execute(); err != nil {
-		fmt.Println(err)
+		fmt.Printf("\rErrore: %v\n", err)
 		os.Exit(1)
 	}
 }

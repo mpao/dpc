@@ -2,6 +2,8 @@ package main
 
 import (
 	_ "embed"
+	"fmt"
+	"time"
 
 	"dpc/internal/allerte"
 	"dpc/internal/app"
@@ -45,7 +47,9 @@ var alertCmd = &cobra.Command{
 	Long:          messageAlert,
 	SilenceErrors: true,
 	SilenceUsage:  true,
-	RunE:          allerte.Get,
+	RunE: func(cmd *cobra.Command, args []string) error {
+		return uxWaitingMessage(allerte.Get)
+	},
 }
 
 var meteoCmd = &cobra.Command{
@@ -54,7 +58,9 @@ var meteoCmd = &cobra.Command{
 	Long:          messageMeteo,
 	SilenceErrors: true,
 	SilenceUsage:  true,
-	RunE:          meteo.Get,
+	RunE: func(cmd *cobra.Command, args []string) error {
+		return uxWaitingMessage(meteo.Get)
+	},
 }
 
 func init() {
@@ -85,4 +91,34 @@ func init() {
 	meteoCmd.Flags().BoolVarP(&app.Original, "original", "o", false, originalMessage)
 	meteoCmd.Flags().BoolVarP(&app.Join, "join", "j", false, joinMessage)
 	meteoCmd.MarkFlagsMutuallyExclusive("join", "original")
+}
+
+// uxWaitingMessage manda in output messaggio di attesa per
+// dare feedback all'utente sul procedere delle operazioni
+func uxWaitingMessage(f func() error) error {
+	s := make(chan error)
+	go func() {
+		go spinner()
+		s <- f()
+	}()
+	if err := <-s; err != nil {
+		return err
+	}
+	fmt.Printf("\rfatto! dati salvati.\n")
+	return nil
+}
+
+func spinner() {
+	for {
+		for _, r := range `-\|/` {
+			// \r, carriage return posiziona il cursore ad inizio riga
+			// e ricomincia a scrivere. Questa operazione simula la riscrittura
+			// degli ultimi caratteri se si utilizza il medesimo prefisso.
+			// prova a eliminare \r per vedere cosa intendo
+			fmt.Printf("\r %c", r)
+			// per dare il senso rotatorio, scrivi i caratteri con
+			// un intervallo di XXms uno dall'altro
+			time.Sleep(70 * time.Millisecond)
+		}
+	}
 }
