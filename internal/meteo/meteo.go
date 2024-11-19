@@ -30,6 +30,7 @@ import (
 	"regexp"
 	"slices"
 	"strings"
+	"sync"
 	"time"
 
 	"dpc/internal/app"
@@ -154,16 +155,23 @@ func topojson(n node) ([]byte, error) {
 
 // writeJSON scarica i file json senza nessuna modifica
 func writeJSON(nodes []node) error {
-	for _, node := range nodes {
-		b, err := topojson(node)
-		if err != nil {
-			slog.Error("")
-		}
-		name := "meteo-topojson-" + node.date.Format("20060102")
-		if err := app.SaveBytes(name, b); err != nil {
-			return err
-		}
+	var wg sync.WaitGroup
+	for _, n := range nodes {
+		wg.Add(1)
+		go func(n node) error {
+			defer wg.Done()
+			b, err := topojson(n)
+			if err != nil {
+				slog.Error("fallito", "giorno", n.date.Format("02/01/2006"), "errore", err.Error())
+			}
+			name := "meteo-topojson-" + n.date.Format("20060102")
+			if err := app.SaveBytes(name, b); err != nil {
+				return err
+			}
+			return nil
+		}(n)
 	}
+	wg.Wait()
 	return nil
 }
 
@@ -184,26 +192,36 @@ func writeCSV(nodes []node) error {
 	}
 	joined := make([][]string, 0, 80_000)
 	joined = slices.Insert(joined, 0, headers)
-	for _, node := range nodes {
-		payload := make([][]string, 0, 8_000)
-		collection := events(node)
-		for _, v := range collection {
-			payload = append(payload, v.CSV())
-		}
-		joined = append(joined, payload...)
-		if app.Join {
-			name := "meteo-" + nodes[0].date.Format("20060102") + nodes[len(nodes)-1].date.Format("20060102")
-			if err := app.SaveCSV(name, joined); err != nil {
-				return err
+	var wg sync.WaitGroup
+	var mutex sync.Mutex
+	for _, n := range nodes {
+		wg.Add(1)
+		go func(n node) error {
+			defer wg.Done()
+			payload := make([][]string, 0, 8_000)
+			collection := events(n)
+			for _, v := range collection {
+				payload = append(payload, v.CSV())
 			}
-		} else {
-			name := "meteo-" + node.date.Format("20060102")
-			payload = slices.Insert(payload, 0, headers)
-			if err := app.SaveCSV(name, payload); err != nil {
-				return err
+			mutex.Lock()
+			joined = append(joined, payload...)
+			mutex.Unlock()
+			if app.Join {
+				name := "meteo-" + nodes[0].date.Format("20060102") + nodes[len(nodes)-1].date.Format("20060102")
+				if err := app.SaveCSV(name, joined); err != nil {
+					return err
+				}
+			} else {
+				name := "meteo-" + n.date.Format("20060102")
+				payload = slices.Insert(payload, 0, headers)
+				if err := app.SaveCSV(name, payload); err != nil {
+					return err
+				}
 			}
-		}
+			return nil
+		}(n)
 	}
+	wg.Wait()
 	return nil
 }
 
