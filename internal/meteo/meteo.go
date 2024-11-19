@@ -35,8 +35,6 @@ import (
 
 	"dpc/internal/app"
 	"dpc/internal/comuni"
-
-	"github.com/spf13/cobra"
 )
 
 const (
@@ -47,7 +45,7 @@ const (
 )
 
 // Get comando per il download delle allerte meteo DPC
-func Get(cmd *cobra.Command, args []string) error {
+func Get() error {
 	list, err := topojsonList()
 	if err != nil {
 		return err

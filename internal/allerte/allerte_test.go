@@ -173,7 +173,7 @@ func TestDemo_FileCreation(t *testing.T) {
 			app.Interval = test.interval
 			app.Join = test.join
 			app.Original = test.original
-			if err := Get(nil, nil); err != nil {
+			if err := Get(); err != nil {
 				t.Fatal(err)
 			}
 		})
