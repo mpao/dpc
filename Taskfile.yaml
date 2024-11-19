@@ -4,7 +4,7 @@ silent: true
 
 env:
   name: dpc
-  version: v0.1
+  version: v0.2
   buildversion:
     sh: "git rev-parse --short main"
 tasks:
