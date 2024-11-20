@@ -18,6 +18,13 @@ $> go install github.com/go-task/task/v3/cmd/task@latest
 $> task release
 ```
 
+### Download
+
+L'eseguibile è disponibile per le piattaforme più diffuse al link:
+
+> https://github.com/mpao/dpc/releases
+
+
 ### Manuale d'uso
 
 ```text
