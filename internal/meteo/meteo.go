@@ -40,8 +40,10 @@ import (
 const (
 	domain         = "https://api.github.com/repos/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica/"
 	fileURL        = "https://github.com/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica/raw/master/"
-	dateLimit      = "01012022" // data minima per richiesta dati, formato ddmmyyyy
-	utf8Laceholder = ""         // il dataset utilizza questo carattere come carattere UTF8 non identificato
+	dateLimit      = "01012022"       // data minima per richiesta dati, formato ddmmyyyy
+	utf8Laceholder = ""               // il dataset utilizza questo carattere come carattere UTF8 non identificato
+	filenameCSV    = "meteo"          // nome del file salvato per i CSV
+	filenameJSON   = "meteo-topojson" // nome del file salvato per i JSON
 )
 
 // Get comando per il download delle allerte meteo DPC
@@ -162,7 +164,7 @@ func writeJSON(nodes []node) error {
 			if err != nil {
 				slog.Error("fallito", "giorno", n.date.Format("02/01/2006"), "errore", err.Error())
 			}
-			name := "meteo-topojson-" + n.date.Format("20060102")
+			name := filenameJSON + "-" + n.date.Format("20060102")
 			if err := app.SaveBytes(name, b); err != nil {
 				return err
 			}
@@ -205,12 +207,12 @@ func writeCSV(nodes []node) error {
 			joined = append(joined, payload...)
 			mutex.Unlock()
 			if app.Join {
-				name := "meteo-" + nodes[0].date.Format("20060102") + nodes[len(nodes)-1].date.Format("20060102")
+				name := filenameCSV + "-" + nodes[0].date.Format("20060102") + nodes[len(nodes)-1].date.Format("20060102")
 				if err := app.SaveCSV(name, joined); err != nil {
 					return err
 				}
 			} else {
-				name := "meteo-" + n.date.Format("20060102")
+				name := filenameCSV + "-" + n.date.Format("20060102")
 				payload = slices.Insert(payload, 0, headers)
 				if err := app.SaveCSV(name, payload); err != nil {
 					return err
