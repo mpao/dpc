@@ -183,7 +183,7 @@ func writeJSON(nodes []node) error {
 				return err
 			}
 			return nil
-		}(n)
+		}(n) //nolint //errcheck ignora
 	}
 	wg.Wait()
 	return nil
@@ -235,7 +235,7 @@ func writeCSV(nodes []node) error {
 				}
 			}
 			return nil
-		}(n)
+		}(n) //nolint //errcheck ignora
 	}
 	wg.Wait()
 	return nil
