@@ -13,8 +13,8 @@ import (
 )
 
 const (
-	message = "Scarica dai repositories ufficiali del Dipartimento di Protezione Civile gli ultimi\n" +
-		"dati disponibili sugli allarmi metereologici e criticità idrogeologica per ogni comune italiano."
+	message = "Scarica dai repositories ufficiali del Dipartimento di Protezione Civile i\n" +
+		"dati sugli allarmi metereologici e criticità idrogeologica per ogni comune italiano."
 	messageAlert = "Scarica i bollettini DPC di criticità idrogeologica e idraulica"
 	messageMeteo = "Scarica i bollettini DPC di vigilanza meteorologica"
 	helpMessage  = "mostra queste informazioni"

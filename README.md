@@ -28,8 +28,8 @@ L'eseguibile è disponibile per le piattaforme più diffuse al link:
 ### Manuale d'uso
 
 ```text
-Scarica dai repositories ufficiali del Dipartimento di Protezione Civile gli ultimi
-dati disponibili sugli allarmi metereologici e criticità idrogeologica per ogni comune italiano.
+Scarica dai repositories ufficiali del Dipartimento di Protezione Civile i
+dati sugli allarmi metereologici e criticità idrogeologica per ogni comune italiano.
 
 Uso:
   dpc [comando]
@@ -40,7 +40,8 @@ dpc meteo --help
 
 
 Comandi disponibili:
-  allerte     Scarica i bollettini DPC di criticità idrogeologica e idraulica
+  allerte     Scarica i bollettini DPC di criticità idrogeologica, idraulica, temporali
+  meteo       Scarica i bollettini DPC di vigilanza meteorologica
 
 Opzioni:
   -d, --dest string    indica la directory in cui salvare il risultato (default "./")
