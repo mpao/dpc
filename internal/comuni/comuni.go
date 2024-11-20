@@ -78,12 +78,6 @@ func comuni(b []byte) (out []Comune) {
 		if err != nil {
 			lt = 0
 		}
-		// https://github.com/opendatasicilia/comuni-italiani/issues/11#issuecomment-2426871148
-		// Per un paese non è corretto l'ID ISTAT, va fatto a mano in attesa di fix a monte
-		// TODO cancellare appena possibile questo IF
-		if attrs[1] == "099031" {
-			attrs[1] = "041060"
-		}
 		c := Comune{
 			ID:    attrs[1],
 			Name:  attrs[0],
