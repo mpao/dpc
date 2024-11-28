@@ -1,4 +1,4 @@
-module dpc
+module github.com/mpao/dpc
 
 go 1.23.2
 

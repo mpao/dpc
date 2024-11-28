@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"dpc/internal/comuni"
+	"github.com/mpao/dpc/internal/comuni"
 )
 
 // tree è la struttura del json restituito dalla API di github che descrive

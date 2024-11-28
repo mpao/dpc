@@ -32,8 +32,8 @@ import (
 	"sync"
 	"time"
 
-	"dpc/internal/app"
-	"dpc/internal/comuni"
+	"github.com/mpao/dpc/internal/app"
+	"github.com/mpao/dpc/internal/comuni"
 )
 
 const (

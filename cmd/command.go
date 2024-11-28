@@ -5,10 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"dpc/internal/allerte"
-	"dpc/internal/app"
-	"dpc/internal/meteo"
-
+	"github.com/mpao/dpc/internal/allerte"
+	"github.com/mpao/dpc/internal/app"
+	"github.com/mpao/dpc/internal/meteo"
 	"github.com/spf13/cobra"
 )
 
