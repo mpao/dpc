@@ -20,21 +20,21 @@ tasks:
       - |
         GOOS=linux go build \
         -ldflags="-s -w -X main.appVersion={{.version}} -X main.appName={{.name}}" \
-        -o bin/{{.name}}-build.{{.buildversion}} ./cmd
+        -o bin/{{.name}}-build.{{.buildversion}} ./cmd/dpc
   windows:
     cmds:
       # multiline command vedi https://github.com/go-task/task/issues/274#issuecomment-565876913
       - |
         GOOS=windows go build \
         -ldflags="-s -w -X main.appVersion={{.version}} -X main.appName={{.name}}" \
-        -o bin/{{.name}}-build.{{.buildversion}}.exe ./cmd
+        -o bin/{{.name}}-build.{{.buildversion}}.exe ./cmd/dpc
   macos:
     cmds:
       # multiline command vedi https://github.com/go-task/task/issues/274#issuecomment-565876913
       - |
         GOOS=darwin GOARCH=arm64 go build \
         -ldflags="-s -w -X main.appVersion={{.version}} -X main.appName={{.name}}" \
-        -o bin/{{.name}}-build.{{.buildversion}}-arm64 ./cmd
+        -o bin/{{.name}}-build.{{.buildversion}}-arm64 ./cmd/dpc
   build:
     cmds:
       - task: test
@@ -47,5 +47,5 @@ tasks:
       - |
         go build \
         -ldflags="-s -w -X main.appVersion={{.version}} -X main.appName={{.name}}" \
-        -o bin/{{.name}}.exe ./cmd
+        -o bin/{{.name}}.exe ./cmd/dpc
       - echo "Fatto! Applicazione salvata nella subdirectory bin/"
