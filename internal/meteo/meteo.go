@@ -73,7 +73,9 @@ func filterNodes(interval string, nodes []node) ([]node, error) {
 		return nil, err
 	}
 	if interval == "" {
-		return append(out, nodes[len(nodes)-1]), nil
+		// restituisce gli ultimi due giorni disponibili,
+		// ovvero la data più recente, e la sua successiva come previsione (tomorrow)
+		return append(out, nodes[len(nodes)-2:]...), nil
 	}
 	for _, n := range nodes {
 		// prima del check di ugualianza sulle date, elimina
@@ -132,6 +134,14 @@ func topojsonList() ([]node, error) {
 		}
 		return 1
 	})
+	// aggiungi l'elemento di "domani"
+	latest := files[len(files)-1]
+	tomorrow := node{
+		date:     latest.date.AddDate(0, 0, 1),
+		Filename: strings.ReplaceAll(latest.Filename, "oggi", "domani"),
+		url:      fileURL + strings.ReplaceAll(latest.Filename, "oggi", "domani"),
+	}
+	files = append(files, tomorrow)
 	return files, nil
 }
 

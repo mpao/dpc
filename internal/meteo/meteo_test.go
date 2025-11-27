@@ -127,7 +127,7 @@ func TestFilterNodes(t *testing.T) {
 		interval string
 		size     int
 	}{
-		{interval: "", size: 1},
+		{interval: "", size: 2},
 		{interval: "20220101", size: 0},
 		{interval: "05012022", size: 1},
 		{interval: "01012022-31012022", size: 31},
