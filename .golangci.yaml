@@ -1,78 +1,108 @@
+version: "2"
 run:
   go: "1.23"
 linters:
-  # default enabled linters: errcheck, gosimple, govet, ineffassign, staticcheck, typecheck, unused
+  default: none
   enable:
+    - errcheck # default linter
+    - govet # default linter
+    - ineffassign # default linter
+    - staticcheck # default linter
+    - unused # default linter
     - bodyclose # checks whether HTTP response body is closed successfully
-    - copyloopvar # checks for pointers to enclosing loop variables
+    - copyloopvar # checks for pointers to enclosing loop
+    - dupl # Detects duplicate fragments of code.
     - forbidigo # forbids identifiers
     - funlen # tool for detection of long functions
-    - gci # controls Go package import order and makes it always deterministic.
     - gocheckcompilerdirectives # validates go compiler directive comments (//go:)
+    - goconst # Finds repeated strings that could be replaced by a constant.
     - gocritic # provides diagnostics that check for bugs, performance and style issues
     - gocyclo # computes and checks the cyclomatic complexity of functions
     - godox # detects fix_me, to_do and other comment keywords
+    - gosec # inspects source code for security problems
     - govet # examines Go source code and reports suspicious constructs
     - lll # reports long lines
-    #- nolintlint # reports ill-formed or insufficient nolint directives
+    - nilnil # Checks that there is no simultaneous return of nil error and an invalid value.
+    # - noctx # finds sending http request without context.Context
+    - nolintlint # reports ill-formed or insufficient nolint directives
     - predeclared # finds code that shadows one of Go's predeclared identifiers
     - reassign # checks that package variables are not reassigned
     - revive # fast, configurable, extensible, flexible linter for Go, drop-in replacement of golint
+    - sqlclosecheck # checks that sql.Rows and sql.Stmt are closed
     - unconvert # removes unnecessary type conversions
     - unparam # reports unused function parameters
     - usestdlibvars # detects the possibility to use variables/constants from the Go standard library
     - unused # reports unused constants, variables, functions and types.
     - wastedassign # finds wasted assignment statements
     - whitespace # detects leading and trailing whitespace
-
-linters-settings:
-  staticcheck:
-    checks: ["all", "-SA1029"] # SA1029: should not use built-in type string as key for value
-  errcheck:
-    check-type-assertions: true
-  gci:
-    skip-generated: true
-    custom-order: true
-    sections:
-      - standard
-      - default
-      - prefix(github.com)
-      - prefix(gopkg.in)
-      - prefix(scm.code.telecomitalia.it)
-  govet:
-    enable-all: true
-  funlen:
-    statements: 50
-  lll:
-    line-length: 120
-  nolintlint:
-    require-explanation: true
-  gocyclo: # complexity increases by 1 for each 'if', 'for', 'case', '&&' or '||'
-    min-complexity: 10
-  forbidigo:
-    forbid:
-      - ^print.*$ # proibisce solo l'utilizzo delle funzioni di debug
-  revive:
-    rules: #https://golangci-lint.run/usage/linters/#revive
-      - name: exported # Exported function and methods should have comments
-        arguments:
-          - disableStutteringCheck
-      - name: argument-limit #Warns when a function receives more parameters than the maximum set by the rule
-        arguments: [3]
-
-issues: # https://golangci-lint.run/usage/configuration/#issues-configuration
-  exclude-rules:
-    - path: _test\.go # disable some linters on test files
-      linters:
-        - gosec
-        - usestdlibvars
-        - funlen # tool for detection of long functions
-        - godot # checks if comments end in a period
-        - godox # detects fix_me, to_do and other comment keywords
-        - govet
-        - lll # reports long lines
-        - nilnil
-        - whitespace # detects leading and trailing whitespace
-  include:
-    - EXC0012 # EXC0012 revive: Annoying issue about not having a comment. The rare codebase has such comments
-    - EXC0014 # EXC0014 revive: Annoying issue about not having a comment. The rare codebase has such comment
+  settings:
+    errcheck:
+      check-type-assertions: true
+    forbidigo:
+      forbid:
+        - pattern: ^print.*$
+    funlen:
+      statements: 50
+    gocyclo:
+      min-complexity: 10
+    govet:
+      enable-all: true
+    lll:
+      line-length: 120
+    nolintlint:
+      require-explanation: true
+    revive:
+      rules:
+        - name: exported
+          arguments:
+            - disableStutteringCheck
+        - name: argument-limit
+          arguments:
+            - 3
+    staticcheck:
+      checks:
+        - all
+        - -ST1000
+        - -SA1029
+  exclusions:
+    generated: lax
+    presets:
+      - common-false-positives
+      - legacy
+      - std-error-handling
+    rules:
+      - linters:
+          - errcheck
+          - funlen
+          - godot
+          - godox
+          - goconst
+          - gosec
+          - govet
+          - lll
+          - nilnil
+          - usestdlibvars
+          - whitespace
+        path: _test\.go
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
+formatters:
+  enable:
+    - gci
+  settings:
+    gci:
+      sections:
+        - standard
+        - default
+        - prefix(github.com)
+        - prefix(gopkg.in)
+        - prefix(scm.code.telecomitalia.it)
+      custom-order: true
+  exclusions:
+    generated: lax
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
