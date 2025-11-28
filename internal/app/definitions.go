@@ -1,6 +1,7 @@
 package app
 
 import (
+	"crypto/tls"
 	"encoding/csv"
 	"errors"
 	"net/http"
@@ -92,6 +93,9 @@ func HTTPClient() *http.Client {
 		u, _ := url.Parse(Proxy)
 		client.Transport = &http.Transport{
 			Proxy: http.ProxyURL(u),
+			//nolint //gosec: se specificato un proxy, salta la verifica del certificato TLS
+			//	      		  poiché potrebbe essere un proxy interno con certificato self-signed
+			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
 		}
 	}
 	return client
