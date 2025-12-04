@@ -38,12 +38,12 @@ import (
 )
 
 const (
-	domain         = "https://api.github.com/repos/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica/"
-	fileURL        = "https://github.com/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica/raw/master/"
-	dateLimit      = "01012022"       // data minima per richiesta dati, formato ddmmyyyy
-	utf8Laceholder = ""               // il dataset utilizza questo carattere come carattere UTF8 non identificato
-	filenameCSV    = "meteo"          // nome del file salvato per i CSV
-	filenameJSON   = "meteo-topojson" // nome del file salvato per i JSON
+	domain          = "https://api.github.com/repos/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica/"
+	fileURL         = "https://github.com/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica/raw/master/"
+	dateLimit       = "01012022"       // data minima per richiesta dati, formato ddmmyyyy
+	utf8Placeholder = ""               // il dataset utilizza questo carattere come carattere UTF8 non identificato
+	filenameCSV     = "meteo"          // nome del file salvato per i CSV
+	filenameJSON    = "meteo-topojson" // nome del file salvato per i JSON
 )
 
 // Get comando per il download delle allerte meteo DPC
@@ -254,7 +254,7 @@ func events(n node) []event {
 			continue
 		}
 		// match con nomi accenti sbagliati
-		key := comuni.SetWrongUTF8(c.Name, utf8Laceholder)
+		key := comuni.SetWrongUTF8(c.Name, utf8Placeholder)
 		if ev, ok := rawmap[key]; ok {
 			ev.addInfo(c)
 			out = append(out, ev)
