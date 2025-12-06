@@ -70,12 +70,12 @@ func TestExtract(t *testing.T) {
 	url := "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/"
 	n := node{
 		date: time.Now(),
-		url:  url + "files/topojson/20200101_1530_today.json",
+		url:  url + "files/topojson/20250101_1443_today.json",
 	}
 	b, _ := topojson(n)
 	// _ = os.WriteFile("topo.json", b, 0666)
 	got := extract(b, n.date)
-	assert.Equal(t, 7952, len(got))
+	assert.Equal(t, 8125, len(got))
 }
 
 func TestEvents(t *testing.T) {
