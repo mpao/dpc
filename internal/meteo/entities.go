@@ -3,6 +3,7 @@ package meteo
 import (
 	"regexp"
 	"strconv"
+	"strings"
 	"time"
 
 	"github.com/mpao/dpc/internal/comuni"
@@ -49,7 +50,8 @@ type event struct {
 }
 
 func (e *event) addInfo(c comuni.Comune) {
-	e.name = c.Name // questo fixa i noi sbagliati dalla codifica
+	e.name = c.Name                               // questo fixa i noi sbagliati dalla codifica
+	e.zona = strings.ReplaceAll(e.zona, "’", "'") // fix apici di val d'aosta
 	e.prov = c.Prov
 	e.sigla = c.Sigla
 	e.reg = c.Reg
