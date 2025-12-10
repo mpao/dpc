@@ -1968,6 +1968,7 @@
 		"Alias": ["Leinì", "Lein"],
 		"ID": "001130",
 		"Zone": [
+			"Torinese",
 			"Pianura Torinese e Colline"
 		],
 		"Prov": "Torino",
@@ -2975,7 +2976,8 @@
 		"Alias": ["Pont-Canavese"],
 		"ID": "001199",
 		"Zone": [
-			"Valli Orco, Lanzo e Sangone"
+			"Valli Orco, Lanzo e Sangone",
+			"Valle d\u2019Aosta orientale e Piemonte nord-occidentale"
 		],
 		"Prov": "Torino",
 		"Sigla": "TO",
@@ -4730,8 +4732,10 @@
 	},
 	"001316": {
 		"Comune": "Mappano",
+		"Alias": ["Caselle Torinese", "Borgaro Torinese", "Mappano Torinese"],
 		"ID": "001316",
 		"Zone": [
+			"Torinese",
 			"Pianura Torinese e Colline"
 		],
 		"Prov": "Torino",
@@ -4747,6 +4751,7 @@
 		"Alias": ["Alice Superiore", "Lugnacco", "Pecco"],
 		"ID": "001317",
 		"Zone": [
+			"Novarese, vercellese, biellese",
 			"Val Sesia, Cervo e Chiusella"
 		],
 		"Prov": "Torino",
@@ -4762,6 +4767,7 @@
 		"Alias": ["Vico Canavese", "Meugliano", "Trausella"],
 		"ID": "001318",
 		"Zone": [
+			"Novarese, vercellese, biellese",
 			"Val Sesia, Cervo e Chiusella"
 		],
 		"Prov": "Torino",
@@ -5992,6 +5998,7 @@
 		"Alias":["Rima San Giuseppe", "Rimasco"],
 		"ID": "002170",
 		"Zone": [
+			"Novarese, vercellese, biellese",
 			"Val Sesia, Cervo e Chiusella"
 		],
 		"Prov": "Vercelli",
@@ -6007,6 +6014,7 @@
 		"Alias": ["Breia", "Cellio"],
 		"ID": "002171",
 		"Zone": [
+			"Novarese, vercellese, biellese",
 			"Val Sesia, Cervo e Chiusella"
 		],
 		"Prov": "Vercelli",
@@ -7346,6 +7354,7 @@
 		"Alias": ["Gattico", "Veruno"], 
 		"ID": "003166",
 		"Zone": [
+			"Novarese, vercellese, biellese",
 			"Pianura settentrionale"
 		],
 		"Prov": "Novara",
@@ -7987,7 +7996,8 @@
 		"Comune": "Carrù",
 		"ID": "004043",
 		"Zone": [
-			"Valle Tanaro"
+			"Valle Tanaro",
+			"Piemonte sud-occidentale ed entroterra ligure di levante"
 		],
 		"Prov": "Cuneo",
 		"Sigla": "CN",
@@ -8094,6 +8104,7 @@
 		"Alias": ["Castellinaldo"],
 		"ID": "004051",
 		"Zone": [
+			"Torinese",
 			"Pianura Torinese e Colline"
 		],
 		"Prov": "Cuneo",
@@ -13565,7 +13576,8 @@
 		"Alias": ["Castellania"],
 		"ID": "006045",
 		"Zone": [
-			"Scrivia"
+			"Scrivia",
+			"Piemonte sud-orientale e Pavese"
 		],
 		"Prov": "Alessandria",
 		"Sigla": "AL",
@@ -14026,6 +14038,7 @@
 		],
 		"ID": "006076",
 		"Zone": [
+			"Novarese, vercellese, biellese",
 			"Belbo e Bormida"
 		],
 		"Prov": "Alessandria",
@@ -15758,6 +15771,7 @@
 		"Alias": ["Alluvioni Cambiò", "Alluvioni Cambi", "Piovera"], 
 		"ID": "006192",
 		"Zone": [
+			"Novarese, vercellese, biellese",
 			"Pianura settentrionale"
 		],
 		"Prov": "Alessandria",
@@ -15773,7 +15787,8 @@
 		"Alias":["Lu", "Cuccaro Monferrato"],
 		"ID": "006193",
 		"Zone": [
-			"Pianura settentrionale"
+			"Pianura settentrionale",
+			"Novarese, vercellese, biellese"
 		],
 		"Prov": "Alessandria",
 		"Sigla": "AL",
@@ -16079,6 +16094,7 @@
 		"Alias": ["Chatillon", "Chtillon"],
 		"ID": "007020",
 		"Zone": [
+			"Valle d\u2019Aosta orientale e Piemonte nord-occidentale",
 			"Valle d'Aosta centrale, Valle del Gran San Bernardo da Aosta a Valpelline,Valle di Saint-Barthélemy e Valtournenche"
 		],
 		"Prov": "Valle d'Aosta/Vallée d'Aoste",
@@ -16294,6 +16310,7 @@
 		"Alias": ["Hone", "Hne"],
 		"ID": "007034",
 		"Zone": [
+			"Valle d\u2019Aosta orientale e Piemonte nord-occidentale",
 			"Bassa Valle d'Aosta, dalla Gola di Montjovet a Pont-Saint-Martin, Valle del torrente Chalamy, Valle d'Ayas, Valle di Champorcher e Valle di Gressoney"
 		],
 		"Prov": "Valle d'Aosta/Vallée d'Aoste",
@@ -16355,6 +16372,7 @@
 		"Alias": ["Jovencan", "Jovenan"],
 		"ID": "007038",
 		"Zone": [
+			"Valle d'Aosta centro-occidentale",
 			"Valle d'Aosta centrale, Valle del Gran San Bernardo da Aosta a Valpelline,Valle di Saint-Barthélemy e Valtournenche"
 		],
 		"Prov": "Valle d'Aosta/Vallée d'Aoste",
@@ -16632,6 +16650,7 @@
 		"Alias":["Rhemes-Saint-Georges", "Rhmes-Saint-Georges"],
 		"ID": "007056",
 		"Zone": [
+			"Valle d'Aosta centro-occidentale",
 			"Valle di Cogne, Valsavarenche e Valle di Rhêmes"
 		],
 		"Prov": "Valle d'Aosta/Vallée d'Aoste",
@@ -17901,6 +17920,7 @@
 		"Alias": ["Carpasio", "Montalto Ligure"],
 		"ID": "008068",
 		"Zone": [
+			"Liguria di ponente e centrale",
 			"Bacini Liguri Marittimi di Ponente"
 		],
 		"Prov": "Imperia",
@@ -20318,6 +20338,7 @@
 		"Alias": ["Ortonovo"],
 		"ID": "011020",
 		"Zone": [
+			"Liguria di levante, Lunigiana, Garfagnana e Versilia",
 			"Bacini Liguri Marittimi di Levante"
 		],
 		"Prov": "La Spezia",
@@ -22591,6 +22612,7 @@
 		"Alias": ["Osmate", "Cadrezzate"],
 		"ID": "012143",
 		"Zone": [
+			"Piemonte settentrionale e Lombardia nord-occidentale",
 			"Laghi e Prealpi Varesine"
 		],
 		"Prov": "Varese",
@@ -24808,6 +24830,7 @@
 		"Alias": ["Ramponio Verna", "Lanzo d'Intelvi", "Pellio Intelvi"],
 		"ID": "013253",
 		"Zone": [
+			"Piemonte settentrionale e Lombardia nord-occidentale",
 			"Lario e Prealpi occidentali"
 		],
 		"Prov": "Como",
@@ -24823,6 +24846,7 @@
 		"Alias": ["Casasco d'Intelvi", "Castiglione d'Intelvi", "San Fedele Intelvi"],
 		"ID": "013254",
 		"Zone": [
+			"Piemonte settentrionale e Lombardia nord-occidentale",
 			"Lario e Prealpi occidentali"
 		],
 		"Prov": "Como",
@@ -24838,6 +24862,7 @@
 		"Alias": ["Solbiate", "Cagno"],
 		"ID": "013255",
 		"Zone": [
+			"Piemonte settentrionale e Lombardia nord-occidentale",
 			"Lario e Prealpi occidentali"
 		],
 		"Prov": "Como",
@@ -28037,6 +28062,7 @@
 		"Alias": ["Vermezzo", "Zelo Surrigone"],
 		"ID": "015251",
 		"Zone": [
+			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
 		"Prov": "Milano",
@@ -34159,7 +34185,8 @@
 		"Alias": ["Puegnago sul Garda"],
 		"ID": "017158",
 		"Zone": [
-			"Laghi e Prealpi orientali"
+			"Laghi e Prealpi orientali",
+			"Lombardia centrale settore orientale"
 		],
 		"Prov": "Brescia",
 		"Sigla": "BS",
@@ -37726,6 +37753,7 @@
 		"Alias": ["Corteolona", "Genzone"],
 		"ID": "018192",
 		"Zone": [
+			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
 		"Prov": "Pavia",
@@ -37741,6 +37769,7 @@
 		"Alias": ["Ruino", "Canevino", "Valverde"],
 		"ID": "018193",
 		"Zone": [
+			"Pianura emiliana",
 			"Appennino pavese"
 		],
 		"Prov": "Pavia",
@@ -39463,6 +39492,7 @@
 		"Alias": ["Piadena", "Drizzona"],
 		"ID": "019116",
 		"Zone": [
+			"Lombardia sud-orientale",
 			"Alta pianura orientale"
 		],
 		"Prov": "Cremona",
@@ -40223,6 +40253,7 @@
 		"Alias": ["San Giorgio di Mantova", "Bigarello"],
 		"ID": "020057",
 		"Zone": [
+			"Lombardia sud-orientale",
 			"Alta pianura orientale"
 		],
 		"Prov": "Mantova",
@@ -40284,6 +40315,7 @@
 		"Alias": ["Sermide", "Felonica"],
 		"ID": "020061",
 		"Zone": [
+			"Romagna e delta del Po",
 			"Bassa pianura orientale"
 		],
 		"Prov": "Mantova",
@@ -40421,6 +40453,7 @@
 		"Alias": ["Pieve di Coriano", "Revere", "Villa Poma"],
 		"ID": "020072",
 		"Zone": [
+			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
 		"Prov": "Mantova",
@@ -40436,6 +40469,7 @@
 		"Alias": ["Borgofranco sul Po", "Carbonara di Po"],
 		"ID": "020073",
 		"Zone": [
+			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
 		"Prov": "Mantova",
@@ -41522,6 +41556,7 @@
 		"Alias":["Rasun Anterselva"],
 		"ID": "021071",
 		"Zone": [
+			"Alto Adige",
 			"Provincia Autonoma di Bolzano"
 		],
 		"Prov": "Bolzano/Bozen",
@@ -41597,6 +41632,7 @@
 		"Alias": ["Salorno"],
 		"ID": "021076",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Bolzano"
 		],
 		"Prov": "Bolzano/Bozen",
@@ -43928,6 +43964,7 @@
 		"Alias": ["Soraga"],
 		"ID": "022176",
 		"Zone": [
+			"Veneto settentrionale e Alpi friulane",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44370,7 +44407,8 @@
 		"Alias": ["Coredo", "Tres", "Smarano", "Taio", "Vervò", "Verv"],
 		"ID": "022230",
 		"Zone": [
-			"Provincia Autonoma di Trento"
+			"Provincia Autonoma di Trento",
+			"Trentino e Alto piano dei sette comuni"
 		],
 		"Prov": "Trento",
 		"Sigla": "TN",
@@ -44385,6 +44423,7 @@
 		"Alias": ["Dorsino", "San Lorenzo in Banale"],
 		"ID": "022231",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44400,6 +44439,7 @@
 		"Alias":["Daone", "Praso", "Bersone"],
 		"ID": "022232",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44415,6 +44455,7 @@
 		"Alias": ["Monclassico", "Dimaro"],
 		"ID": "022233",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44430,6 +44471,7 @@
 		"Alias": ["Pieve di Bono", "Prezzo"],
 		"ID": "022234",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44445,6 +44487,8 @@
 		"Alias": ["Valda", "Faver", "Grauno", "Grumes"],
 		"ID": "022235",
 		"Zone": [
+			"Alto Adige",
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44462,6 +44506,7 @@
 		],
 		"ID": "022236",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44477,6 +44522,7 @@
 		"Alias": ["Don", "Amblar"],
 		"ID": "022237",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44492,6 +44538,7 @@
 		"Alias": ["Condino", "Cimego", "Brione"],
 		"ID": "022238",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44507,6 +44554,7 @@
 		"Alias": ["Zuclo", "Bolbeno"],
 		"ID": "022239",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44522,7 +44570,8 @@
 		"Alias": ["Ivano Fracena", "Ivano-Fracena", "Strigno", "Spera", "Villa Agnedo"],
 		"ID": "022240",
 		"Zone": [
-			"Provincia Autonoma di Trento"
+			"Provincia Autonoma di Trento",
+			"Trentino e Alto piano dei sette comuni"
 		],
 		"Prov": "Trento",
 		"Sigla": "TN",
@@ -44537,6 +44586,7 @@
 		"Alias": ["Cembra", "Lisignago"],
 		"ID": "022241",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44552,6 +44602,7 @@
 		"Alias": ["Flavon", "Cunevo", "Terres"],
 		"ID": "022242",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44567,6 +44618,7 @@
 		"Alias": ["Lasino", "Calavino"],
 		"ID": "022243",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44582,7 +44634,8 @@
 		"Alias": ["Vigo Rendena", "Villa Rendena", "Darè", "Dar"],
 		"ID": "022244",
 		"Zone": [
-			"Provincia Autonoma di Trento"
+			"Provincia Autonoma di Trento",
+			"Trentino e Alto piano dei sette comuni"
 		],
 		"Prov": "Trento",
 		"Sigla": "TN",
@@ -44597,6 +44650,7 @@
 		"Alias":["Fiera di Primiero", "Transacqua", "Siror", "Tonadico"],
 		"ID": "022245",
 		"Zone": [
+			"Veneto settentrionale e Alpi friulane",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44612,6 +44666,7 @@
 		"Alias": ["Bondo", "Roncone", "Lardaro", "Breguzzo"],
 		"ID": "022246",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44627,6 +44682,7 @@
 		"Alias": ["Ragoli", "Montagne", "Preore"],
 		"ID": "022247",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44642,6 +44698,7 @@
 		"Alias": ["Vezzano", "Padergnone", "Terlago"],
 		"ID": "022248",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44657,6 +44714,7 @@
 		"Alias": ["Tuenno", "Nanno", "Tassullo"],
 		"ID": "022249",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44672,6 +44730,7 @@
 		"Alias": ["Vigo di Fassa", "Pozza di Fassa"], 
 		"ID": "022250",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44687,6 +44746,7 @@
 		"Alias": ["Zambana", "Nave San Rocco"],
 		"ID": "022251",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44702,6 +44762,7 @@
 		"Alias": ["Malosco", "Fondo", "Castelfondo"],
 		"ID": "022252",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44717,6 +44778,7 @@
 		"Alias":["Cloz","Romallo","Brez","Cagnò","Cagn", "Revò", "Rev"],
 		"ID": "022253",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -44732,6 +44794,7 @@
 		"Alias": ["Daiano", "Varena", "Carano"],
 		"ID": "022254",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Provincia Autonoma di Trento"
 		],
 		"Prov": "Trento",
@@ -45201,6 +45264,7 @@
 		"Alias": ["Costermano"],
 		"ID": "023030",
 		"Zone": [
+			"Lombardia sud-orientale",
 			"Adige-Garda e monti Lessini"
 		],
 		"Prov": "Verona",
@@ -45539,7 +45603,8 @@
 		"Alias": ["Negrar"],
 		"ID": "023052",
 		"Zone": [
-			"Adige-Garda e monti Lessini"
+			"Adige-Garda e monti Lessini",
+			"Lombardia sud-orientale"
 		],
 		"Prov": "Verona",
 		"Sigla": "VR",
@@ -47921,6 +47986,7 @@
 		"Alias": ["San Germano dei Berici", "Grancona"],
 		"ID": "024123",
 		"Zone": [
+			"Pianura veneta",
 			"Basso Brenta-Bacchiglione e Fratta Gorzone"
 		],
 		"Prov": "Vicenza",
@@ -47936,6 +48002,7 @@
 		"Alias": ["Barbarano Vicentino", "Mossano"],
 		"ID": "024124",
 		"Zone": [
+			"Pianura veneta",
 			"Basso Brenta-Bacchiglione e Fratta Gorzone"
 		],
 		"Prov": "Vicenza",
@@ -47953,6 +48020,7 @@
 		],
 		"ID": "024125",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Alto Brenta-Bacchiglione-Alpone"
 		],
 		"Prov": "Vicenza",
@@ -47984,7 +48052,8 @@
 		"Alias": ["Lusiana", "Conco"],
 		"ID": "024127",
 		"Zone": [
-			"Alto Brenta-Bacchiglione-Alpone"
+			"Alto Brenta-Bacchiglione-Alpone",
+			"Trentino e Alto piano dei sette comuni"
 		],
 		"Prov": "Vicenza",
 		"Sigla": "VI",
@@ -48884,6 +48953,7 @@
 		"Alias": ["Farra d'Alpago", "Pieve d'Alpago", "Puos d'Alpago"],
 		"ID": "025072",
 		"Zone": [
+			"Veneto settentrionale e Alpi friulane",
 			"Piave pedemontano"
 		],
 		"Prov": "Belluno",
@@ -48899,6 +48969,7 @@
 		"Alias": ["Zoldo Alto", "Forno di Zoldo"],
 		"ID": "025073",
 		"Zone": [
+			"Veneto settentrionale e Alpi friulane",
 			"Alto Piave"
 		],
 		"Prov": "Belluno",
@@ -48914,6 +48985,7 @@
 		"Alias": ["Mel", "Trichiana", "Lentiai"],
 		"ID": "025074",
 		"Zone": [
+			"Veneto settentrionale e Alpi friulane",
 			"Piave pedemontano"
 		],
 		"Prov": "Belluno",
@@ -50367,6 +50439,7 @@
 		"Alias": ["Paderno del Grappa", "Crespano del Grappa"],
 		"ID": "026096",
 		"Zone": [
+			"Trentino e Alto piano dei sette comuni",
 			"Alto Brenta-Bacchiglione-Alpone"
 		],
 		"Prov": "Treviso",
@@ -52569,6 +52642,7 @@
 		"Alias": ["Megliadino San Fidenzio", "Saletto", "Santa Margherita d'Adige"],
 		"ID": "028107",
 		"Zone": [
+			"Pianura veneta",
 			"Basso Brenta-Bacchiglione e Fratta Gorzone"
 		],
 		"Prov": "Padova",
@@ -55362,6 +55436,7 @@
 		"Alias": ["Villa Vicentina", "Fiumicello"],
 		"ID": "030190",
 		"Zone": [
+			"Pianura friulana",
 			"Bacino dell'Isonzo e Pianura di Udine e Gorizia"
 		],
 		"Prov": "Udine",
@@ -55377,6 +55452,7 @@
 		"Alias":["Ligosullo", "Treppo Carnico"],
 		"ID": "030191",
 		"Zone": [
+			"Veneto settentrionale e Alpi friulane",
 			"Bacino montano del Tagliamento e del Torre"
 		],
 		"Prov": "Udine",
@@ -55766,6 +55842,7 @@
 		"Alias": ["Duino-Aurisina"],
 		"ID": "032001",
 		"Zone": [
+			"Pianura friulana",
 			"Bacino di Levante / Carso"
 		],
 		"Prov": "Trieste",
@@ -55811,6 +55888,7 @@
 		"Alias": ["San Dorligo della Valle-Dolina"],
 		"ID": "032004",
 		"Zone": [
+			"Pianura friulana",
 			"Bacino di Levante / Carso"
 		],
 		"Prov": "Trieste",
@@ -56562,6 +56640,7 @@
 		],
 		"ID": "033049",
 		"Zone": [
+			"Pianura emiliana",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -57230,6 +57309,8 @@
 		"Alias":["Polesine Parmense", "Zibello"],
 		"ID": "034050",
 		"Zone": [
+			"Lombardia sud-orientale",
+			"Pianura emiliana",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Parma",
@@ -57245,6 +57326,7 @@
 		"Alias": ["Mezzani", "Sorbolo"],
 		"ID": "034051",
 		"Zone": [
+			"Pianura emiliana",
 			"Pianura reggiana di Po"
 		],
 		"Prov": "Parma",
@@ -57892,6 +57974,7 @@
 		"Alias": ["Ramiseto", "Ligonchio", "Busana", "Collagna"],
 		"ID": "035046",
 		"Zone": [
+			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -59482,6 +59565,7 @@
 		"Alias": ["Granaglione", "Porretta Terme"],
 		"ID": "037062",
 		"Zone": [
+			"Mugello e Casentino",
 			"Bacini emiliani orientali"
 		],
 		"Prov": "Bologna",
@@ -59774,6 +59858,7 @@
 		"Alias": ["Sant'Agostino", "Mirabello"],
 		"ID": "038028",
 		"Zone": [
+			"Romagna e delta del Po",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Ferrara",
@@ -59789,6 +59874,7 @@
 		"Alias": ["Berra", "Ro"],
 		"ID": "038029",
 		"Zone": [
+			"Romagna e delta del Po",
 			"Pianura ferrarese"
 		],
 		"Prov": "Ferrara",
@@ -59804,6 +59890,7 @@
 		"Alias": ["Formignana", "Tresigallo"],
 		"ID": "038030",
 		"Zone": [
+			"Romagna e delta del Po",
 			"Pianura ferrarese"
 		],
 		"Prov": "Ferrara",
@@ -61323,6 +61410,7 @@
 		"Alias": ["Serrungarina", "Saltara", "Montemaggiore al Metauro"],
 		"ID": "041069",
 		"Zone": [
+			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Marc-2"
 		],
 		"Prov": "Pesaro e Urbino",
@@ -61338,6 +61426,7 @@
 		"Alias": ["Piagge", "San Giorgio di Pesaro", "Barchi", "Orciano di Pesaro"],
 		"ID": "041070",
 		"Zone": [
+			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Marc-2"
 		],
 		"Prov": "Pesaro e Urbino",
@@ -61355,6 +61444,7 @@
 		],
 		"ID": "041071",
 		"Zone": [
+			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Marc-2"
 		],
 		"Prov": "Pesaro e Urbino",
@@ -62926,6 +63016,7 @@
 		"Alias": ["Pievebovigliana", "Fiordimonte"],
 		"ID": "043058",
 		"Zone": [
+			"Appennino marchigiano",
 			"Marc-5"
 		],
 		"Prov": "Macerata",
@@ -64200,6 +64291,7 @@
 		"Alias": ["Sillano", "Giuncugnano"],
 		"ID": "046037",
 		"Zone": [
+			"Liguria di levante, Lunigiana, Garfagnana e Versilia",
 			"Serchio-Garfagnana-Lima"
 		],
 		"Prov": "Lucca",
@@ -64504,6 +64596,7 @@
 		"Alias": ["Abetone", "Cutigliano"],
 		"ID": "047023",
 		"Zone": [
+			"Liguria di levante, Lunigiana, Garfagnana e Versilia",
 			"Serchio-Garfagnana-Lima"
 		],
 		"Prov": "Pistoia",
@@ -64519,6 +64612,7 @@
 		"Alias": ["San Marcello Pistoiese", "Piteglio"],
 		"ID": "047024",
 		"Zone": [
+			"Liguria di levante, Lunigiana, Garfagnana e Versilia",
 			"Serchio-Garfagnana-Lima"
 		],
 		"Prov": "Pistoia",
@@ -65165,6 +65259,7 @@
 		"Alias": ["Tavarnelle Val di Pesa", "Barberino Val d'Elsa"],
 		"ID": "048054",
 		"Zone": [
+			"Terre di Pisa e Livorno",
 			"Arno-Firenze"
 		],
 		"Prov": "Firenze",
@@ -65453,6 +65548,7 @@
 		"Alias": ["Rio nell'Elba", "Rio Marina"],
 		"ID": "049021",
 		"Zone": [
+			"Costa degli etruschi e maremmana",
 			"Isole"
 		],
 		"Prov": "Livorno",
@@ -66601,6 +66697,7 @@
 		"Alias": ["Laterina", "Pergine Valdarno"],
 		"ID": "051042",
 		"Zone": [
+			"Vladarno aretino, Val di Chiana e Trasimeno",
 			"Arno-Valdarno Sup."
 		],
 		"Prov": "Arezzo",
@@ -76320,6 +76417,7 @@
 		"Alias": ["Trentola-Ducenta"],
 		"ID": "061094",
 		"Zone": [
+			"Pianura Campana, Napoli, Penisola Amalfitana e Monti Picentini",
 			"Piana campana, Napoli, Isole e Area vesuviana"
 		],
 		"Prov": "Caserta",
@@ -81268,7 +81366,8 @@
 		"Alias": ["Capaccio"],
 		"ID": "065025",
 		"Zone": [
-			"Piana Sele e Alto Cilento"
+			"Piana Sele e Alto Cilento",
+			"Cilento, Vallo di Diano ed Appennino lucano"
 		],
 		"Prov": "Salerno",
 		"Sigla": "SA",
@@ -93058,6 +93157,7 @@
 		"Alias": ["Acquarica del Capo", "Presicce"],
 		"ID": "075098",
 		"Zone": [
+			"Penisola salentina",
 			"Salento"
 		],
 		"Prov": "Lecce",
@@ -97391,6 +97491,7 @@
 		"Alias": ["Spezzano Piccolo", "Casole Bruzio", "Pedace", "Serra Pedace", "Trenta"],
 		"ID": "078156",
 		"Zone": [
+			"Versante jonico calabrese centrale settore settentrionale",
 			"Versante Tirrenico Centro-settentrionale"
 		],
 		"Prov": "Cosenza",
@@ -97406,6 +97507,7 @@
 		"Alias": ["Corigliano Calabro", "Rossano"],
 		"ID": "078157",
 		"Zone": [
+			"Versante jonico calabrese settentrionale",
 			"Versante Jonico Settentrionale"
 		],
 		"Prov": "Cosenza",
@@ -99454,6 +99556,7 @@
 		"Alias": ["Montebello Ionico"],
 		"ID": "080053",
 		"Zone": [
+			"Versante jonico calabrese meridionale",
 			"Versante Jonico Meridionale"
 		],
 		"Prov": "Reggio Calabria",
@@ -100504,8 +100607,10 @@
 	},
 	"081025": {
 		"Comune": "Misiliscemi",
+		"Alias":["Paceco","Valderice"],
 		"ID": "081025",
 		"Zone": [
+			"SiciliaoOccidentale",
 			"Nord-Occidentale e isole Egadi e Ustica"
 		],
 		"Prov": "Trapani",
@@ -109663,6 +109768,7 @@
 		"Alias": ["Arzene", "Valvasone"],
 		"ID": "093053",
 		"Zone": [
+			"Pianura friulana",
 			"Bacino del Livenza e del Lemene"
 		],
 		"Prov": "Pordenone",
@@ -112880,6 +112986,7 @@
 		"Alias": ["Quaregna", "Cerreto Castello"],
 		"ID": "096087",
 		"Zone": [
+			"Novarese, vercellese, biellese",
 			"Pianura settentrionale"
 		],
 		"Prov": "Biella",
@@ -112895,6 +113002,7 @@
 		"Alias": ["Valle Mosso", "Soprana", "Mosso", "Trivero"],
 		"ID": "096088",
 		"Zone": [
+			"Novarese, vercellese, biellese",
 			"Val Sesia, Cervo e Chiusella"
 		],
 		"Prov": "Biella",
@@ -114175,6 +114283,7 @@
 		"Alias": ["Rovagnate", "Perego"],
 		"ID": "097092",
 		"Zone": [
+			"Piemonte settentrionale e Lombardia nord-occidentale",
 			"Lario e Prealpi occidentali"
 		],
 		"Prov": "Lecco",
@@ -114190,6 +114299,7 @@
 		"Alias": ["Introzzo", "Tremenico", "Vestreno"],
 		"ID": "097093",
 		"Zone": [
+			"Piemonte settentrionale e Lombardia nord-occidentale",
 			"Lario e Prealpi occidentali"
 		],
 		"Prov": "Lecco",
@@ -115098,6 +115208,7 @@
 		"Alias": ["Camairago", "Cavacurta"],
 		"ID": "098062",
 		"Zone": [
+			"Lombardia centrale settore occidentale",
 			"Pianura centrale"
 		],
 		"Prov": "Lodi",
@@ -115483,6 +115594,7 @@
 		"Alias": ["Montescudo", "Monte Colombo"],
 		"ID": "099029",
 		"Zone": [
+			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Bassa collina e pianura romagnola"
 		],
 		"Prov": "Rimini",
@@ -117904,6 +118016,7 @@
 		"Alias": ["Seppiana", "Viganella"],
 		"ID": "103078",
 		"Zone": [
+			"Piemonte settentrionale e Lombardia nord-occidentale",
 			"Toce"
 		],
 		"Prov": "Verbano-Cusio-Ossola",
@@ -117919,6 +118032,7 @@
 		"Alias": ["Falmenta", "Cavaglio-Spoccia", "Cursolo-Orasso"],
 		"ID": "103079",
 		"Zone": [
+			"Piemonte settentrionale e Lombardia nord-occidentale",
 			"Toce"
 		],
 		"Prov": "Verbano-Cusio-Ossola",
