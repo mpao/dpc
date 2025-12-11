@@ -3,6 +3,7 @@
 		"Comune": "Agliè",
 		"ID": "001001",
 		"Zone": [
+			"Pianura Torinese e Colline",
 			"Novarese, vercellese, biellese",
 			"Torinese"
 		],
@@ -1286,6 +1287,7 @@
 		"Comune": "Ciriè",
 		"ID": "001086",
 		"Zone": [
+			"Pianura Torinese e Colline",
 			"Torinese"
 		],
 		"Prov": "Torino",
@@ -1471,6 +1473,7 @@
 		"Comune": "Cuorgnè",
 		"ID": "001098",
 		"Zone": [
+			"Valli Orco, Lanzo e Sangone",
 			"Valle d'Aosta orientale e Piemonte nord-occidentale",
 			"Torinese"
 		],
@@ -2075,6 +2078,7 @@
 		"Comune": "Loranzè",
 		"ID": "001137",
 		"Zone": [
+			"Pianura settentrionale",
 			"Novarese, vercellese, biellese"
 		],
 		"Prov": "Torino",
@@ -2121,6 +2125,7 @@
 		"Comune": "Lusigliè",
 		"ID": "001141",
 		"Zone": [
+			"Pianura Torinese e Colline",
 			"Torinese"
 		],
 		"Prov": "Torino",
@@ -2227,6 +2232,7 @@
 		"Comune": "Mazzè",
 		"ID": "001148",
 		"Zone": [
+			"Pianura settentrionale",
 			"Torinese",
 			"Novarese, vercellese, biellese"
 		],
@@ -3392,6 +3398,7 @@
 		"Comune": "Rorà",
 		"ID": "001226",
 		"Zone": [
+			"Valli Susa, Chisone, Pellice e Po",
 			"Piemonte occidentale"
 		],
 		"Prov": "Torino",
@@ -4434,6 +4441,7 @@
 		"Comune": "Vestignè",
 		"ID": "001295",
 		"Zone": [
+			"Pianura settentrionale",
 			"Novarese, vercellese, biellese"
 		],
 		"Prov": "Torino",
@@ -4449,6 +4457,7 @@
 		"ID": "001296",
 		"Zone": [
 			"Torinese",
+			"Pianura settentrionale",
 			"Novarese, vercellese, biellese"
 		],
 		"Prov": "Torino",
@@ -4690,6 +4699,7 @@
 		"Comune": "Viù",
 		"ID": "001313",
 		"Zone": [
+			"Valli Orco, Lanzo e Sangone",
 			"Valle d'Aosta orientale e Piemonte nord-occidentale"
 		],
 		"Prov": "Torino",
@@ -4890,6 +4900,7 @@
 		"Comune": "Bianzè",
 		"ID": "002011",
 		"Zone": [
+			"Pianura settentrionale",
 			"Novarese, vercellese, biellese"
 		],
 		"Prov": "Vercelli",
@@ -5784,6 +5795,7 @@
 		"Comune": "Santhià",
 		"ID": "002133",
 		"Zone": [
+			"Pianura settentrionale",
 			"Novarese, vercellese, biellese"
 		],
 		"Prov": "Vercelli",
@@ -7568,6 +7580,7 @@
 		"Comune": "Bastia Mondovì",
 		"ID": "004014",
 		"Zone": [
+			"Valle Tanaro",
 			"Piemonte sud-occidentale ed entroterra ligure di levante"
 		],
 		"Prov": "Cuneo",
@@ -7982,6 +7995,7 @@
 		"Comune": "Cardè",
 		"ID": "004042",
 		"Zone": [
+			"Pianura Cuneese",
 			"Torinese"
 		],
 		"Prov": "Cuneo",
@@ -9308,6 +9322,7 @@
 		"Comune": "Mondovì",
 		"ID": "004130",
 		"Zone": [
+			"Valle Tanaro",
 			"Piemonte sud-occidentale ed entroterra ligure di levante"
 		],
 		"Prov": "Cuneo",
@@ -9352,6 +9367,7 @@
 		"Comune": "Montà",
 		"ID": "004133",
 		"Zone": [
+			"Pianura Torinese e Colline",
 			"Torinese"
 		],
 		"Prov": "Cuneo",
@@ -9366,6 +9382,7 @@
 		"Comune": "Montaldo di Mondovì",
 		"ID": "004134",
 		"Zone": [
+			"Valle Tanaro",
 			"Piemonte sud-occidentale ed entroterra ligure di levante"
 		],
 		"Prov": "Cuneo",
@@ -10187,6 +10204,7 @@
 		"Comune": "Rocca Cigliè",
 		"ID": "004188",
 		"Zone": [
+			"Valle Tanaro",
 			"Piemonte sud-occidentale ed entroterra ligure di levante"
 		],
 		"Prov": "Cuneo",
@@ -10216,6 +10234,7 @@
 		"Comune": "Roccaforte Mondovì",
 		"ID": "004190",
 		"Zone": [
+			"Valle Tanaro",
 			"Piemonte sud-occidentale ed entroterra ligure di levante"
 		],
 		"Prov": "Cuneo",
@@ -10780,6 +10799,7 @@
 		"Comune": "Torre Mondovì",
 		"ID": "004227",
 		"Zone": [
+			"Valle Tanaro",
 			"Piemonte sud-occidentale ed entroterra ligure di levante"
 		],
 		"Prov": "Cuneo",
@@ -10854,6 +10874,7 @@
 		"Comune": "Trinità",
 		"ID": "004232",
 		"Zone": [
+			"Valle Tanaro",
 			"Piemonte sud-occidentale ed entroterra ligure di levante"
 		],
 		"Prov": "Cuneo",
@@ -11039,6 +11060,7 @@
 		"Comune": "Villanova Mondovì",
 		"ID": "004245",
 		"Zone": [
+			"Valle Tanaro",
 			"Piemonte sud-occidentale ed entroterra ligure di levante"
 		],
 		"Prov": "Cuneo",
@@ -11325,8 +11347,10 @@
 	},
 	"005014": {
 		"Comune": "Calliano",
+		"Alias": ["Calliano Monferrato"],
 		"ID": "005014",
 		"Zone": [
+			"Pianura Torinese e Colline",
 			"Piemonte sud-orientale e Pavese",
 			"Torinese"
 		],
@@ -11416,6 +11440,7 @@
 	},
 	"005020": {
 		"Comune": "Casorzo",
+		"Alias": ["Casorzo Monferrato"],
 		"ID": "005020",
 		"Zone": [
 			"Piemonte sud-orientale e Pavese",
@@ -11952,6 +11977,7 @@
 	},
 	"005056": {
 		"Comune": "Grana",
+		"Alias": ["Grana Monferrato"],
 		"ID": "005056",
 		"Zone": [
 			"Torinese",
@@ -12272,6 +12298,7 @@
 	},
 	"005077": {
 		"Comune": "Montemagno",
+		"Alias": ["Montemagno Monferrato"],
 		"ID": "005077",
 		"Zone": [
 			"Piemonte sud-orientale e Pavese",
@@ -12289,6 +12316,7 @@
 	},
 	"005079": {
 		"Comune": "Moransengo",
+		"Alias": ["Moransengo-Tonengo", "Tonengo"],
 		"ID": "005079",
 		"Zone": [
 			"Torinese",
@@ -12398,6 +12426,7 @@
 		"Comune": "Piovà Massaia",
 		"ID": "005086",
 		"Zone": [
+			"Pianura Torinese e Colline",
 			"Torinese"
 		],
 		"Prov": "Asti",
@@ -12746,6 +12775,7 @@
 	},
 	"005110": {
 		"Comune": "Tonengo",
+		"Alias": ["Moransengo-Tonengo", "Tonengo"],
 		"ID": "005110",
 		"Zone": [
 			"Torinese",
@@ -15802,7 +15832,9 @@
 		"Comune": "Allein",
 		"ID": "007001",
 		"Zone": [
+			"Dorsale settentrionale e nord-occidentale, Valgrisenche e Valdigne",
 			"Valle d'Aosta centro-occidentale",
+			"Valle d?Aosta centrale, Valle del Gran San Bernardo da Aosta a Valpelline,Valle di Saint-Barthélemy e Valtournenche",
 			"Valle d'Aosta centrale, Valle del Gran San Bernardo da Aosta a Valpelline,Valle di Saint-Barthélemy e Valtournenche"
 		],
 		"Prov": "Valle d'Aosta/Vallée d'Aoste",
@@ -15817,6 +15849,7 @@
 		"Comune": "Antey-Saint-André",
 		"ID": "007002",
 		"Zone": [
+			"Valle d?Aosta centrale, Valle del Gran San Bernardo da Aosta a Valpelline,Valle di Saint-Barthélemy e Valtournenche",
 			"Valle d'Aosta centro-occidentale"
 		],
 		"Prov": "Valle d'Aosta/Vallée d'Aoste",
@@ -15831,6 +15864,7 @@
 		"Comune": "Aosta",
 		"ID": "007003",
 		"Zone": [
+			"Valle d?Aosta centrale, Valle del Gran San Bernardo da Aosta a Valpelline,Valle di Saint-Barthélemy e Valtournenche",
 			"Valle d'Aosta centro-occidentale",
 			"Valle d'Aosta centrale, Valle del Gran San Bernardo da Aosta a Valpelline,Valle di Saint-Barthélemy e Valtournenche"
 		],
@@ -15861,6 +15895,7 @@
 		"Comune": "Arvier",
 		"ID": "007005",
 		"Zone": [
+			"Dorsale settentrionale e nord-occidentale, Valgrisenche e Valdigne",
 			"Valle d'Aosta centro-occidentale",
 			"Valle d'Aosta centrale, Valle del Gran San Bernardo da Aosta a Valpelline,Valle di Saint-Barthélemy e Valtournenche"
 		],
@@ -15876,6 +15911,7 @@
 		"Comune": "Avise",
 		"ID": "007006",
 		"Zone": [
+			"Dorsale settentrionale e nord-occidentale, Valgrisenche e Valdigne",
 			"Valle d'Aosta centro-occidentale",
 			"Valle d'Aosta centrale, Valle del Gran San Bernardo da Aosta a Valpelline,Valle di Saint-Barthélemy e Valtournenche"
 		],
@@ -16169,8 +16205,10 @@
 	},
 	"007025": {
 		"Comune": "Emarèse",
+		"Alias": ["Émarèse"],
 		"ID": "007025",
 		"Zone": [
+			"Valle d?Aosta centrale, Valle del Gran San Bernardo da Aosta a Valpelline,Valle di Saint-Barthélemy e Valtournenche",
 			"Valle d'Aosta orientale e Piemonte nord-occidentale",
 			"Valle d'Aosta centro-occidentale"
 		],
@@ -16201,6 +16239,7 @@
 		"Comune": "Fénis",
 		"ID": "007027",
 		"Zone": [
+			"Valle d?Aosta centrale, Valle del Gran San Bernardo da Aosta a Valpelline,Valle di Saint-Barthélemy e Valtournenche",
 			"Valle d'Aosta centro-occidentale",
 			"Valle d'Aosta orientale e Piemonte nord-occidentale"
 		],
@@ -16278,6 +16317,7 @@
 		"Comune": "Gressoney-La-Trinité",
 		"ID": "007032",
 		"Zone": [
+			"Bassa Valle d?Aosta, dalla Gola di Montjovet a Pont-Saint-Martin, Valle del torrente Chalamy, Valle d?Ayas, Valle di Champorcher e Valle di Gressoney",
 			"Novarese, vercellese, biellese",
 			"Valle d'Aosta orientale e Piemonte nord-occidentale"
 		],
@@ -16604,6 +16644,7 @@
 		"Comune": "Pré-Saint-Didier",
 		"ID": "007053",
 		"Zone": [
+			"Dorsale settentrionale e nord-occidentale, Valgrisenche e Valdigne",
 			"Valle d'Aosta centro-occidentale"
 		],
 		"Prov": "Valle d'Aosta/Vallée d'Aoste",
@@ -16771,6 +16812,7 @@
 		"Comune": "Saint-Rhémy-en-Bosses",
 		"ID": "007064",
 		"Zone": [
+			"Dorsale settentrionale e nord-occidentale, Valgrisenche e Valdigne",
 			"Valle d'Aosta centro-occidentale"
 		],
 		"Prov": "Valle d'Aosta/Vallée d'Aoste",
@@ -16908,6 +16950,7 @@
 		"Comune": "Verrès",
 		"ID": "007073",
 		"Zone": [
+			"Bassa Valle d?Aosta, dalla Gola di Montjovet a Pont-Saint-Martin, Valle del torrente Chalamy, Valle d?Ayas, Valle di Champorcher e Valle di Gressoney",
 			"Valle d'Aosta orientale e Piemonte nord-occidentale"
 		],
 		"Prov": "Valle d'Aosta/Vallée d'Aoste",
@@ -17604,6 +17647,7 @@
 		"Comune": "Prelà",
 		"ID": "008047",
 		"Zone": [
+			"Bacini Liguri Marittimi di Ponente",
 			"Liguria di ponente e centrale"
 		],
 		"Prov": "Imperia",
@@ -19894,6 +19938,7 @@
 		"Comune": "Serra Riccò",
 		"ID": "010058",
 		"Zone": [
+			"Bacini Liguri Marittimi di Centro",
 			"Liguria di ponente e centrale",
 			"Appennino emiliano ed entroterra ligure di ponente"
 		],
@@ -20383,6 +20428,7 @@
 		"Comune": "Riccò del Golfo di Spezia",
 		"ID": "011023",
 		"Zone": [
+			"Bacini Liguri Marittimi di Levante",
 			"Liguria di levante, Lunigiana, Garfagnana e Versilia"
 		],
 		"Prov": "La Spezia",
@@ -20655,6 +20701,7 @@
 	},
 	"012009": {
 		"Comune": "Bardello",
+		"Alias": ["Bardello con Malgesso e Bregano"],
 		"ID": "012009",
 		"Zone": [
 			"Piemonte settentrionale e Lombardia nord-occidentale",
@@ -20791,6 +20838,7 @@
 	},
 	"012018": {
 		"Comune": "Bregano",
+		"Alias": ["Bardello con Malgesso e Bregano"],
 		"ID": "012018",
 		"Zone": [
 			"Piemonte settentrionale e Lombardia nord-occidentale",
@@ -21924,6 +21972,7 @@
 	},
 	"012095": {
 		"Comune": "Malgesso",
+		"Alias": ["Bardello con Malgesso e Bregano"],
 		"ID": "012095",
 		"Zone": [
 			"Piemonte settentrionale e Lombardia nord-occidentale",
@@ -22551,6 +22600,7 @@
 		"Comune": "Viggiù",
 		"ID": "012139",
 		"Zone": [
+			"Laghi e Prealpi Varesine",
 			"Piemonte settentrionale e Lombardia nord-occidentale"
 		],
 		"Prov": "Varese",
@@ -23023,6 +23073,7 @@
 		"Comune": "Cantù",
 		"ID": "013041",
 		"Zone": [
+			"Nodo Idraulico di Milano",
 			"Piemonte settentrionale e Lombardia nord-occidentale",
 			"Lombardia centrale settore occidentale"
 		],
@@ -23524,6 +23575,7 @@
 		"Comune": "Fenegrò",
 		"ID": "013100",
 		"Zone": [
+			"Nodo Idraulico di Milano",
 			"Lombardia centrale settore occidentale"
 		],
 		"Prov": "Como",
@@ -24342,6 +24394,7 @@
 	},
 	"013199": {
 		"Comune": "Ronago",
+		"Alias": ["Uggiate con Ronago"],
 		"ID": "013199",
 		"Zone": [
 			"Piemonte settentrionale e Lombardia nord-occidentale",
@@ -24585,6 +24638,7 @@
 	},
 	"013228": {
 		"Comune": "Uggiate-Trevano",
+		"Alias": ["Uggiate con Ronago", "Uggiate"],
 		"ID": "013228",
 		"Zone": [
 			"Piemonte settentrionale e Lombardia nord-occidentale",
@@ -26147,6 +26201,7 @@
 		"Comune": "Assago",
 		"ID": "015011",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -26192,6 +26247,7 @@
 		"Comune": "Basiglio",
 		"ID": "015015",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -26238,6 +26294,7 @@
 		"Comune": "Besate",
 		"ID": "015022",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -26253,6 +26310,7 @@
 		"Comune": "Binasco",
 		"ID": "015024",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -26314,6 +26372,7 @@
 		"Comune": "Bubbiano",
 		"ID": "015035",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -26329,6 +26388,7 @@
 		"Comune": "Buccinasco",
 		"ID": "015036",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -26389,6 +26449,7 @@
 		"Comune": "Calvignasco",
 		"ID": "015042",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -26434,6 +26495,7 @@
 		"Comune": "Carpiano",
 		"ID": "015050",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -26464,6 +26526,7 @@
 		"Comune": "Casarile",
 		"ID": "015055",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -26570,6 +26633,7 @@
 		"Comune": "Cerro al Lambro",
 		"ID": "015071",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -26600,6 +26664,7 @@
 		"Comune": "Cesano Boscone",
 		"ID": "015074",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -26735,6 +26800,7 @@
 		"Comune": "Corsico",
 		"ID": "015093",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -26826,6 +26892,7 @@
 		"Comune": "Gaggiano",
 		"ID": "015103",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -26946,6 +27013,7 @@
 		"Comune": "Lacchiarella",
 		"ID": "015115",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -27006,6 +27074,7 @@
 		"Comune": "Locate di Triulzi",
 		"ID": "015125",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -27248,6 +27317,7 @@
 		"Comune": "Opera",
 		"ID": "015159",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -27398,6 +27468,7 @@
 		"Comune": "Pieve Emanuele",
 		"ID": "015173",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -27580,6 +27651,7 @@
 		"Comune": "Rozzano",
 		"ID": "015189",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -27595,6 +27667,7 @@
 		"Comune": "San Colombano al Lambro",
 		"ID": "015191",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -27685,6 +27758,7 @@
 		"Comune": "San Zenone al Lambro",
 		"ID": "015202",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -28137,6 +28211,7 @@
 		"Comune": "Almè",
 		"ID": "016005",
 		"Zone": [
+			"Pianura centrale",
 			"Lombardia centrale settore orientale",
 			"Lombardia centrale settore occidentale"
 		],
@@ -31225,6 +31300,7 @@
 		"Comune": "Torre de' Busi",
 		"ID": "016215",
 		"Zone": [
+			"Orobie bergamasche",
 			"Piemonte settentrionale e Lombardia nord-occidentale",
 			"Lombardia centrale settore orientale",
 			"Lario e Prealpi occidentali"
@@ -31566,6 +31642,7 @@
 		"Comune": "Villa d'Almè",
 		"ID": "016239",
 		"Zone": [
+			"Orobie bergamasche",
 			"Lombardia centrale settore orientale",
 			"Lombardia centrale settore occidentale"
 		],
@@ -34277,6 +34354,7 @@
 		"Comune": "Roè Volciano",
 		"ID": "017164",
 		"Zone": [
+			"Laghi e Prealpi orientali",
 			"Lombardia centrale settore orientale"
 		],
 		"Prov": "Brescia",
@@ -34367,6 +34445,7 @@
 		"Comune": "Salò",
 		"ID": "017170",
 		"Zone": [
+			"Laghi e Prealpi orientali",
 			"Lombardia sud-orientale",
 			"Lombardia centrale settore orientale"
 		],
@@ -34582,6 +34661,7 @@
 		"Comune": "Temù",
 		"ID": "017184",
 		"Zone": [
+			"Valcamonica",
 			"Lombardia centrale settore orientale"
 		],
 		"Prov": "Brescia",
@@ -34932,6 +35012,7 @@
 		"Comune": "Alagna",
 		"ID": "018001",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -34945,8 +35026,10 @@
 	},
 	"018002": {
 		"Comune": "Albaredo Arnaboldi",
+		"Alias": ["Campospinoso Albaredo", "Albaredo", "Campospinoso"],
 		"ID": "018002",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Piemonte sud-orientale e Pavese",
 			"Bassa pianura occidentale"
@@ -34963,6 +35046,7 @@
 		"Comune": "Albonese",
 		"ID": "018003",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Novarese, vercellese, biellese",
 			"Bassa pianura occidentale"
@@ -34979,6 +35063,7 @@
 		"Comune": "Albuzzano",
 		"ID": "018004",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -34994,6 +35079,7 @@
 		"Comune": "Arena Po",
 		"ID": "018005",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Pianura emiliana",
 			"Piemonte sud-orientale e Pavese",
@@ -35011,6 +35097,7 @@
 		"Comune": "Badia Pavese",
 		"ID": "018006",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35041,6 +35128,7 @@
 		"Comune": "Barbianello",
 		"ID": "018008",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Piemonte sud-orientale e Pavese",
 			"Bassa pianura occidentale"
@@ -35057,6 +35145,7 @@
 		"Comune": "Bascapè",
 		"ID": "018009",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale"
 		],
 		"Prov": "Pavia",
@@ -35071,6 +35160,7 @@
 		"Comune": "Bastida Pancarana",
 		"ID": "018011",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35086,6 +35176,7 @@
 		"Comune": "Battuda",
 		"ID": "018012",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35101,6 +35192,7 @@
 		"Comune": "Belgioioso",
 		"ID": "018013",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35116,6 +35208,7 @@
 		"Comune": "Bereguardo",
 		"ID": "018014",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35131,6 +35224,7 @@
 		"Comune": "Borgarello",
 		"ID": "018015",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35176,6 +35270,7 @@
 		"Comune": "Borgo San Siro",
 		"ID": "018018",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35191,6 +35286,7 @@
 		"Comune": "Bornasco",
 		"ID": "018019",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35239,6 +35335,7 @@
 		"Comune": "Breme",
 		"ID": "018022",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Novarese, vercellese, biellese",
 			"Bassa pianura occidentale"
@@ -35255,6 +35352,7 @@
 		"Comune": "Bressana Bottarone",
 		"ID": "018023",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35270,6 +35368,7 @@
 		"Comune": "Broni",
 		"ID": "018024",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Piemonte sud-orientale e Pavese",
 			"Lombardia centrale settore occidentale",
 			"Appennino pavese"
@@ -35299,6 +35398,7 @@
 	},
 	"018026": {
 		"Comune": "Campospinoso",
+		"Alias": ["Campospinoso Albaredo", "Albaredo", "Campospinoso"],
 		"ID": "018026",
 		"Zone": [
 			"Piemonte sud-orientale e Pavese",
@@ -35317,6 +35417,7 @@
 		"Comune": "Candia Lomellina",
 		"ID": "018027",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Novarese, vercellese, biellese",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
@@ -35348,6 +35449,7 @@
 		"Comune": "Carbonara al Ticino",
 		"ID": "018030",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35363,6 +35465,7 @@
 		"Comune": "Casanova Lonati",
 		"ID": "018031",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35378,6 +35481,7 @@
 		"Comune": "Casatisma",
 		"ID": "018032",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Piemonte sud-orientale e Pavese",
 			"Bassa pianura occidentale"
@@ -35394,6 +35498,7 @@
 		"Comune": "Casei Gerola",
 		"ID": "018033",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Novarese, vercellese, biellese",
 			"Piemonte sud-orientale e Pavese",
 			"Lombardia centrale settore occidentale",
@@ -35411,6 +35516,7 @@
 		"Comune": "Casorate Primo",
 		"ID": "018034",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35426,6 +35532,7 @@
 		"Comune": "Cassolnovo",
 		"ID": "018035",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Novarese, vercellese, biellese",
 			"Bassa pianura occidentale"
@@ -35473,6 +35580,7 @@
 		"Comune": "Castelletto di Branduzzo",
 		"ID": "018038",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35488,6 +35596,7 @@
 		"Comune": "Castello d'Agogna",
 		"ID": "018039",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35503,6 +35612,7 @@
 		"Comune": "Castelnovetto",
 		"ID": "018040",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35518,6 +35628,7 @@
 		"Comune": "Cava Manara",
 		"ID": "018041",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35548,6 +35659,7 @@
 		"Comune": "Ceranova",
 		"ID": "018043",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35563,6 +35675,7 @@
 		"Comune": "Ceretto Lomellina",
 		"ID": "018044",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35578,6 +35691,7 @@
 		"Comune": "Cergnago",
 		"ID": "018045",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35593,6 +35707,7 @@
 		"Comune": "Certosa di Pavia",
 		"ID": "018046",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35608,6 +35723,7 @@
 		"Comune": "Cervesina",
 		"ID": "018047",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35625,6 +35741,7 @@
 		"Zone": [
 			"Lombardia centrale settore occidentale",
 			"Pianura emiliana",
+			"Bassa pianura centro-occidentale",
 			"Bassa pianura occidentale"
 		],
 		"Prov": "Pavia",
@@ -35654,6 +35771,7 @@
 		"Comune": "Cilavegna",
 		"ID": "018050",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Novarese, vercellese, biellese",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
@@ -35686,6 +35804,7 @@
 		"Comune": "Confienza",
 		"ID": "018052",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Novarese, vercellese, biellese",
 			"Bassa pianura occidentale"
@@ -35702,6 +35821,7 @@
 		"Comune": "Copiano",
 		"ID": "018053",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35717,6 +35837,7 @@
 		"Comune": "Corana",
 		"ID": "018054",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35748,6 +35869,7 @@
 		"Comune": "Costa de' Nobili",
 		"ID": "018058",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35763,6 +35885,7 @@
 		"Comune": "Cozzo",
 		"ID": "018059",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35778,6 +35901,7 @@
 		"Comune": "Cura Carpignano",
 		"ID": "018060",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35793,6 +35917,7 @@
 		"Comune": "Dorno",
 		"ID": "018061",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35808,6 +35933,7 @@
 		"Comune": "Ferrera Erbognone",
 		"ID": "018062",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35823,6 +35949,7 @@
 		"Comune": "Filighera",
 		"ID": "018063",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35853,6 +35980,7 @@
 		"Comune": "Frascarolo",
 		"ID": "018065",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Novarese, vercellese, biellese",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
@@ -35869,6 +35997,7 @@
 		"Comune": "Galliavola",
 		"ID": "018066",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -35900,6 +36029,7 @@
 		"Comune": "Gambolò",
 		"ID": "018068",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale"
 		],
 		"Prov": "Pavia",
@@ -35929,6 +36059,7 @@
 		"Comune": "Gerenzago",
 		"ID": "018071",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -36021,6 +36152,7 @@
 		"Comune": "Inverno e Monteleone",
 		"ID": "018077",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -36036,6 +36168,7 @@
 		"Comune": "Landriano",
 		"ID": "018078",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -36067,6 +36200,7 @@
 		"Comune": "Lardirago",
 		"ID": "018080",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -36143,6 +36277,7 @@
 		"Comune": "Magherno",
 		"ID": "018085",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -36173,6 +36308,7 @@
 		"Comune": "Marzano",
 		"ID": "018087",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -36265,6 +36401,7 @@
 		"Comune": "Miradolo Terme",
 		"ID": "018093",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -36358,6 +36495,7 @@
 		"Zone": [
 			"Lombardia centrale settore occidentale",
 			"Pianura emiliana",
+			"Bassa pianura centro-occidentale",
 			"Bassa pianura occidentale"
 		],
 		"Prov": "Pavia",
@@ -36372,6 +36510,7 @@
 		"Comune": "Montù Beccaria",
 		"ID": "018100",
 		"Zone": [
+			"Appennino pavese",
 			"Piemonte sud-orientale e Pavese"
 		],
 		"Prov": "Pavia",
@@ -36586,6 +36725,7 @@
 		"Zone": [
 			"Lombardia centrale settore occidentale",
 			"Pianura emiliana",
+			"Bassa pianura centro-occidentale",
 			"Bassa pianura occidentale"
 		],
 		"Prov": "Pavia",
@@ -36819,6 +36959,7 @@
 		"Comune": "Roncaro",
 		"ID": "018129",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -36958,6 +37099,7 @@
 		"Comune": "Santa Cristina e Bissone",
 		"ID": "018139",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -36989,6 +37131,7 @@
 		"Comune": "Sant'Alessio con Vialone",
 		"ID": "018141",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -37051,6 +37194,7 @@
 		"Comune": "San Zenone al Po",
 		"ID": "018145",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -37128,6 +37272,7 @@
 		"ID": "018150",
 		"Zone": [
 			"Lombardia centrale settore occidentale",
+			"Bassa pianura centro-occidentale",
 			"Bassa pianura occidentale"
 		],
 		"Prov": "Pavia",
@@ -37159,6 +37304,7 @@
 		"Zone": [
 			"Piemonte sud-orientale e Pavese",
 			"Lombardia centrale settore occidentale",
+			"Bassa pianura centro-occidentale",
 			"Bassa pianura occidentale"
 		],
 		"Prov": "Pavia",
@@ -37173,6 +37319,7 @@
 		"Comune": "Stradella",
 		"ID": "018153",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale",
 			"Piemonte sud-orientale e Pavese",
 			"Appennino pavese"
@@ -37236,6 +37383,7 @@
 		"Comune": "Torre d'Arese",
 		"ID": "018157",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -37251,6 +37399,7 @@
 		"Comune": "Torre de' Negri",
 		"ID": "018158",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -37281,6 +37430,7 @@
 		"Comune": "Torrevecchia Pia",
 		"ID": "018160",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -37312,6 +37462,7 @@
 		"Comune": "Travacò Siccomario",
 		"ID": "018162",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale"
 		],
 		"Prov": "Pavia",
@@ -37507,6 +37658,7 @@
 		"Comune": "Vidigulfo",
 		"ID": "018176",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -37567,6 +37719,7 @@
 		"Comune": "Villanterio",
 		"ID": "018180",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -37582,6 +37735,7 @@
 		"Comune": "Vistarino",
 		"ID": "018181",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -37691,6 +37845,7 @@
 		"Comune": "Zerbo",
 		"ID": "018188",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -37706,6 +37861,7 @@
 		"Comune": "Zerbolò",
 		"ID": "018189",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Lombardia centrale settore occidentale"
 		],
 		"Prov": "Pavia",
@@ -37735,6 +37891,7 @@
 		"Comune": "Cornale e Bastida",
 		"ID": "018191",
 		"Zone": [
+			"Bassa pianura occidentale",
 			"Novarese, vercellese, biellese",
 			"Piemonte sud-orientale e Pavese",
 			"Lombardia centrale settore occidentale",
@@ -37753,6 +37910,7 @@
 		"Alias": ["Corteolona", "Genzone"],
 		"ID": "018192",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -37784,6 +37942,7 @@
 		"Comune": "Acquanegra Cremonese",
 		"ID": "019001",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura orientale"
@@ -37861,6 +38020,7 @@
 		"Comune": "Bonemerse",
 		"ID": "019006",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -38075,6 +38235,7 @@
 		"Zone": [
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
+			"Bassa pianura centro-orientale",
 			"Bassa pianura orientale"
 		],
 		"Prov": "Cremona",
@@ -38104,6 +38265,7 @@
 		"Comune": "Casteldidone",
 		"ID": "019023",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -38180,6 +38342,7 @@
 		"Comune": "Cella Dati",
 		"ID": "019028",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -38225,6 +38388,7 @@
 		"Comune": "Cingia de' Botti",
 		"ID": "019031",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -38300,6 +38464,7 @@
 		"Comune": "Cremona",
 		"ID": "019036",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
 			"Bassa pianura orientale"
@@ -38334,6 +38499,7 @@
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
 			"Lombardia centrale settore occidentale",
+			"Bassa pianura centro-occidentale",
 			"Bassa pianura occidentale"
 		],
 		"Prov": "Cremona",
@@ -38365,6 +38531,7 @@
 		"ID": "019040",
 		"Zone": [
 			"Lombardia sud-orientale",
+			"Bassa pianura centro-orientale",
 			"Bassa pianura orientale"
 		],
 		"Prov": "Cremona",
@@ -38469,6 +38636,7 @@
 		"Comune": "Gerre de' Caprioli",
 		"ID": "019048",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
 			"Bassa pianura orientale"
@@ -38515,6 +38683,7 @@
 		"Comune": "Grumello Cremonese ed Uniti",
 		"ID": "019051",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia centrale settore occidentale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
@@ -38532,6 +38701,7 @@
 		"ID": "019052",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -38592,6 +38762,7 @@
 		"Comune": "Malagnino",
 		"ID": "019056",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -38607,6 +38778,7 @@
 		"Comune": "Martignana di Po",
 		"ID": "019057",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
 			"Bassa pianura orientale"
@@ -38668,6 +38840,7 @@
 		"Comune": "Motta Baluffi",
 		"ID": "019061",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
 			"Bassa pianura orientale"
@@ -38851,6 +39024,7 @@
 		"Zone": [
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
+			"Bassa pianura centro-orientale",
 			"Bassa pianura orientale"
 		],
 		"Prov": "Cremona",
@@ -38865,6 +39039,7 @@
 		"Comune": "Pieve San Giacomo",
 		"ID": "019075",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -38882,6 +39057,7 @@
 		"Zone": [
 			"Lombardia centrale settore occidentale",
 			"Lombardia sud-orientale",
+			"Bassa pianura centro-occidentale",
 			"Bassa pianura occidentale"
 		],
 		"Prov": "Cremona",
@@ -38986,6 +39162,7 @@
 		"Comune": "Rivarolo del Re ed Uniti",
 		"ID": "019083",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -39078,6 +39255,7 @@
 		"Zone": [
 			"Pianura emiliana",
 			"Lombardia sud-orientale",
+			"Bassa pianura centro-orientale",
 			"Bassa pianura orientale"
 		],
 		"Prov": "Cremona",
@@ -39092,6 +39270,7 @@
 		"Comune": "San Giovanni in Croce",
 		"ID": "019090",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -39107,6 +39286,7 @@
 		"Comune": "San Martino del Lago",
 		"ID": "019091",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -39122,6 +39302,7 @@
 		"Comune": "Scandolara Ravara",
 		"ID": "019092",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -39167,6 +39348,7 @@
 		"Comune": "Sesto ed Uniti",
 		"ID": "019095",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -39182,6 +39364,7 @@
 		"Comune": "Solarolo Rainerio",
 		"ID": "019096",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -39229,6 +39412,7 @@
 		"Comune": "Sospiro",
 		"ID": "019099",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -39244,6 +39428,7 @@
 		"Comune": "Spinadesco",
 		"ID": "019100",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Pianura emiliana",
 			"Lombardia centrale settore occidentale",
 			"Lombardia sud-orientale",
@@ -39261,6 +39446,7 @@
 		"Comune": "Spineda",
 		"ID": "019101",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -39293,6 +39479,7 @@
 		"Zone": [
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
+			"Bassa pianura centro-orientale",
 			"Bassa pianura orientale"
 		],
 		"Prov": "Cremona",
@@ -39339,6 +39526,7 @@
 		"ID": "019106",
 		"Zone": [
 			"Lombardia sud-orientale",
+			"Bassa pianura centro-orientale",
 			"Bassa pianura orientale"
 		],
 		"Prov": "Cremona",
@@ -39354,6 +39542,7 @@
 		"Alias": ["Ca' d'Andrea"],
 		"ID": "019107",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Alta pianura orientale"
 		],
@@ -39371,6 +39560,7 @@
 		"Zone": [
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
+			"Bassa pianura centro-orientale",
 			"Bassa pianura orientale"
 		],
 		"Prov": "Cremona",
@@ -39477,6 +39667,7 @@
 		"ID": "019115",
 		"Zone": [
 			"Lombardia sud-orientale",
+			"Bassa pianura centro-orientale",
 			"Bassa pianura orientale"
 		],
 		"Prov": "Cremona",
@@ -39552,6 +39743,7 @@
 		"Comune": "Bozzolo",
 		"ID": "020007",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -39733,6 +39925,7 @@
 		"Comune": "Commessaggio",
 		"ID": "020020",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -39764,6 +39957,7 @@
 		"ID": "020022",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -39794,6 +39988,7 @@
 		"Comune": "Gazzuolo",
 		"ID": "020025",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -39885,6 +40080,7 @@
 		"Comune": "Marcaria",
 		"ID": "020031",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -40055,6 +40251,7 @@
 		"Zone": [
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
+			"Bassa pianura centro-orientale",
 			"Bassa pianura orientale"
 		],
 		"Prov": "Mantova",
@@ -40146,6 +40343,7 @@
 		"Comune": "Rivarolo Mantovano",
 		"ID": "020050",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -40206,6 +40404,7 @@
 		"Comune": "Sabbioneta",
 		"ID": "020054",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -40284,6 +40483,7 @@
 		"Comune": "San Martino dall'Argine",
 		"ID": "020059",
 		"Zone": [
+			"Bassa pianura centro-orientale",
 			"Lombardia sud-orientale",
 			"Bassa pianura orientale"
 		],
@@ -40393,6 +40593,7 @@
 		"Zone": [
 			"Pianura emiliana",
 			"Lombardia sud-orientale",
+			"Bassa pianura centro-orientale",
 			"Bassa pianura orientale"
 		],
 		"Prov": "Mantova",
@@ -40946,6 +41147,7 @@
 		"Alias": ["Fi allo Sciliar", "Fi allo Sciliar/Vls am Schlern", "Fi� allo Sciliar/V�ls am Schlern"],
 		"ID": "021031",
 		"Zone": [
+			"Provincia Autonoma di Bolzano",
 			"Alto Adige"
 		],
 		"Prov": "Bolzano/Bozen",
@@ -41158,6 +41360,7 @@
 		"ID": "021045",
 		"Zone": [
 			"Alto Adige",
+			"Provincia Autonoma di Bolzano",
 			"Trentino e Alto piano dei sette comuni"
 		],
 		"Prov": "Bolzano/Bozen",
@@ -42349,6 +42552,7 @@
 		"Comune": "Baselga di Pinè",
 		"ID": "022009",
 		"Zone": [
+			"Provincia Autonoma di Trento",
 			"Trentino e Alto piano dei sette comuni"
 		],
 		"Prov": "Trento",
@@ -43000,8 +43204,10 @@
 	},
 	"022083": {
 		"Comune": "Fiavè",
+		"Alias": ["Fiavé"],
 		"ID": "022083",
 		"Zone": [
+			"Provincia Autonoma di Trento",
 			"Trentino e Alto piano dei sette comuni"
 		],
 		"Prov": "Trento",
@@ -43257,6 +43463,7 @@
 		"Comune": "Malé",
 		"ID": "022110",
 		"Zone": [
+			"Provincia Autonoma di Trento",
 			"Trentino e Alto piano dei sette comuni"
 		],
 		"Prov": "Trento",
@@ -43502,6 +43709,7 @@
 		"Comune": "Palù del Fersina",
 		"ID": "022133",
 		"Zone": [
+			"Provincia Autonoma di Trento",
 			"Trentino e Alto piano dei sette comuni"
 		],
 		"Prov": "Trento",
@@ -43516,6 +43724,7 @@
 		"Comune": "Panchià",
 		"ID": "022134",
 		"Zone": [
+			"Provincia Autonoma di Trento",
 			"Trentino e Alto piano dei sette comuni"
 		],
 		"Prov": "Trento",
@@ -43761,9 +43970,11 @@
 	},
 	"022160": {
 		"Comune": "Roverè della Luna",
+		"Alias": ["Roveré della Luna"],
 		"ID": "022160",
 		"Zone": [
 			"Alto Adige",
+			"Provincia Autonoma di Trento",
 			"Trentino e Alto piano dei sette comuni"
 		],
 		"Prov": "Trento",
@@ -43791,8 +44002,10 @@
 	},
 	"022162": {
 		"Comune": "Ruffrè-Mendola",
+		"Alias": ["Ruffré-Mendola"],
 		"ID": "022162",
 		"Zone": [
+			"Provincia Autonoma di Trento",
 			"Trentino e Alto piano dei sette comuni",
 			"Alto Adige"
 		],
@@ -44727,7 +44940,7 @@
 	},
 	"022250": {
 		"Comune": "San Giovanni di Fassa",
-		"Alias": ["Vigo di Fassa", "Pozza di Fassa"], 
+		"Alias": ["Vigo di Fassa", "Pozza di Fassa", "San Giovanni di Fassa-Sèn Jan"], 
 		"ID": "022250",
 		"Zone": [
 			"Trentino e Alto piano dei sette comuni",
@@ -45279,6 +45492,7 @@
 		"Comune": "Dolcè",
 		"ID": "023031",
 		"Zone": [
+			"Adige-Garda e monti Lessini",
 			"Lombardia sud-orientale",
 			"Trentino e Alto piano dei sette comuni"
 		],
@@ -45294,6 +45508,7 @@
 		"Comune": "Erbè",
 		"ID": "023032",
 		"Zone": [
+			"Po, Fissero-Tartaro-Canalbianco e Basso Adige",
 			"Lombardia sud-orientale"
 		],
 		"Prov": "Verona",
@@ -45663,6 +45878,7 @@
 		"Comune": "Palù",
 		"ID": "023056",
 		"Zone": [
+			"Po, Fissero-Tartaro-Canalbianco e Basso Adige",
 			"Lombardia sud-orientale"
 		],
 		"Prov": "Verona",
@@ -45816,6 +46032,7 @@
 		"Comune": "Roveredo di Guà",
 		"ID": "023066",
 		"Zone": [
+			"Basso Brenta-Bacchiglione e Fratta Gorzone",
 			"Pianura veneta"
 		],
 		"Prov": "Verona",
@@ -45828,8 +46045,10 @@
 	},
 	"023067": {
 		"Comune": "Roverè Veronese",
+		"Alias": ["Roveré Veronese"],
 		"ID": "023067",
 		"Zone": [
+			"Adige-Garda e monti Lessini",
 			"Lombardia sud-orientale"
 		],
 		"Prov": "Verona",
@@ -46091,6 +46310,7 @@
 		"Comune": "Sorgà",
 		"ID": "023084",
 		"Zone": [
+			"Po, Fissero-Tartaro-Canalbianco e Basso Adige",
 			"Lombardia sud-orientale"
 		],
 		"Prov": "Verona",
@@ -46644,6 +46864,7 @@
 		"Comune": "Carrè",
 		"ID": "024024",
 		"Zone": [
+			"Alto Brenta-Bacchiglione-Alpone",
 			"Trentino e Alto piano dei sette comuni",
 			"Piemonte sud-occidentale ed entroterra ligure di levante"
 		],
@@ -46917,6 +47138,7 @@
 	},
 	"024044": {
 		"Comune": "Gambugliano",
+		"Alias": ["Sovizzo"],
 		"ID": "024044",
 		"Zone": [
 			"Trentino e Alto piano dei sette comuni",
@@ -47501,6 +47723,7 @@
 		"Comune": "Rosà",
 		"ID": "024087",
 		"Zone": [
+			"Basso Brenta-Bacchiglione e Fratta Gorzone",
 			"Trentino e Alto piano dei sette comuni",
 			"Pianura veneta"
 		],
@@ -47926,6 +48149,7 @@
 		"Comune": "Zanè",
 		"ID": "024119",
 		"Zone": [
+			"Alto Brenta-Bacchiglione-Alpone",
 			"Trentino e Alto piano dei sette comuni"
 		],
 		"Prov": "Vicenza",
@@ -48080,6 +48304,7 @@
 	},
 	"025002": {
 		"Comune": "Alano di Piave",
+		"Alias": ["Setteville"],
 		"ID": "025002",
 		"Zone": [
 			"Trentino e Alto piano dei sette comuni",
@@ -48113,6 +48338,7 @@
 		"Comune": "Arsiè",
 		"ID": "025004",
 		"Zone": [
+			"Alto Brenta-Bacchiglione-Alpone",
 			"Trentino e Alto piano dei sette comuni",
 			"Veneto settentrionale e Alpi friulane"
 		],
@@ -48621,6 +48847,7 @@
 		"Comune": "San Nicolò di Comelico",
 		"ID": "025046",
 		"Zone": [
+			"Alto Piave",
 			"Veneto settentrionale e Alpi friulane"
 		],
 		"Prov": "Belluno",
@@ -48908,6 +49135,7 @@
 		"Comune": "Zoppè di Cadore",
 		"ID": "025069",
 		"Zone": [
+			"Alto Piave",
 			"Veneto settentrionale e Alpi friulane"
 		],
 		"Prov": "Belluno",
@@ -48920,6 +49148,7 @@
 	},
 	"025070": {
 		"Comune": "Quero Vas",
+		"Alias": ["Setteville"],
 		"ID": "025070",
 		"Zone": [
 			"Veneto settentrionale e Alpi friulane",
@@ -49276,9 +49505,11 @@
 	},
 	"026019": {
 		"Comune": "Codognè",
+		"Alias": ["Codogné"],
 		"ID": "026019",
 		"Zone": [
 			"Pianura veneta",
+			"Livenza, Lemene e Tagliamento",
 			"Veneto settentrionale e Alpi friulane"
 		],
 		"Prov": "Treviso",
@@ -49545,6 +49776,7 @@
 		"Comune": "Mansuè",
 		"ID": "026037",
 		"Zone": [
+			"Livenza, Lemene e Tagliamento",
 			"Pianura friulana",
 			"Pianura veneta"
 		],
@@ -49886,6 +50118,7 @@
 		"Comune": "Portobuffolè",
 		"ID": "026060",
 		"Zone": [
+			"Livenza, Lemene e Tagliamento",
 			"Pianura veneta",
 			"Pianura friulana"
 		],
@@ -50698,6 +50931,7 @@
 		"Comune": "Fossò",
 		"ID": "027017",
 		"Zone": [
+			"Basso Brenta-Bacchiglione e Fratta Gorzone",
 			"Pianura veneta"
 		],
 		"Prov": "Venezia",
@@ -50939,6 +51173,7 @@
 		"Comune": "San Donà di Piave",
 		"ID": "027033",
 		"Zone": [
+			"Basso Piave, Sile e Bacino scolante in laguna",
 			"Pianura veneta"
 		],
 		"Prov": "Venezia",
@@ -50999,6 +51234,7 @@
 		"Comune": "Scorzè",
 		"ID": "027037",
 		"Zone": [
+			"Basso Piave, Sile e Bacino scolante in laguna",
 			"Pianura veneta"
 		],
 		"Prov": "Venezia",
@@ -51180,6 +51416,7 @@
 		"Comune": "Arquà Petrarca",
 		"ID": "028005",
 		"Zone": [
+			"Basso Brenta-Bacchiglione e Fratta Gorzone",
 			"Pianura veneta"
 		],
 		"Prov": "Padova",
@@ -51434,6 +51671,9 @@
 	},
 	"028022": {
 		"Comune": "Carceri",
+		"Alias": [
+			"Santa Caterina d'Este"
+		],
 		"ID": "028022",
 		"Zone": [
 			"Pianura veneta",
@@ -51798,6 +52038,7 @@
 		"Comune": "Maserà di Padova",
 		"ID": "028048",
 		"Zone": [
+			"Basso Brenta-Bacchiglione e Fratta Gorzone",
 			"Pianura veneta"
 		],
 		"Prov": "Padova",
@@ -52099,6 +52340,7 @@
 		"Comune": "Ponte San Nicolò",
 		"ID": "028069",
 		"Zone": [
+			"Basso Brenta-Bacchiglione e Fratta Gorzone",
 			"Pianura veneta"
 		],
 		"Prov": "Padova",
@@ -52504,6 +52746,7 @@
 	},
 	"028098": {
 		"Comune": "Vighizzolo d'Este",
+		"Alias": ["Santa Caterina d'Este"],
 		"ID": "028098",
 		"Zone": [
 			"Pianura veneta",
@@ -52688,6 +52931,7 @@
 		"Comune": "Arquà Polesine",
 		"ID": "029003",
 		"Zone": [
+			"Po, Fissero-Tartaro-Canalbianco e Basso Adige",
 			"Romagna e delta del Po"
 		],
 		"Prov": "Rovigo",
@@ -55495,8 +55739,10 @@
 	},
 	"031003": {
 		"Comune": "Doberdò del Lago",
+		"Alias": ["Doberdò del Lago-Doberdob"],
 		"ID": "031003",
 		"Zone": [
+			"Bacino di Levante / Carso",
 			"Pianura friulana"
 		],
 		"Prov": "Gorizia",
@@ -55734,6 +55980,7 @@
 	},
 	"031019": {
 		"Comune": "San Floriano del Collio",
+		"Alias":["San Floriano del Collio-Števerjan"],
 		"ID": "031019",
 		"Zone": [
 			"Pianura friulana",
@@ -55779,6 +56026,7 @@
 	},
 	"031022": {
 		"Comune": "Savogna d'Isonzo",
+		"Alias": ["Savogna d'Isonzo-Sovodnje ob Soči"],
 		"ID": "031022",
 		"Zone": [
 			"Pianura friulana",
@@ -55839,7 +56087,7 @@
 	},
 	"032001": {
 		"Comune": "Duino Aurisina",
-		"Alias": ["Duino-Aurisina"],
+		"Alias": ["Duino-Aurisina", "Duino Aurisina-Devin-Nabrežina"],
 		"ID": "032001",
 		"Zone": [
 			"Pianura friulana",
@@ -55855,6 +56103,7 @@
 	},
 	"032002": {
 		"Comune": "Monrupino",
+		"Alias": ["Monrupino-Repentabor"],
 		"ID": "032002",
 		"Zone": [
 			"Pianura friulana",
@@ -55901,6 +56150,7 @@
 	},
 	"032005": {
 		"Comune": "Sgonico",
+		"Alias": ["Sgonico-Zgonik"],
 		"ID": "032005",
 		"Zone": [
 			"Pianura friulana",
@@ -55934,6 +56184,7 @@
 		"ID": "033001",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -55949,6 +56200,7 @@
 		"ID": "033002",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -55964,6 +56216,7 @@
 		"ID": "033003",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -55978,6 +56231,7 @@
 		"Comune": "Bettola",
 		"ID": "033004",
 		"Zone": [
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana",
 			"Bacini emiliani occidentali"
@@ -55995,6 +56249,7 @@
 		"ID": "033005",
 		"Zone": [
 			"Pianura emiliana",
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Piemonte sud-orientale e Pavese",
 			"Bacini emiliani occidentali"
@@ -56012,6 +56267,7 @@
 		"ID": "033006",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56027,6 +56283,7 @@
 		"ID": "033007",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56042,6 +56299,7 @@
 		"ID": "033008",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Lombardia centrale settore occidentale",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -56058,6 +56316,7 @@
 		"ID": "033010",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Lombardia centrale settore occidentale",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -56074,6 +56333,7 @@
 		"ID": "033011",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56089,6 +56349,7 @@
 		"ID": "033012",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56104,6 +56365,7 @@
 		"ID": "033013",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Lombardia centrale settore occidentale",
 			"Piemonte sud-orientale e Pavese",
 			"Pianura e bassa collina emiliana occidentale"
@@ -56122,6 +56384,7 @@
 		"Zone": [
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56136,6 +56399,7 @@
 		"Comune": "Cerignale",
 		"ID": "033015",
 		"Zone": [
+			"Alta collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Piemonte sud-orientale e Pavese",
 			"Bacini emiliani occidentali"
@@ -56152,6 +56416,7 @@
 		"Comune": "Coli",
 		"ID": "033016",
 		"Zone": [
+			"Alta collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -56167,6 +56432,7 @@
 		"Comune": "Corte Brugnatella",
 		"ID": "033017",
 		"Zone": [
+			"Alta collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Piemonte sud-orientale e Pavese",
 			"Bacini emiliani occidentali"
@@ -56184,6 +56450,7 @@
 		"ID": "033018",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56198,6 +56465,7 @@
 		"Comune": "Farini",
 		"ID": "033019",
 		"Zone": [
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana",
 			"Bacini emiliani occidentali"
@@ -56214,6 +56482,7 @@
 		"Comune": "Ferriere",
 		"ID": "033020",
 		"Zone": [
+			"Alta collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -56230,6 +56499,7 @@
 		"ID": "033021",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56245,6 +56515,7 @@
 		"ID": "033022",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -56261,6 +56532,7 @@
 		"ID": "033023",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56276,6 +56548,7 @@
 		"ID": "033024",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56292,6 +56565,7 @@
 		"Zone": [
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56307,6 +56581,7 @@
 		"ID": "033026",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56323,6 +56598,7 @@
 		"Zone": [
 			"Lombardia centrale settore occidentale",
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Lombardia sud-orientale",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -56340,6 +56616,7 @@
 		"Zone": [
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56354,6 +56631,7 @@
 		"Comune": "Ottone",
 		"ID": "033030",
 		"Zone": [
+			"Alta collina piacentino-parmense",
 			"Piemonte sud-orientale e Pavese",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
@@ -56371,6 +56649,7 @@
 		"ID": "033032",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Lombardia centrale settore occidentale",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -56387,6 +56666,7 @@
 		"ID": "033033",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56402,6 +56682,7 @@
 		"ID": "033034",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -56418,6 +56699,7 @@
 		"ID": "033035",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56433,6 +56715,7 @@
 		"ID": "033036",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -56449,6 +56732,7 @@
 		"ID": "033037",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56464,6 +56748,7 @@
 		"ID": "033038",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -56480,6 +56765,7 @@
 		"ID": "033039",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Lombardia centrale settore occidentale",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -56496,6 +56782,7 @@
 		"ID": "033040",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56511,6 +56798,7 @@
 		"ID": "033041",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56526,6 +56814,7 @@
 		"ID": "033042",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Lombardia centrale settore occidentale",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -56542,6 +56831,7 @@
 		"ID": "033043",
 		"Zone": [
 			"Pianura emiliana",
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -56558,6 +56848,7 @@
 		"ID": "033044",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -56573,6 +56864,7 @@
 		"Comune": "Vigolzone",
 		"ID": "033045",
 		"Zone": [
+			"Bassa collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana",
 			"Pianura e bassa collina emiliana occidentale"
@@ -56591,6 +56883,7 @@
 		"Zone": [
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56605,6 +56898,7 @@
 		"Comune": "Zerba",
 		"ID": "033047",
 		"Zone": [
+			"Alta collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Piemonte sud-orientale e Pavese",
 			"Bacini emiliani occidentali"
@@ -56622,6 +56916,7 @@
 		"ID": "033048",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Piemonte sud-orientale e Pavese",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -56641,6 +56936,7 @@
 		"ID": "033049",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Piacenza",
@@ -56655,6 +56951,7 @@
 		"Comune": "Albareto",
 		"ID": "034001",
 		"Zone": [
+			"Alta collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Liguria di levante, Lunigiana, Garfagnana e Versilia",
 			"Bacini emiliani occidentali"
@@ -56672,6 +56969,7 @@
 		"ID": "034002",
 		"Zone": [
 			"Pianura emiliana",
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -56687,6 +56985,7 @@
 		"Comune": "Bedonia",
 		"ID": "034003",
 		"Zone": [
+			"Alta collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -56702,6 +57001,7 @@
 		"Comune": "Berceto",
 		"ID": "034004",
 		"Zone": [
+			"Alta collina piacentino-parmense",
 			"Liguria di levante, Lunigiana, Garfagnana e Versilia",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
@@ -56719,6 +57019,7 @@
 		"ID": "034005",
 		"Zone": [
 			"Pianura emiliana",
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -56734,6 +57035,7 @@
 		"Comune": "Borgo Val di Taro",
 		"ID": "034006",
 		"Zone": [
+			"Alta collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Liguria di levante, Lunigiana, Garfagnana e Versilia",
 			"Bacini emiliani occidentali"
@@ -56751,6 +57053,7 @@
 		"ID": "034007",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Parma",
@@ -56765,6 +57068,7 @@
 		"Comune": "Calestano",
 		"ID": "034008",
 		"Zone": [
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -56782,6 +57086,7 @@
 		"Zone": [
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Parma",
@@ -56797,6 +57102,7 @@
 		"ID": "034010",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Lombardia sud-orientale",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -56812,6 +57118,7 @@
 		"Comune": "Compiano",
 		"ID": "034011",
 		"Zone": [
+			"Alta collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -56827,6 +57134,7 @@
 		"Comune": "Corniglio",
 		"ID": "034012",
 		"Zone": [
+			"Alta collina piacentino-parmense",
 			"Liguria di levante, Lunigiana, Garfagnana e Versilia",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
@@ -56844,6 +57152,7 @@
 		"ID": "034013",
 		"Zone": [
 			"Pianura emiliana",
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -56860,6 +57169,7 @@
 		"ID": "034014",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Parma",
@@ -56875,6 +57185,7 @@
 		"ID": "034015",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Parma",
@@ -56890,6 +57201,7 @@
 		"ID": "034016",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Parma",
@@ -56904,6 +57216,7 @@
 		"Comune": "Fornovo di Taro",
 		"ID": "034017",
 		"Zone": [
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana",
 			"Bacini emiliani occidentali"
@@ -56921,6 +57234,7 @@
 		"ID": "034018",
 		"Zone": [
 			"Pianura emiliana",
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -56937,6 +57251,7 @@
 		"ID": "034019",
 		"Zone": [
 			"Pianura emiliana",
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -56953,6 +57268,7 @@
 		"ID": "034020",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -56968,6 +57284,7 @@
 		"Comune": "Monchio delle Corti",
 		"ID": "034022",
 		"Zone": [
+			"Montagna emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Liguria di levante, Lunigiana, Garfagnana e Versilia",
 			"Bacini emiliani centrali"
@@ -56985,6 +57302,7 @@
 		"ID": "034023",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana centrale"
 		],
@@ -57000,6 +57318,7 @@
 		"Comune": "Neviano degli Arduini",
 		"ID": "034024",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -57016,6 +57335,7 @@
 		"ID": "034025",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Parma",
@@ -57030,6 +57350,7 @@
 		"Comune": "Palanzano",
 		"ID": "034026",
 		"Zone": [
+			"Montagna emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -57046,6 +57367,7 @@
 		"ID": "034027",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -57062,6 +57384,7 @@
 		"ID": "034028",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -57079,6 +57402,7 @@
 		"Zone": [
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Parma",
@@ -57093,6 +57417,7 @@
 		"Comune": "Sala Baganza",
 		"ID": "034031",
 		"Zone": [
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana",
 			"Bacini emiliani occidentali"
@@ -57110,6 +57435,7 @@
 		"ID": "034032",
 		"Zone": [
 			"Pianura emiliana",
+			"Bassa collina piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Parma",
@@ -57125,6 +57451,7 @@
 		"ID": "034033",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Parma",
@@ -57139,6 +57466,7 @@
 		"Comune": "Solignano",
 		"ID": "034035",
 		"Zone": [
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -57155,6 +57483,7 @@
 		"ID": "034036",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Parma",
@@ -57169,6 +57498,7 @@
 		"Comune": "Terenzo",
 		"ID": "034038",
 		"Zone": [
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -57184,6 +57514,7 @@
 		"Comune": "Tizzano Val Parma",
 		"ID": "034039",
 		"Zone": [
+			"Alta collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -57199,6 +57530,7 @@
 		"Comune": "Tornolo",
 		"ID": "034040",
 		"Zone": [
+			"Alta collina piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Liguria di levante, Lunigiana, Garfagnana e Versilia",
 			"Bacini emiliani occidentali"
@@ -57216,6 +57548,7 @@
 		"ID": "034041",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Parma",
@@ -57230,6 +57563,7 @@
 		"Comune": "Traversetolo",
 		"ID": "034042",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana",
 			"Bacini emiliani centrali"
@@ -57246,6 +57580,7 @@
 		"Comune": "Valmozzola",
 		"ID": "034044",
 		"Zone": [
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -57262,6 +57597,7 @@
 		"ID": "034045",
 		"Zone": [
 			"Pianura emiliana",
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -57277,6 +57613,7 @@
 		"Comune": "Varsi",
 		"ID": "034046",
 		"Zone": [
+			"Montagna piacentino-parmense",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani occidentali"
 		],
@@ -57293,6 +57630,7 @@
 		"ID": "034049",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Lombardia sud-orientale",
 			"Pianura e bassa collina emiliana occidentale"
 		],
@@ -57311,6 +57649,7 @@
 		"Zone": [
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
+			"Pianura piacentino-parmense",
 			"Pianura e bassa collina emiliana occidentale"
 		],
 		"Prov": "Parma",
@@ -57327,6 +57666,7 @@
 		"ID": "034051",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana di Po",
 			"Pianura reggiana di Po"
 		],
 		"Prov": "Parma",
@@ -57342,6 +57682,7 @@
 		"ID": "035001",
 		"Zone": [
 			"Pianura emiliana",
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -57358,6 +57699,7 @@
 		"ID": "035002",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57372,6 +57714,7 @@
 		"Comune": "Baiso",
 		"ID": "035003",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -57388,6 +57731,7 @@
 		"ID": "035004",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana centrale"
 		],
@@ -57405,6 +57749,7 @@
 		"Zone": [
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
+			"Pianura reggiana di Po",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57421,6 +57766,7 @@
 		"Zone": [
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
+			"Pianura reggiana di Po",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57436,6 +57782,7 @@
 		"ID": "035008",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57451,6 +57798,7 @@
 		"ID": "035009",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57466,6 +57814,7 @@
 		"ID": "035010",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57480,6 +57829,7 @@
 		"Comune": "Carpineti",
 		"ID": "035011",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -57497,6 +57847,7 @@
 		"Zone": [
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana",
+			"Collina emiliana centrale",
 			"Bacini emiliani centrali"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57511,6 +57862,7 @@
 		"Comune": "Casina",
 		"ID": "035013",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -57526,6 +57878,7 @@
 		"Comune": "Castellarano",
 		"ID": "035014",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -57542,6 +57895,7 @@
 		"ID": "035015",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57556,6 +57910,7 @@
 		"Comune": "Castelnovo ne' Monti",
 		"ID": "035016",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -57572,6 +57927,7 @@
 		"ID": "035017",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57586,6 +57942,7 @@
 		"Comune": "Canossa",
 		"ID": "035018",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -57602,6 +57959,7 @@
 		"ID": "035020",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57617,6 +57975,7 @@
 		"ID": "035021",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57632,6 +57991,7 @@
 		"ID": "035022",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57647,6 +58007,7 @@
 		"ID": "035023",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana di Po",
 			"Lombardia sud-orientale",
 			"Pianura emiliana centrale"
 		],
@@ -57664,6 +58025,7 @@
 		"Zone": [
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
+			"Pianura reggiana di Po",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57680,6 +58042,7 @@
 		"Zone": [
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
+			"Pianura reggiana di Po",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57695,6 +58058,7 @@
 		"ID": "035027",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana centrale"
 		],
@@ -57711,6 +58075,7 @@
 		"ID": "035028",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57726,6 +58091,7 @@
 		"ID": "035029",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana di Po",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57740,6 +58106,7 @@
 		"Comune": "Quattro Castella",
 		"ID": "035030",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana",
 			"Bacini emiliani centrali"
@@ -57757,6 +58124,7 @@
 		"ID": "035032",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Lombardia sud-orientale",
 			"Pianura emiliana centrale"
 		],
@@ -57773,6 +58141,7 @@
 		"ID": "035033",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana centrale"
 		],
@@ -57789,6 +58158,7 @@
 		"ID": "035034",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57805,6 +58175,7 @@
 		"Zone": [
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57821,6 +58192,7 @@
 		"Zone": [
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57836,6 +58208,7 @@
 		"ID": "035037",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57851,6 +58224,7 @@
 		"ID": "035038",
 		"Zone": [
 			"Pianura emiliana",
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -57867,6 +58241,7 @@
 		"ID": "035039",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura reggiana",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57883,6 +58258,7 @@
 		"Zone": [
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana",
+			"Collina emiliana centrale",
 			"Bacini emiliani centrali"
 		],
 		"Prov": "Reggio nell'Emilia",
@@ -57897,6 +58273,7 @@
 		"Comune": "Toano",
 		"ID": "035041",
 		"Zone": [
+			"Montagna emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -57912,6 +58289,7 @@
 		"Comune": "Vetto",
 		"ID": "035042",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -57927,6 +58305,7 @@
 		"Comune": "Vezzano sul Crostolo",
 		"ID": "035043",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -57942,6 +58321,7 @@
 		"Comune": "Viano",
 		"ID": "035044",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -57957,6 +58337,7 @@
 		"Comune": "Villa Minozzo",
 		"ID": "035045",
 		"Zone": [
+			"Montagna emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Liguria di levante, Lunigiana, Garfagnana e Versilia",
 			"Bacini emiliani centrali"
@@ -57974,6 +58355,7 @@
 		"Alias": ["Ramiseto", "Ligonchio", "Busana", "Collagna"],
 		"ID": "035046",
 		"Zone": [
+			"Montagna emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -57990,6 +58372,7 @@
 		"ID": "036001",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Modena",
@@ -58005,6 +58388,7 @@
 		"ID": "036002",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Modena",
@@ -58020,6 +58404,7 @@
 		"ID": "036003",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Modena",
@@ -58035,6 +58420,7 @@
 		"ID": "036004",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Modena",
@@ -58050,6 +58436,7 @@
 		"ID": "036005",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Modena",
@@ -58064,6 +58451,7 @@
 		"Comune": "Castelfranco Emilia",
 		"ID": "036006",
 		"Zone": [
+			"Pianura modenese",
 			"Appennino emiliano romagnolo",
 			"Pianura emiliana",
 			"Romagna e delta del Po",
@@ -58082,6 +58470,7 @@
 		"ID": "036007",
 		"Zone": [
 			"Pianura emiliana",
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58097,6 +58486,7 @@
 		"Comune": "Castelvetro di Modena",
 		"ID": "036008",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58113,6 +58503,7 @@
 		"ID": "036009",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Modena",
@@ -58128,6 +58519,7 @@
 		"ID": "036010",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Lombardia sud-orientale",
 			"Pianura emiliana centrale"
 		],
@@ -58144,6 +58536,7 @@
 		"ID": "036011",
 		"Zone": [
 			"Appennino emiliano romagnolo",
+			"Montagna emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Liguria di levante, Lunigiana, Garfagnana e Versilia",
 			"Bacini emiliani centrali"
@@ -58161,6 +58554,7 @@
 		"ID": "036012",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Romagna e delta del Po",
 			"Pianura emiliana centrale"
 		],
@@ -58176,6 +58570,7 @@
 		"Comune": "Fiorano Modenese",
 		"ID": "036013",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58191,6 +58586,7 @@
 		"Comune": "Fiumalbo",
 		"ID": "036014",
 		"Zone": [
+			"Montagna emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Liguria di levante, Lunigiana, Garfagnana e Versilia",
 			"Bacini emiliani centrali"
@@ -58207,6 +58603,7 @@
 		"Comune": "Formigine",
 		"ID": "036015",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana",
 			"Bacini emiliani centrali"
@@ -58223,6 +58620,7 @@
 		"Comune": "Frassinoro",
 		"ID": "036016",
 		"Zone": [
+			"Montagna emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Liguria di levante, Lunigiana, Garfagnana e Versilia",
 			"Bacini emiliani centrali"
@@ -58239,6 +58637,7 @@
 		"Comune": "Guiglia",
 		"ID": "036017",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani centrali"
@@ -58255,6 +58654,7 @@
 		"Comune": "Lama Mocogno",
 		"ID": "036018",
 		"Zone": [
+			"Montagna emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58270,6 +58670,7 @@
 		"Comune": "Maranello",
 		"ID": "036019",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58285,6 +58686,7 @@
 		"Comune": "Marano sul Panaro",
 		"ID": "036020",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58301,6 +58703,7 @@
 		"ID": "036021",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Modena",
@@ -58316,6 +58719,7 @@
 		"ID": "036022",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Romagna e delta del Po",
 			"Lombardia sud-orientale",
 			"Pianura emiliana centrale"
@@ -58334,6 +58738,7 @@
 		"Zone": [
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Modena",
@@ -58348,6 +58753,7 @@
 		"Comune": "Montecreto",
 		"ID": "036024",
 		"Zone": [
+			"Montagna emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58363,6 +58769,7 @@
 		"Comune": "Montefiorino",
 		"ID": "036025",
 		"Zone": [
+			"Montagna emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58379,6 +58786,7 @@
 		"ID": "036026",
 		"Zone": [
 			"Appennino emiliano romagnolo",
+			"Montagna emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58396,6 +58804,7 @@
 		"Zone": [
 			"Romagna e delta del Po",
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Modena",
@@ -58410,6 +58819,7 @@
 		"Comune": "Novi di Modena",
 		"ID": "036028",
 		"Zone": [
+			"Pianura modenese",
 			"Lombardia sud-orientale",
 			"Pianura emiliana",
 			"Pianura emiliana centrale"
@@ -58426,6 +58836,7 @@
 		"Comune": "Palagano",
 		"ID": "036029",
 		"Zone": [
+			"Montagna emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58441,6 +58852,7 @@
 		"Comune": "Pavullo nel Frignano",
 		"ID": "036030",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58456,6 +58868,7 @@
 		"Comune": "Pievepelago",
 		"ID": "036031",
 		"Zone": [
+			"Montagna emiliana centrale",
 			"Liguria di levante, Lunigiana, Garfagnana e Versilia",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
@@ -58472,6 +58885,7 @@
 		"Comune": "Polinago",
 		"ID": "036032",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58487,6 +58901,7 @@
 		"Comune": "Prignano sulla Secchia",
 		"ID": "036033",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58503,6 +58918,7 @@
 		"ID": "036034",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Modena",
@@ -58517,6 +58933,7 @@
 		"Comune": "Riolunato",
 		"ID": "036035",
 		"Zone": [
+			"Montagna emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58534,6 +58951,7 @@
 		"Zone": [
 			"Appennino emiliano romagnolo",
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Pianura emiliana centrale"
 		],
@@ -58550,6 +58968,7 @@
 		"ID": "036037",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Modena",
@@ -58565,6 +58984,7 @@
 		"ID": "036038",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Modena",
@@ -58580,6 +59000,7 @@
 		"ID": "036039",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Modena",
@@ -58594,6 +59015,7 @@
 		"Comune": "Sassuolo",
 		"ID": "036040",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58610,6 +59032,7 @@
 		"ID": "036041",
 		"Zone": [
 			"Pianura emiliana",
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani centrali"
@@ -58626,6 +59049,7 @@
 		"Comune": "Serramazzoni",
 		"ID": "036042",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58641,6 +59065,7 @@
 		"Comune": "Sestola",
 		"ID": "036043",
 		"Zone": [
+			"Montagna emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58657,6 +59082,7 @@
 		"ID": "036044",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Modena",
@@ -58672,6 +59098,7 @@
 		"ID": "036045",
 		"Zone": [
 			"Pianura emiliana",
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58687,6 +59114,7 @@
 		"Comune": "Vignola",
 		"ID": "036046",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani centrali"
 		],
@@ -58702,6 +59130,7 @@
 		"Comune": "Zocca",
 		"ID": "036047",
 		"Zone": [
+			"Collina emiliana centrale",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani centrali"
@@ -58721,6 +59150,7 @@
 			"Romagna e delta del Po",
 			"Appennino emiliano romagnolo",
 			"Pianura emiliana",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -58736,6 +59166,7 @@
 		"ID": "037002",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -58751,6 +59182,7 @@
 		"ID": "037003",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -58766,6 +59198,7 @@
 		"ID": "037005",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -58780,6 +59213,7 @@
 		"Comune": "Bologna",
 		"ID": "037006",
 		"Zone": [
+			"Collina bolognese",
 			"Romagna e delta del Po",
 			"Appennino emiliano romagnolo",
 			"Pianura emiliana orientale e costa Ferrarese"
@@ -58796,6 +59230,7 @@
 		"Comune": "Borgo Tossignano",
 		"ID": "037007",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
 		],
@@ -58812,6 +59247,7 @@
 		"ID": "037008",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Appennino emiliano romagnolo",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
@@ -58828,6 +59264,7 @@
 		"ID": "037009",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Appennino emiliano romagnolo",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
@@ -58844,6 +59281,7 @@
 		"ID": "037010",
 		"Zone": [
 			"Mugello e Casentino",
+			"Montagna bolognese",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
 		],
@@ -58859,6 +59297,7 @@
 		"Comune": "Casalecchio di Reno",
 		"ID": "037011",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
 		],
@@ -58874,6 +59313,7 @@
 		"Comune": "Casalfiumanese",
 		"ID": "037012",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
 		],
@@ -58890,6 +59330,7 @@
 		"ID": "037013",
 		"Zone": [
 			"Appennino emiliano romagnolo",
+			"Montagna bolognese",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani orientali"
 		],
@@ -58905,6 +59346,7 @@
 		"Comune": "Castel del Rio",
 		"ID": "037014",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Mugello e Casentino",
 			"Bacini emiliani orientali"
@@ -58922,6 +59364,7 @@
 		"ID": "037015",
 		"Zone": [
 			"Mugello e Casentino",
+			"Montagna bolognese",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
 		],
@@ -58939,6 +59382,7 @@
 		"Zone": [
 			"Appennino emiliano romagnolo",
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -58954,6 +59398,7 @@
 		"ID": "037017",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -58969,6 +59414,7 @@
 		"ID": "037019",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Appennino emiliano romagnolo",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
@@ -58984,6 +59430,7 @@
 		"Comune": "Castel San Pietro Terme",
 		"ID": "037020",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Romagna e delta del Po",
 			"Bacini emiliani orientali"
@@ -59002,6 +59449,7 @@
 		"Zone": [
 			"Appennino emiliano romagnolo",
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -59016,6 +59464,7 @@
 		"Comune": "Castiglione dei Pepoli",
 		"ID": "037022",
 		"Zone": [
+			"Montagna bolognese",
 			"Appennino emiliano romagnolo",
 			"Mugello e Casentino",
 			"Bacini emiliani orientali"
@@ -59033,6 +59482,7 @@
 		"ID": "037024",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura modenese",
 			"Romagna e delta del Po",
 			"Pianura emiliana centrale"
 		],
@@ -59048,6 +59498,7 @@
 		"Comune": "Dozza",
 		"ID": "037025",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Romagna e delta del Po",
 			"Bacini emiliani orientali"
@@ -59064,6 +59515,7 @@
 		"Comune": "Fontanelice",
 		"ID": "037026",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
 		],
@@ -59079,6 +59531,7 @@
 		"Comune": "Gaggio Montano",
 		"ID": "037027",
 		"Zone": [
+			"Montagna bolognese",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
@@ -59096,6 +59549,7 @@
 		"ID": "037028",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -59112,6 +59566,7 @@
 		"Zone": [
 			"Appennino emiliano romagnolo",
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -59126,6 +59581,7 @@
 		"Comune": "Grizzana Morandi",
 		"ID": "037031",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
 		],
@@ -59141,6 +59597,7 @@
 		"Comune": "Imola",
 		"ID": "037032",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Romagna e delta del Po",
 			"Pianura emiliana orientale e costa Ferrarese"
@@ -59157,6 +59614,7 @@
 		"Comune": "Lizzano in Belvedere",
 		"ID": "037033",
 		"Zone": [
+			"Montagna bolognese",
 			"Mugello e Casentino",
 			"Appennino emiliano romagnolo",
 			"Appennino emiliano ed entroterra ligure di ponente",
@@ -59175,6 +59633,7 @@
 		"Comune": "Loiano",
 		"ID": "037034",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
 		],
@@ -59191,6 +59650,7 @@
 		"ID": "037035",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -59205,6 +59665,7 @@
 		"Comune": "Marzabotto",
 		"ID": "037036",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
 		],
@@ -59221,6 +59682,7 @@
 		"ID": "037037",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Appennino emiliano romagnolo",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
@@ -59237,6 +59699,7 @@
 		"ID": "037038",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -59252,6 +59715,7 @@
 		"ID": "037039",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -59267,6 +59731,7 @@
 		"ID": "037040",
 		"Zone": [
 			"Mugello e Casentino",
+			"Montagna bolognese",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
 		],
@@ -59282,6 +59747,7 @@
 		"Comune": "Monterenzio",
 		"ID": "037041",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Mugello e Casentino",
 			"Bacini emiliani orientali"
@@ -59298,6 +59764,7 @@
 		"Comune": "Monte San Pietro",
 		"ID": "037042",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
 		],
@@ -59313,6 +59780,7 @@
 		"Comune": "Monzuno",
 		"ID": "037044",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
 		],
@@ -59329,6 +59797,7 @@
 		"ID": "037045",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Appennino emiliano romagnolo",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
@@ -59344,6 +59813,7 @@
 		"Comune": "Ozzano dell'Emilia",
 		"ID": "037046",
 		"Zone": [
+			"Collina bolognese",
 			"Romagna e delta del Po",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
@@ -59360,6 +59830,7 @@
 		"Comune": "Pianoro",
 		"ID": "037047",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
 		],
@@ -59376,6 +59847,7 @@
 		"ID": "037048",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -59391,6 +59863,7 @@
 		"ID": "037050",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -59406,6 +59879,7 @@
 		"ID": "037051",
 		"Zone": [
 			"Mugello e Casentino",
+			"Montagna bolognese",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
 		],
@@ -59422,6 +59896,7 @@
 		"ID": "037052",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -59438,6 +59913,7 @@
 		"Zone": [
 			"Romagna e delta del Po",
 			"Pianura emiliana",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -59452,6 +59928,7 @@
 		"Comune": "San Lazzaro di Savena",
 		"ID": "037054",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Romagna e delta del Po",
 			"Bacini emiliani orientali"
@@ -59469,6 +59946,7 @@
 		"ID": "037055",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -59485,6 +59963,7 @@
 		"Zone": [
 			"Romagna e delta del Po",
 			"Pianura emiliana",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Bologna",
@@ -59499,6 +59978,7 @@
 		"Comune": "Sasso Marconi",
 		"ID": "037057",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
 		],
@@ -59514,6 +59994,7 @@
 		"Comune": "Vergato",
 		"ID": "037059",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Appennino emiliano ed entroterra ligure di ponente",
 			"Bacini emiliani orientali"
@@ -59530,6 +60011,7 @@
 		"Comune": "Zola Predosa",
 		"ID": "037060",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Romagna e delta del Po",
 			"Bacini emiliani orientali"
@@ -59546,6 +60028,7 @@
 		"Comune": "Valsamoggia",
 		"ID": "037061",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Romagna e delta del Po",
 			"Appennino emiliano ed entroterra ligure di ponente",
@@ -59566,6 +60049,7 @@
 		"ID": "037062",
 		"Zone": [
 			"Mugello e Casentino",
+			"Montagna bolognese",
 			"Bacini emiliani orientali"
 		],
 		"Prov": "Bologna",
@@ -59582,6 +60066,7 @@
 		"Zone": [
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Appennino emiliano romagnolo",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
@@ -59600,6 +60085,7 @@
 			"Lombardia sud-orientale",
 			"Romagna e delta del Po",
 			"Pianura emiliana",
+			"Pianura ferrarese",
 			"Pianura emiliana centrale"
 		],
 		"Prov": "Ferrara",
@@ -59615,6 +60101,7 @@
 		"ID": "038004",
 		"Zone": [
 			"Pianura emiliana",
+			"Pianura bolognese",
 			"Romagna e delta del Po",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
@@ -59630,6 +60117,7 @@
 		"Comune": "Codigoro",
 		"ID": "038005",
 		"Zone": [
+			"Costa ferrarese",
 			"Romagna e delta del Po",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
@@ -59645,6 +60133,7 @@
 		"Comune": "Comacchio",
 		"ID": "038006",
 		"Zone": [
+			"Costa ferrarese",
 			"Romagna e delta del Po",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura emiliana orientale e costa Ferrarese"
@@ -59661,6 +60150,7 @@
 		"Comune": "Copparo",
 		"ID": "038007",
 		"Zone": [
+			"Pianura ferrarese",
 			"Romagna e delta del Po",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
@@ -59676,6 +60166,7 @@
 		"Comune": "Ferrara",
 		"ID": "038008",
 		"Zone": [
+			"Pianura ferrarese",
 			"Lombardia sud-orientale",
 			"Romagna e delta del Po",
 			"Pianura emiliana orientale e costa Ferrarese"
@@ -59693,6 +60184,7 @@
 		"ID": "038010",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura ferrarese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Ferrara",
@@ -59708,6 +60200,7 @@
 		"ID": "038011",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura ferrarese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Ferrara",
@@ -59723,6 +60216,7 @@
 		"ID": "038012",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura ferrarese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Ferrara",
@@ -59737,6 +60231,7 @@
 		"Comune": "Mesola",
 		"ID": "038014",
 		"Zone": [
+			"Costa ferrarese",
 			"Romagna e delta del Po",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
@@ -59753,6 +60248,7 @@
 		"ID": "038017",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura ferrarese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Ferrara",
@@ -59768,6 +60264,7 @@
 		"ID": "038018",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Ferrara",
@@ -59782,6 +60279,7 @@
 		"Comune": "Portomaggiore",
 		"ID": "038019",
 		"Zone": [
+			"Pianura ferrarese",
 			"Romagna e delta del Po",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
@@ -59798,6 +60296,7 @@
 		"ID": "038022",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura ferrarese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Ferrara",
@@ -59812,6 +60311,7 @@
 		"Comune": "Voghiera",
 		"ID": "038023",
 		"Zone": [
+			"Pianura ferrarese",
 			"Romagna e delta del Po",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
@@ -59827,6 +60327,7 @@
 		"Comune": "Goro",
 		"ID": "038025",
 		"Zone": [
+			"Costa ferrarese",
 			"Romagna e delta del Po",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
@@ -59843,6 +60344,7 @@
 		"ID": "038027",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura ferrarese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Ferrara",
@@ -59859,6 +60361,7 @@
 		"ID": "038028",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Ferrara",
@@ -59906,6 +60409,7 @@
 		"ID": "039001",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
@@ -59923,6 +60427,7 @@
 		"Zone": [
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Ravenna",
@@ -59939,6 +60444,7 @@
 		"Zone": [
 			"Romagna e delta del Po",
 			"Appennino emiliano romagnolo",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Ravenna",
@@ -59953,6 +60459,7 @@
 		"Comune": "Brisighella",
 		"ID": "039004",
 		"Zone": [
+			"Alta collina romagnola",
 			"Mugello e Casentino",
 			"Appennino emiliano romagnolo",
 			"Coste romagnola meridionale e marchigiana settentrionale",
@@ -59970,6 +60477,7 @@
 		"Comune": "Casola Valsenio",
 		"ID": "039005",
 		"Zone": [
+			"Collina bolognese",
 			"Mugello e Casentino",
 			"Appennino emiliano romagnolo",
 			"Bacini emiliani orientali"
@@ -59986,6 +60494,7 @@
 		"Comune": "Castel Bolognese",
 		"ID": "039006",
 		"Zone": [
+			"Collina bolognese",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Romagna e delta del Po",
 			"Appennino emiliano romagnolo",
@@ -60003,6 +60512,7 @@
 		"Comune": "Cervia",
 		"ID": "039007",
 		"Zone": [
+			"Costa romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -60019,6 +60529,7 @@
 		"ID": "039008",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Appennino emiliano romagnolo",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
@@ -60034,6 +60545,7 @@
 		"Comune": "Cotignola",
 		"ID": "039009",
 		"Zone": [
+			"Pianura bolognese",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Romagna e delta del Po",
 			"Pianura emiliana orientale e costa Ferrarese"
@@ -60052,6 +60564,7 @@
 		"Zone": [
 			"Appennino emiliano romagnolo",
 			"Romagna e delta del Po",
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -60068,6 +60581,7 @@
 		"ID": "039011",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Ravenna",
@@ -60083,6 +60597,7 @@
 		"ID": "039012",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Ravenna",
@@ -60099,6 +60614,7 @@
 		"Zone": [
 			"Appennino emiliano romagnolo",
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Ravenna",
@@ -60114,6 +60630,7 @@
 		"ID": "039014",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Costa romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -60129,6 +60646,7 @@
 		"Comune": "Riolo Terme",
 		"ID": "039015",
 		"Zone": [
+			"Collina bolognese",
 			"Appennino emiliano romagnolo",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Bacini emiliani orientali"
@@ -60145,6 +60663,7 @@
 		"Comune": "Russi",
 		"ID": "039016",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Romagna e delta del Po",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
@@ -60162,6 +60681,7 @@
 		"ID": "039017",
 		"Zone": [
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
 		"Prov": "Ravenna",
@@ -60178,6 +60698,7 @@
 		"Zone": [
 			"Appennino emiliano romagnolo",
 			"Romagna e delta del Po",
+			"Pianura bolognese",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura emiliana orientale e costa Ferrarese"
 		],
@@ -60193,6 +60714,7 @@
 		"Comune": "Bagno di Romagna",
 		"ID": "040001",
 		"Zone": [
+			"Montagna romagnola",
 			"Appennino emiliano romagnolo",
 			"Mugello e Casentino",
 			"Bacini romagnoli"
@@ -60209,6 +60731,7 @@
 		"Comune": "Bertinoro",
 		"ID": "040003",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Appennino emiliano romagnolo",
 			"Pianura e costa romagnola"
@@ -60225,6 +60748,7 @@
 		"Comune": "Borghi",
 		"ID": "040004",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -60240,6 +60764,7 @@
 		"Comune": "Castrocaro Terme e Terra del Sole",
 		"ID": "040005",
 		"Zone": [
+			"Alta collina romagnola",
 			"Appennino emiliano romagnolo",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Bacini romagnoli"
@@ -60256,6 +60781,7 @@
 		"Comune": "Cesena",
 		"ID": "040007",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Appennino emiliano romagnolo",
 			"Pianura e costa romagnola"
@@ -60272,6 +60798,7 @@
 		"Comune": "Cesenatico",
 		"ID": "040008",
 		"Zone": [
+			"Costa romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -60287,6 +60814,7 @@
 		"Comune": "Civitella di Romagna",
 		"ID": "040009",
 		"Zone": [
+			"Alta collina romagnola",
 			"Appennino emiliano romagnolo",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Bacini romagnoli"
@@ -60303,6 +60831,7 @@
 		"Comune": "Dovadola",
 		"ID": "040011",
 		"Zone": [
+			"Alta collina romagnola",
 			"Appennino emiliano romagnolo",
 			"Bacini romagnoli"
 		],
@@ -60318,6 +60847,7 @@
 		"Comune": "Forlì",
 		"ID": "040012",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Appennino emiliano romagnolo"
 		],
@@ -60333,6 +60863,7 @@
 		"Comune": "Forlimpopoli",
 		"ID": "040013",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -60348,6 +60879,7 @@
 		"Comune": "Galeata",
 		"ID": "040014",
 		"Zone": [
+			"Alta collina romagnola",
 			"Appennino emiliano romagnolo",
 			"Bacini romagnoli"
 		],
@@ -60363,6 +60895,7 @@
 		"Comune": "Gambettola",
 		"ID": "040015",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -60378,6 +60911,7 @@
 		"Comune": "Gatteo",
 		"ID": "040016",
 		"Zone": [
+			"Costa romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -60393,6 +60927,7 @@
 		"Comune": "Longiano",
 		"ID": "040018",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -60408,6 +60943,7 @@
 		"Comune": "Meldola",
 		"ID": "040019",
 		"Zone": [
+			"Alta collina romagnola",
 			"Appennino emiliano romagnolo",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Bacini romagnoli"
@@ -60424,6 +60960,7 @@
 		"Comune": "Mercato Saraceno",
 		"ID": "040020",
 		"Zone": [
+			"Alta collina romagnola",
 			"Appennino emiliano romagnolo",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Bacini romagnoli"
@@ -60440,6 +60977,7 @@
 		"Comune": "Modigliana",
 		"ID": "040022",
 		"Zone": [
+			"Alta collina romagnola",
 			"Appennino emiliano romagnolo",
 			"Mugello e Casentino",
 			"Bacini romagnoli"
@@ -60456,6 +60994,7 @@
 		"Comune": "Montiano",
 		"ID": "040028",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -60471,6 +61010,7 @@
 		"Comune": "Portico e San Benedetto",
 		"ID": "040031",
 		"Zone": [
+			"Montagna romagnola",
 			"Mugello e Casentino",
 			"Appennino emiliano romagnolo",
 			"Bacini romagnoli"
@@ -60487,6 +61027,7 @@
 		"Comune": "Predappio",
 		"ID": "040032",
 		"Zone": [
+			"Alta collina romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Appennino emiliano romagnolo",
 			"Bacini romagnoli"
@@ -60504,6 +61045,7 @@
 		"ID": "040033",
 		"Zone": [
 			"Mugello e Casentino",
+			"Montagna romagnola",
 			"Appennino emiliano romagnolo",
 			"Bacini romagnoli"
 		],
@@ -60519,6 +61061,7 @@
 		"Comune": "Rocca San Casciano",
 		"ID": "040036",
 		"Zone": [
+			"Alta collina romagnola",
 			"Appennino emiliano romagnolo",
 			"Bacini romagnoli"
 		],
@@ -60534,6 +61077,7 @@
 		"Comune": "Roncofreddo",
 		"ID": "040037",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Appennino emiliano romagnolo",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
@@ -60550,6 +61094,7 @@
 		"Comune": "San Mauro Pascoli",
 		"ID": "040041",
 		"Zone": [
+			"Costa romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -60565,6 +61110,7 @@
 		"Comune": "Santa Sofia",
 		"ID": "040043",
 		"Zone": [
+			"Montagna romagnola",
 			"Appennino emiliano romagnolo",
 			"Mugello e Casentino",
 			"Bacini romagnoli"
@@ -60581,6 +61127,7 @@
 		"Comune": "Sarsina",
 		"ID": "040044",
 		"Zone": [
+			"Alta collina romagnola",
 			"Appennino emiliano romagnolo",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Bacini romagnoli"
@@ -60597,6 +61144,7 @@
 		"Comune": "Savignano sul Rubicone",
 		"ID": "040045",
 		"Zone": [
+			"Costa romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -60612,6 +61160,7 @@
 		"Comune": "Sogliano al Rubicone",
 		"ID": "040046",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Appennino emiliano romagnolo",
 			"Pianura e costa romagnola"
@@ -60628,6 +61177,7 @@
 		"Comune": "Tredozio",
 		"ID": "040049",
 		"Zone": [
+			"Alta collina romagnola",
 			"Mugello e Casentino",
 			"Appennino emiliano romagnolo",
 			"Bacini romagnoli"
@@ -60644,6 +61194,7 @@
 		"Comune": "Verghereto",
 		"ID": "040050",
 		"Zone": [
+			"Montagna romagnola",
 			"Mugello e Casentino",
 			"Appennino emiliano romagnolo",
 			"Alto Tevere umbro",
@@ -61301,6 +61852,7 @@
 		"Comune": "Sassofeltrio",
 		"ID": "041060",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Appennino emiliano romagnolo",
 			"Marc-2"
@@ -66268,6 +66820,7 @@
 		"Comune": "Castel San Niccolò",
 		"ID": "051010",
 		"Zone": [
+			"Arno-Casentino",
 			"Mugello e Casentino",
 			"Vladarno aretino, Val di Chiana e Trasimeno"
 		],
@@ -66665,6 +67218,7 @@
 		"Comune": "Castelfranco Piandiscò",
 		"ID": "051040",
 		"Zone": [
+			"Arno-Valdarno Sup.",
 			"Mugello e Casentino",
 			"Vladarno aretino, Val di Chiana e Trasimeno"
 		],
@@ -67868,6 +68422,7 @@
 		"Comune": "Città della Pieve",
 		"ID": "054012",
 		"Zone": [
+			"Trasimeno - Nestore",
 			"Vladarno aretino, Val di Chiana e Trasimeno",
 			"Chianti, Terre di Siena, Val d'Orcia, Maremma toscana",
 			"Medio bacino del Tevere Umbro-Laziale"
@@ -67885,6 +68440,7 @@
 		"ID": "054013",
 		"Zone": [
 			"Alto Tevere umbro",
+			"Alto Tevere",
 			"Appennino marchigiano",
 			"Vladarno aretino, Val di Chiana e Trasimeno"
 		],
@@ -71228,6 +71784,7 @@
 		"Comune": "Albano Laziale",
 		"ID": "058003",
 		"Zone": [
+			"Bacini di Roma",
 			"Agro Pontino, Costa laziale meridionale, Lepini ed Aurunci",
 			"Comune di Roma",
 			"Roma"
@@ -71259,6 +71816,7 @@
 		"Comune": "Anguillara Sabazia",
 		"ID": "058005",
 		"Zone": [
+			"Bacini di Roma",
 			"Maremma laziale, monti Cimini, Volsini e Sabatini",
 			"Comune di Roma",
 			"Roma"
@@ -71320,6 +71878,7 @@
 		"Comune": "Ariccia",
 		"ID": "058009",
 		"Zone": [
+			"Bacini di Roma",
 			"Agro Pontino, Costa laziale meridionale, Lepini ed Aurunci",
 			"Comune di Roma",
 			"Roma"
@@ -71415,6 +71974,7 @@
 		"ID": "058015",
 		"Zone": [
 			"Comune di Roma",
+			"Bacini di Roma",
 			"Medio bacino del Tevere Umbro-Laziale",
 			"Roma"
 		],
@@ -71522,6 +72082,7 @@
 		"Comune": "Castel Gandolfo",
 		"ID": "058022",
 		"Zone": [
+			"Bacini di Roma",
 			"Comune di Roma",
 			"Roma"
 		],
@@ -71553,6 +72114,7 @@
 		"ID": "058024",
 		"Zone": [
 			"Comune di Roma",
+			"Bacini di Roma",
 			"Medio bacino del Tevere Umbro-Laziale",
 			"Roma"
 		],
@@ -71767,6 +72329,7 @@
 		"Comune": "Formello",
 		"ID": "058038",
 		"Zone": [
+			"Bacini di Roma",
 			"Comune di Roma",
 			"Roma"
 		],
@@ -71783,6 +72346,7 @@
 		"ID": "058039",
 		"Zone": [
 			"Aniene, Ciociaria",
+			"Bacini di Roma",
 			"Comune di Roma",
 			"Aniene"
 		],
@@ -71890,6 +72454,7 @@
 		"ID": "058046",
 		"Zone": [
 			"Aniene, Ciociaria",
+			"Bacini di Roma",
 			"Comune di Roma",
 			"Roma"
 		],
@@ -71906,6 +72471,7 @@
 		"ID": "058047",
 		"Zone": [
 			"Comune di Roma",
+			"Bacini di Roma",
 			"Medio bacino del Tevere Umbro-Laziale",
 			"Aniene, Ciociaria",
 			"Aniene"
@@ -72060,6 +72626,7 @@
 		"ID": "058057",
 		"Zone": [
 			"Comune di Roma",
+			"Bacini di Roma",
 			"Aniene, Ciociaria",
 			"Roma"
 		],
@@ -72092,6 +72659,7 @@
 		"ID": "058059",
 		"Zone": [
 			"Aniene, Ciociaria",
+			"Bacini di Roma",
 			"Medio bacino del Tevere Umbro-Laziale",
 			"Comune di Roma",
 			"Roma"
@@ -72109,6 +72677,7 @@
 		"ID": "058060",
 		"Zone": [
 			"Comune di Roma",
+			"Bacini di Roma",
 			"Aniene, Ciociaria",
 			"Aniene"
 		],
@@ -72172,6 +72741,7 @@
 		"ID": "058064",
 		"Zone": [
 			"Comune di Roma",
+			"Bacini di Roma",
 			"Aniene, Ciociaria",
 			"Aniene"
 		],
@@ -72189,6 +72759,7 @@
 		"Zone": [
 			"Medio bacino del Tevere Umbro-Laziale",
 			"Aniene, Ciociaria",
+			"Bacini di Roma",
 			"Comune di Roma",
 			"Roma"
 		],
@@ -72235,6 +72806,7 @@
 		"ID": "058068",
 		"Zone": [
 			"Comune di Roma",
+			"Bacini di Roma",
 			"Medio bacino del Tevere Umbro-Laziale",
 			"Roma"
 		],
@@ -72407,6 +72979,7 @@
 		"ID": "058079",
 		"Zone": [
 			"Comune di Roma",
+			"Bacini di Roma",
 			"Agro Pontino, Costa laziale meridionale, Lepini ed Aurunci",
 			"Roma"
 		],
@@ -72437,6 +73010,7 @@
 		"Comune": "Riano",
 		"ID": "058081",
 		"Zone": [
+			"Bacini di Roma",
 			"Comune di Roma",
 			"Roma"
 		],
@@ -72514,6 +73088,7 @@
 		"Comune": "Rocca di Papa",
 		"ID": "058086",
 		"Zone": [
+			"Bacini di Roma",
 			"Agro Pontino, Costa laziale meridionale, Lepini ed Aurunci",
 			"Aniene, Ciociaria",
 			"Comune di Roma",
@@ -72546,6 +73121,7 @@
 		"Comune": "Rocca Priora",
 		"ID": "058088",
 		"Zone": [
+			"Bacini di Roma",
 			"Agro Pontino, Costa laziale meridionale, Lepini ed Aurunci",
 			"Aniene, Ciociaria",
 			"Bacino del Liri"
@@ -72596,6 +73172,7 @@
 			"Medio bacino del Tevere Umbro-Laziale",
 			"Aniene, Ciociaria",
 			"Comune di Roma",
+			"Bacini di Roma",
 			"Agro Pontino, Costa laziale meridionale, Lepini ed Aurunci",
 			"Roma"
 		],
@@ -72626,6 +73203,7 @@
 		"Comune": "Sacrofano",
 		"ID": "058093",
 		"Zone": [
+			"Bacini di Roma",
 			"Medio bacino del Tevere Umbro-Laziale",
 			"Comune di Roma",
 			"Roma"
@@ -72705,6 +73283,7 @@
 		"ID": "058098",
 		"Zone": [
 			"Aniene, Ciociaria",
+			"Bacini di Roma",
 			"Medio bacino del Tevere Umbro-Laziale",
 			"Bacino Medio Tevere"
 		],
@@ -73003,6 +73582,7 @@
 		"ID": "058117",
 		"Zone": [
 			"Comune di Roma",
+			"Bacini di Roma",
 			"Agro Pontino, Costa laziale meridionale, Lepini ed Aurunci",
 			"Roma"
 		],
@@ -73018,6 +73598,7 @@
 		"Comune": "Ciampino",
 		"ID": "058118",
 		"Zone": [
+			"Bacini di Roma",
 			"Aniene, Ciociaria",
 			"Comune di Roma",
 			"Roma"
@@ -73050,6 +73631,7 @@
 		"ID": "058120",
 		"Zone": [
 			"Comune di Roma",
+			"Bacini di Roma",
 			"Maremma laziale, monti Cimini, Volsini e Sabatini",
 			"Roma"
 		],
@@ -73066,6 +73648,7 @@
 		"ID": "058122",
 		"Zone": [
 			"Aniene, Ciociaria",
+			"Bacini di Roma",
 			"Comune di Roma",
 			"Roma"
 		],
@@ -79130,6 +79713,7 @@
 		"Comune": "Santa Maria la Carità",
 		"ID": "063090",
 		"Zone": [
+			"Penisola sorrentino-amalfitana, Monti di Sarno e Monti Picentini",
 			"Pianura Campana, Napoli, Penisola Amalfitana e Monti Picentini"
 		],
 		"Prov": "Napoli",
@@ -85956,6 +86540,7 @@
 		"Comune": "Città Sant'Angelo",
 		"ID": "068012",
 		"Zone": [
+			"Bacino del Pescara",
 			"Coste marchigiana meridionale e abruzzese centro-settentrionale"
 		],
 		"Prov": "Pescara",
@@ -86270,6 +86855,7 @@
 	},
 	"068033": {
 		"Comune": "Popoli",
+		"Alias": ["Popoli Terme"],
 		"ID": "068033",
 		"Zone": [
 			"Appennino abruzzese centro-settentrionale",
@@ -92484,6 +93070,7 @@
 		"Comune": "Nardò",
 		"ID": "075052",
 		"Zone": [
+			"Salento",
 			"Penisola salentina"
 		],
 		"Prov": "Lecce",
@@ -92603,6 +93190,7 @@
 		"Comune": "Patù",
 		"ID": "075060",
 		"Zone": [
+			"Salento",
 			"Penisola salentina"
 		],
 		"Prov": "Lecce",
@@ -92797,6 +93385,7 @@
 		"Comune": "Seclì",
 		"ID": "075074",
 		"Zone": [
+			"Salento",
 			"Penisola salentina"
 		],
 		"Prov": "Lecce",
@@ -96266,6 +96855,7 @@
 		"Comune": "Maierà",
 		"ID": "078071",
 		"Zone": [
+			"Versante Tirrenico Settentrionale",
 			"Versante tirrenico calabrese settentrionale"
 		],
 		"Prov": "Cosenza",
@@ -98290,8 +98880,10 @@
 	},
 	"079095": {
 		"Comune": "Petronà",
+		"Alias": ["Petroná"],
 		"ID": "079095",
 		"Zone": [
+			"Versante Jionico Centro-meridionale",
 			"Versante jonico calabrese centrale settore meridionale"
 		],
 		"Prov": "Catanzaro",
@@ -98648,6 +99240,7 @@
 		"Comune": "Stalettì",
 		"ID": "079143",
 		"Zone": [
+			"Versante Jionico Centro-meridionale",
 			"Versante jonico calabrese centrale settore meridionale"
 		],
 		"Prov": "Catanzaro",
@@ -99140,6 +99733,7 @@
 		"Comune": "Ciminà",
 		"ID": "080026",
 		"Zone": [
+			"Versante Jonico Meridionale",
 			"Versante Tirrenico calabrese meridionale",
 			"Versante jonico calabrese meridionale"
 		],
@@ -99479,6 +100073,7 @@
 		"Comune": "Melicuccà",
 		"ID": "080048",
 		"Zone": [
+			"Versante Tirrenico Meridionale",
 			"Versante Tirrenico calabrese meridionale"
 		],
 		"Prov": "Reggio Calabria",
@@ -99663,6 +100258,7 @@
 		"Comune": "Platì",
 		"ID": "080060",
 		"Zone": [
+			"Versante Jonico Meridionale",
 			"Versante jonico calabrese meridionale",
 			"Versante Tirrenico calabrese meridionale"
 		],
@@ -99895,6 +100491,7 @@
 		"Comune": "San Pietro di Caridà",
 		"ID": "080075",
 		"Zone": [
+			"Versante Tirrenico Meridionale",
 			"Versante jonico calabrese meridionale",
 			"Versante tirrenico calabrese centrale",
 			"Versante Tirrenico calabrese meridionale"
@@ -101007,6 +101604,7 @@
 		"Comune": "Cefalà Diana",
 		"ID": "082026",
 		"Zone": [
+			"Centro-Settentrionale, versante tirrenico",
 			"Sicilia Centro-settentrionale"
 		],
 		"Prov": "Palermo",
@@ -101021,6 +101619,7 @@
 		"Comune": "Cefalù",
 		"ID": "082027",
 		"Zone": [
+			"Centro-Settentrionale, versante tirrenico",
 			"Sicilia Centro-settentrionale"
 		],
 		"Prov": "Palermo",
@@ -101895,6 +102494,7 @@
 		"Comune": "Alì",
 		"ID": "083002",
 		"Zone": [
+			"Nord-Orientale, versante ionico",
 			"Versante jonico nord-orientale Siciliano"
 		],
 		"Prov": "Messina",
@@ -101909,6 +102509,7 @@
 		"Comune": "Alì Terme",
 		"ID": "083003",
 		"Zone": [
+			"Nord-Orientale, versante ionico",
 			"Versante jonico nord-orientale Siciliano"
 		],
 		"Prov": "Messina",
@@ -101954,6 +102555,7 @@
 		"Comune": "Basicò",
 		"ID": "083006",
 		"Zone": [
+			"Nord-Orientale, versante tirrenico e isole Eolie",
 			"Versante tirrenico nord-orientale Siciliano"
 		],
 		"Prov": "Messina",
@@ -102124,6 +102726,7 @@
 		"Comune": "Cesarò",
 		"ID": "083017",
 		"Zone": [
+			"Centro-Settentrionale, versante tirrenico",
 			"Sicilia Centro-settentrionale",
 			"Bacino del Simeto"
 		],
@@ -102139,6 +102742,7 @@
 		"Comune": "Condrò",
 		"ID": "083018",
 		"Zone": [
+			"Nord-Orientale, versante tirrenico e isole Eolie",
 			"Versante tirrenico nord-orientale Siciliano"
 		],
 		"Prov": "Messina",
@@ -102231,6 +102835,7 @@
 		"Comune": "Forza d'Agrò",
 		"ID": "083024",
 		"Zone": [
+			"Nord-Orientale, versante ionico",
 			"Versante jonico nord-orientale Siciliano"
 		],
 		"Prov": "Messina",
@@ -102261,6 +102866,7 @@
 		"Comune": "Frazzanò",
 		"ID": "083026",
 		"Zone": [
+			"Nord-Orientale, versante tirrenico e isole Eolie",
 			"Versante tirrenico nord-orientale Siciliano",
 			"Sicilia Centro-settentrionale"
 		],
@@ -102400,6 +103006,7 @@
 		"Comune": "Gualtieri Sicaminò",
 		"ID": "083035",
 		"Zone": [
+			"Nord-Orientale, versante tirrenico e isole Eolie",
 			"Versante tirrenico nord-orientale Siciliano"
 		],
 		"Prov": "Messina",
@@ -102567,6 +103174,7 @@
 		"Comune": "Mazzarrà Sant'Andrea",
 		"ID": "083046",
 		"Zone": [
+			"Nord-Orientale, versante tirrenico e isole Eolie",
 			"Versante tirrenico nord-orientale Siciliano"
 		],
 		"Prov": "Messina",
@@ -102581,6 +103189,7 @@
 		"Comune": "Merì",
 		"ID": "083047",
 		"Zone": [
+			"Nord-Orientale, versante tirrenico e isole Eolie",
 			"Versante tirrenico nord-orientale Siciliano"
 		],
 		"Prov": "Messina",
@@ -103006,6 +103615,7 @@
 		"Comune": "Rodì Milici",
 		"ID": "083075",
 		"Zone": [
+			"Nord-Orientale, versante tirrenico e isole Eolie",
 			"Versante tirrenico nord-orientale Siciliano",
 			"Versante jonico nord-orientale Siciliano"
 		],
@@ -103682,6 +104292,7 @@
 		"Comune": "Canicattì",
 		"ID": "084011",
 		"Zone": [
+			"Centro-Meridionale e isole Pelagie",
 			"Sicilia centro-meridionale"
 		],
 		"Prov": "Agrigento",
@@ -105315,6 +105926,7 @@
 		"Comune": "Paternò",
 		"ID": "087033",
 		"Zone": [
+			"Bacino del Fiume Simeto",
 			"Bacino del Simeto"
 		],
 		"Prov": "Catania",
@@ -106457,6 +107069,7 @@
 		"Comune": "Buddusò",
 		"ID": "090017",
 		"Zone": [
+			"Logudoro",
 			"Sardegna centro-occidentale",
 			"Logudoro, La Nurra",
 			"Gallura"
@@ -106869,6 +107482,7 @@
 		"Comune": "Nughedu San Nicolò",
 		"ID": "090044",
 		"Zone": [
+			"Logudoro",
 			"Logudoro, La Nurra"
 		],
 		"Prov": "Sassari",
@@ -107703,6 +108317,7 @@
 		"Comune": "Belvì",
 		"ID": "091007",
 		"Zone": [
+			"Bacino del Tirso",
 			"Sardegna centro-meridionale Orientale",
 			"Sardegna centro-occidentale"
 		],
@@ -107907,6 +108522,7 @@
 		"Comune": "Galtellì",
 		"ID": "091027",
 		"Zone": [
+			"Bacini Flumendosa - Flumineddu",
 			"Sardegna centro-meridionale Orientale",
 			"Gallura"
 		],
@@ -108632,6 +109248,7 @@
 		"Comune": "Tortolì",
 		"ID": "091095",
 		"Zone": [
+			"Bacini Flumendosa - Flumineddu",
 			"Sardegna centro-meridionale Orientale"
 		],
 		"Prov": "Nuoro",
@@ -108752,6 +109369,7 @@
 		"Comune": "Assemini",
 		"ID": "092003",
 		"Zone": [
+			"Campidano",
 			"Iglesiente, Sulcis, Campidano",
 			"Iglesiente"
 		],
@@ -110074,6 +110692,7 @@
 		"Comune": "Forlì del Sannio",
 		"ID": "094020",
 		"Zone": [
+			"Alto Volturno - Medio Sangro",
 			"Medio-alto Volturno, Venafro ed Alto Liri",
 			"Appennino abruzzese meridionale, Sannio, Frentani e Matese"
 		],
@@ -110780,6 +111399,7 @@
 		"Comune": "Bidonì",
 		"ID": "095014",
 		"Zone": [
+			"Bacino del Tirso",
 			"Sardegna centro-occidentale"
 		],
 		"Prov": "Oristano",
@@ -110915,6 +111535,7 @@
 		"Comune": "Gonnosnò",
 		"ID": "095023",
 		"Zone": [
+			"Bacini Montevecchio - Pischilappiu",
 			"Sardegna centro-occidentale"
 		],
 		"Prov": "Oristano",
@@ -111260,6 +111881,7 @@
 		"Comune": "San Nicolò d'Arcidano",
 		"ID": "095046",
 		"Zone": [
+			"Bacini Montevecchio - Pischilappiu",
 			"Sardegna centro-occidentale"
 		],
 		"Prov": "Oristano",
@@ -111592,6 +112214,7 @@
 		"Comune": "Ulà Tirso",
 		"ID": "095068",
 		"Zone": [
+			"Bacino del Tirso",
 			"Sardegna centro-occidentale"
 		],
 		"Prov": "Oristano",
@@ -111741,6 +112364,7 @@
 		"Comune": "Soddì",
 		"ID": "095078",
 		"Zone": [
+			"Bacino del Tirso",
 			"Sardegna centro-occidentale"
 		],
 		"Prov": "Oristano",
@@ -112108,6 +112732,7 @@
 		"Comune": "Cavaglià",
 		"ID": "096016",
 		"Zone": [
+			"Pianura settentrionale",
 			"Novarese, vercellese, biellese"
 		],
 		"Prov": "Biella",
@@ -113094,6 +113719,7 @@
 		"Comune": "Barzanò",
 		"ID": "097006",
 		"Zone": [
+			"Nodo Idraulico di Milano",
 			"Piemonte settentrionale e Lombardia nord-occidentale",
 			"Lombardia centrale settore occidentale"
 		],
@@ -114101,6 +114727,7 @@
 		"Comune": "Santa Maria Hoè",
 		"ID": "097074",
 		"Zone": [
+			"Lario e Prealpi occidentali",
 			"Piemonte settentrionale e Lombardia nord-occidentale"
 		],
 		"Prov": "Lecco",
@@ -114252,6 +114879,7 @@
 		"Comune": "Viganò",
 		"ID": "097090",
 		"Zone": [
+			"Lario e Prealpi occidentali",
 			"Piemonte settentrionale e Lombardia nord-occidentale",
 			"Lombardia centrale settore occidentale"
 		],
@@ -114359,6 +114987,7 @@
 		"Comune": "Borghetto Lodigiano",
 		"ID": "098004",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114374,6 +115003,7 @@
 		"Comune": "Borgo San Giovanni",
 		"ID": "098005",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114389,6 +115019,7 @@
 		"Comune": "Brembio",
 		"ID": "098006",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114404,6 +115035,7 @@
 		"Comune": "Casaletto Lodigiano",
 		"ID": "098008",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114419,6 +115051,7 @@
 		"Comune": "Casalmaiocco",
 		"ID": "098009",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114434,6 +115067,7 @@
 		"Comune": "Casalpusterlengo",
 		"ID": "098010",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114451,6 +115085,7 @@
 		"Zone": [
 			"Lombardia centrale settore occidentale",
 			"Pianura emiliana",
+			"Bassa pianura centro-occidentale",
 			"Bassa pianura occidentale"
 		],
 		"Prov": "Lodi",
@@ -114465,6 +115100,7 @@
 		"Comune": "Caselle Lurani",
 		"ID": "098012",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114482,6 +115118,7 @@
 		"Zone": [
 			"Lombardia centrale settore occidentale",
 			"Pianura emiliana",
+			"Bassa pianura centro-occidentale",
 			"Bassa pianura occidentale"
 		],
 		"Prov": "Lodi",
@@ -114511,6 +115148,7 @@
 		"Comune": "Castiraga Vidardo",
 		"ID": "098015",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114556,6 +115194,7 @@
 		"Comune": "Codogno",
 		"ID": "098019",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114601,6 +115240,7 @@
 		"Comune": "Corno Giovine",
 		"ID": "098022",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Pianura emiliana",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
@@ -114617,6 +115257,7 @@
 		"Comune": "Cornovecchio",
 		"ID": "098023",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114662,6 +115303,7 @@
 		"Comune": "Fombio",
 		"ID": "098026",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114692,6 +115334,7 @@
 		"Comune": "Graffignana",
 		"ID": "098028",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114709,6 +115352,7 @@
 		"Zone": [
 			"Pianura emiliana",
 			"Lombardia centrale settore occidentale",
+			"Bassa pianura centro-occidentale",
 			"Bassa pianura occidentale"
 		],
 		"Prov": "Lodi",
@@ -114723,6 +115367,7 @@
 		"Comune": "Livraga",
 		"ID": "098030",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114753,6 +115398,7 @@
 		"Comune": "Lodi Vecchio",
 		"ID": "098032",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114768,6 +115414,7 @@
 		"Comune": "Maccastorna",
 		"ID": "098033",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114798,6 +115445,7 @@
 		"Comune": "Maleo",
 		"ID": "098035",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114813,6 +115461,7 @@
 		"Comune": "Marudo",
 		"ID": "098036",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114828,6 +115477,7 @@
 		"Comune": "Massalengo",
 		"ID": "098037",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Pianura centrale"
 		],
@@ -114843,6 +115493,7 @@
 		"Comune": "Meleti",
 		"ID": "098038",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114888,6 +115539,7 @@
 		"Comune": "Mulazzano",
 		"ID": "098041",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114905,6 +115557,7 @@
 		"Zone": [
 			"Lombardia centrale settore occidentale",
 			"Pianura emiliana",
+			"Bassa pianura centro-occidentale",
 			"Bassa pianura occidentale"
 		],
 		"Prov": "Lodi",
@@ -114919,6 +115572,7 @@
 		"Comune": "Ospedaletto Lodigiano",
 		"ID": "098043",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114949,6 +115603,7 @@
 		"Comune": "Pieve Fissiraga",
 		"ID": "098045",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114964,6 +115619,7 @@
 		"Comune": "Salerano sul Lambro",
 		"ID": "098046",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -114979,6 +115635,7 @@
 		"Comune": "San Fiorano",
 		"ID": "098047",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -115011,6 +115668,7 @@
 		"Zone": [
 			"Lombardia centrale settore occidentale",
 			"Pianura emiliana",
+			"Bassa pianura centro-occidentale",
 			"Bassa pianura occidentale"
 		],
 		"Prov": "Lodi",
@@ -115025,6 +115683,7 @@
 		"Comune": "Sant'Angelo Lodigiano",
 		"ID": "098050",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -115042,6 +115701,7 @@
 		"Zone": [
 			"Pianura emiliana",
 			"Lombardia centrale settore occidentale",
+			"Bassa pianura centro-occidentale",
 			"Bassa pianura occidentale"
 		],
 		"Prov": "Lodi",
@@ -115073,6 +115733,7 @@
 		"Zone": [
 			"Lombardia centrale settore occidentale",
 			"Pianura emiliana",
+			"Bassa pianura centro-occidentale",
 			"Bassa pianura occidentale"
 		],
 		"Prov": "Lodi",
@@ -115087,6 +115748,7 @@
 		"Comune": "Somaglia",
 		"ID": "098054",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -115102,6 +115764,7 @@
 		"Comune": "Sordio",
 		"ID": "098055",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -115117,6 +115780,7 @@
 		"Comune": "Tavazzano con Villavesco",
 		"ID": "098056",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -115162,6 +115826,7 @@
 		"Comune": "Valera Fratta",
 		"ID": "098059",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -115177,6 +115842,7 @@
 		"Comune": "Villanova del Sillaro",
 		"ID": "098060",
 		"Zone": [
+			"Bassa pianura centro-occidentale",
 			"Lombardia centrale settore occidentale",
 			"Bassa pianura occidentale"
 		],
@@ -115223,6 +115889,7 @@
 		"Comune": "Bellaria-Igea Marina",
 		"ID": "099001",
 		"Zone": [
+			"Costa romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -115238,6 +115905,7 @@
 		"Comune": "Cattolica",
 		"ID": "099002",
 		"Zone": [
+			"Costa romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -115253,6 +115921,7 @@
 		"Comune": "Coriano",
 		"ID": "099003",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -115268,6 +115937,7 @@
 		"Comune": "Gemmano",
 		"ID": "099004",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -115283,6 +115953,7 @@
 		"Comune": "Misano Adriatico",
 		"ID": "099005",
 		"Zone": [
+			"Costa romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -115298,6 +115969,7 @@
 		"Comune": "Mondaino",
 		"ID": "099006",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -115313,6 +115985,7 @@
 		"Comune": "Montefiore Conca",
 		"ID": "099008",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -115328,6 +116001,7 @@
 		"Comune": "Montegridolfo",
 		"ID": "099009",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -115343,6 +116017,7 @@
 		"Comune": "Morciano di Romagna",
 		"ID": "099011",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -115358,6 +116033,7 @@
 		"Comune": "Riccione",
 		"ID": "099013",
 		"Zone": [
+			"Costa romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -115373,6 +116049,7 @@
 		"Comune": "Rimini",
 		"ID": "099014",
 		"Zone": [
+			"Costa romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -115388,6 +116065,8 @@
 		"Comune": "Saludecio",
 		"ID": "099015",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
+			"Costa romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -115403,6 +116082,8 @@
 		"Comune": "San Clemente",
 		"ID": "099016",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
+			"Costa romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -115418,6 +116099,8 @@
 		"Comune": "San Giovanni in Marignano",
 		"ID": "099017",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
+			"Costa romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -115433,6 +116116,8 @@
 		"Comune": "Santarcangelo di Romagna",
 		"ID": "099018",
 		"Zone": [
+			"Costa romagnola",
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
 		],
@@ -115448,6 +116133,7 @@
 		"Comune": "Verucchio",
 		"ID": "099020",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Appennino emiliano romagnolo",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Pianura e costa romagnola"
@@ -115464,6 +116150,7 @@
 		"Comune": "Casteldelci",
 		"ID": "099021",
 		"Zone": [
+			"Montagna romagnola",
 			"Alto Tevere umbro",
 			"Appennino emiliano romagnolo",
 			"Bacini romagnoli"
@@ -115480,6 +116167,7 @@
 		"Comune": "Maiolo",
 		"ID": "099022",
 		"Zone": [
+			"Alta collina romagnola",
 			"Appennino emiliano romagnolo",
 			"Appennino marchigiano",
 			"Bacini romagnoli"
@@ -115496,6 +116184,7 @@
 		"Comune": "Novafeltria",
 		"ID": "099023",
 		"Zone": [
+			"Alta collina romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Appennino emiliano romagnolo",
 			"Bacini romagnoli"
@@ -115512,6 +116201,7 @@
 		"Comune": "Pennabilli",
 		"ID": "099024",
 		"Zone": [
+			"Montagna romagnola",
 			"Alto Tevere umbro",
 			"Appennino emiliano romagnolo",
 			"Appennino marchigiano",
@@ -115529,6 +116219,7 @@
 		"Comune": "San Leo",
 		"ID": "099025",
 		"Zone": [
+			"Alta collina romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Appennino marchigiano",
 			"Appennino emiliano romagnolo",
@@ -115546,6 +116237,7 @@
 		"Comune": "Sant'Agata Feltria",
 		"ID": "099026",
 		"Zone": [
+			"Alta collina romagnola",
 			"Appennino emiliano romagnolo",
 			"Bacini romagnoli"
 		],
@@ -115561,6 +116253,7 @@
 		"Comune": "Talamello",
 		"ID": "099027",
 		"Zone": [
+			"Alta collina romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Appennino emiliano romagnolo",
 			"Bacini romagnoli"
@@ -115577,6 +116270,7 @@
 		"Comune": "Poggio Torriana",
 		"ID": "099028",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Appennino emiliano romagnolo",
 			"Pianura e costa romagnola"
@@ -115591,9 +116285,10 @@
 	},
 	"099029": {
 		"Comune": "Montescudo-Monte Colombo",
-		"Alias": ["Montescudo", "Monte Colombo"],
+		"Alias": ["Montescudo - Monte Colombo", "Montescudo", "Monte Colombo"],
 		"ID": "099029",
 		"Zone": [
+			"Bassa collina e pianura romagnola",
 			"Coste romagnola meridionale e marchigiana settentrionale",
 			"Bassa collina e pianura romagnola"
 		],
@@ -115609,6 +116304,7 @@
 		"Comune": "Montecopiolo",
 		"ID": "099030",
 		"Zone": [
+			"Montagna romagnola",
 			"Appennino emiliano romagnolo",
 			"Appennino marchigiano",
 			"Coste romagnola meridionale e marchigiana settentrionale",
@@ -115825,6 +116521,7 @@
 		"Comune": "Cirò",
 		"ID": "101007",
 		"Zone": [
+			"Versante Jonico Centro-settentrionale",
 			"Versante jonico calabrese centrale settore settentrionale"
 		],
 		"Prov": "Crotone",
@@ -115839,6 +116536,7 @@
 		"Comune": "Cirò Marina",
 		"ID": "101008",
 		"Zone": [
+			"Versante Jonico Centro-settentrionale",
 			"Versante jonico calabrese centrale settore settentrionale"
 		],
 		"Prov": "Crotone",
@@ -116243,6 +116941,7 @@
 		"Comune": "Dasà",
 		"ID": "102007",
 		"Zone": [
+			"Versante Tirrenico Centro-meridionale",
 			"Versante tirrenico calabrese centrale"
 		],
 		"Prov": "Vibo Valentia",
@@ -118542,6 +119241,7 @@
 		"Comune": "Muggiò",
 		"ID": "108034",
 		"Zone": [
+			"Nodo Idraulico di Milano",
 			"Lombardia centrale settore occidentale"
 		],
 		"Prov": "Monza e della Brianza",
@@ -120601,6 +121301,7 @@
 		"Comune": "San Nicolò Gerrei",
 		"ID": "111064",
 		"Zone": [
+			"Bacini Flumendosa - Flumineddu",
 			"Iglesiente, Sulcis, Campidano",
 			"Sardegna centro-meridionale Orientale"
 		],
@@ -120770,6 +121471,7 @@
 		"Comune": "Senorbì",
 		"ID": "111075",
 		"Zone": [
+			"Campidano",
 			"Sardegna centro-meridionale Orientale",
 			"Iglesiente, Sulcis, Campidano"
 		],

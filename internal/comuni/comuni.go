@@ -1,23 +1,23 @@
 package comuni
 
 import (
+	"crypto/sha256"
 	_ "embed"
-	"fmt"
-	"strconv"
+	"encoding/hex"
+	"encoding/json"
 	"strings"
 )
 
-//go:embed assets/comuni.csv
+//go:embed assets/comuni.json
 var comuniData []byte
-
-//go:embed assets/popolazione_2021.csv
-var popolazioneData []byte
 
 // Comune descrive un comune italiano attraverso i dati ufficiali
 // del censimento 2021
-type Comune struct {
-	ID    string
-	Name  string
+type Comune struct { //nolint //fieldalignment: struct with 136 pointer bytes could be 128
+	Name  string   `json:"Comune"`
+	Alias []string `json:"Alias,omitempty"`
+	ID    string   `json:"ID"`
+	Zone  []string `json:"Zone"`
 	Prov  string
 	Sigla string
 	Reg   string
@@ -27,90 +27,81 @@ type Comune struct {
 	Pop   int
 }
 
-// SetWrongUTF8 estra un valore, considerato come chiave, che possa essere usato per
-// aggregare i dati dei comuni italiani con i dati della protezione civile. Tale
-// valore per ora può essere solo il nome del comune, facendo attenzione che i dati
-// provenienti da DPC hanno parecchie criticità, primo su tutti la codifica non UTF8
-func SetWrongUTF8(s, replacewith string) string {
-	// l'ugualianza tra i nomi dei comuni è problematica; i dati arrivano da due fonti diverse,
-	// alcuni nomi sono completamente differenti (~200) e la fonte DPC ha problemi coi caratteri UTF8.
-	// Uso quindi una stringa ricavata dal vero nome del comune per fare la ricerca nella map proveniente
-	// da DPC
-	for _, char := range []string{
-		"à", "á", "ä", "â",
-		"è", "é", "ë", "ê",
-		"ì", "í", "ï", "î",
-		"ò", "ó", "ö", "ô",
-		"ù", "ú", "ü", "û",
-	} {
-		s = strings.ReplaceAll(s, char, replacewith)
+// Keys genera una lista di chiavi che possono ricondurre univocamente allo stesso comune
+func (c *Comune) Keys() []string {
+	var yield []string
+	for _, z := range c.Zone {
+		yield = append(yield, Key(c.Name, z))
 	}
-	return s
+	for _, a := range c.Alias {
+		for _, z := range c.Zone {
+			yield = append(yield, Key(a, z))
+		}
+	}
+	return yield
+}
+
+// Get ricava le informazioni sul comune
+func Get(id string) (Comune, bool) {
+	var m = make(map[string]Comune)
+	err := json.Unmarshal(comuniData, &m)
+	if err != nil {
+		return Comune{}, false
+	}
+	if val, ok := m[id]; ok {
+		return val, ok
+	}
+	return Comune{}, false
 }
 
 // GetAll restituisce la lista di tutti i comuni italiani e i loro attributi
 func GetAll() []Comune {
-	comuni := comuni(comuniData)
-	pop := popolazione(popolazioneData)
-	for i, c := range comuni {
-		c.Pop = pop[c.ID]
-		comuni[i] = c
+	var m = make(map[string]Comune)
+	err := json.Unmarshal(comuniData, &m)
+	if err != nil {
+		return nil
+	}
+	var comuni = make([]Comune, 0, len(m))
+	for _, c := range m {
+		comuni = append(comuni, c)
 	}
 	return comuni
 }
 
-// comuni ricava la lista dei comuni italiani da un flusso di dati
-func comuni(b []byte) (out []Comune) {
-	list := strings.Split(string(b), "\n")
-	for i := 1; i < len(list); i++ {
-		attrs := strings.Split(list[i], ",")
-		if len(attrs) < 12 {
-			continue
+// FindEvent trova eventi atmosferici correlati al comune
+func FindEvent[T any](c Comune, m map[string]T) (T, bool) {
+	keys := c.Keys()
+	for _, v := range keys {
+		if val, ok := m[v]; ok {
+			return val, ok
 		}
-		for i, v := range attrs {
-			attrs[i] = strings.TrimSpace(v)
-		}
-		lt, err := strconv.ParseFloat(attrs[2], 64)
-		if err != nil {
-			lt = 0
-		}
-		lg, err := strconv.ParseFloat(attrs[3], 64)
-		if err != nil {
-			lt = 0
-		}
-		c := Comune{
-			ID:    attrs[1],
-			Name:  attrs[0],
-			Prov:  attrs[4],
-			Sigla: attrs[5],
-			Reg:   attrs[6],
-			Info:  attrs[12],
-			Lat:   lt,
-			Lon:   lg,
-		}
-		out = append(out, c)
 	}
-	return
+	return *new(T), false
 }
 
-// popolazione ricava la popolazione dei comuni italiani da un flusso di dati
-func popolazione(b []byte) map[string]int {
-	list := strings.Split(string(b), "\n")
-	var out = map[string]int{}
-	for i := 1; i < len(list); i++ {
-		attrs := strings.Split(list[i], ",")
-		if len(attrs) < 2 {
-			continue
+func replaceChars(s string) string {
+	var sb strings.Builder
+	for _, c := range s {
+		if 122 >= int(c) && int(c) >= 65 {
+			sb.WriteRune(c)
 		}
-		for i, v := range attrs {
-			attrs[i] = strings.TrimSpace(v)
-		}
-		value, err := strconv.Atoi(attrs[1])
-		if err != nil {
-			value = 0
-		}
-		s := fmt.Sprintf("%06s", attrs[0])
-		out[s] = value
 	}
-	return out
+	return sb.String()
+}
+
+// Key genera chiave identificativa
+func Key(parts ...string) string {
+	h := sha256.New()
+	sep := []byte{0} // separatore tra le parti
+	// in allerte i nomi dei comuni hanno bilinguismo
+	// per comuni alpini: ignorali !
+	bilingue := strings.Split(parts[0], "/")
+	parts[0] = bilingue[0]
+	for _, p := range parts {
+		p = replaceChars(p)
+		p = strings.ToLower(p) // previene case sensitive
+		h.Write([]byte(p))
+		h.Write(sep)
+	}
+	return hex.EncodeToString(h.Sum(nil))
 }
