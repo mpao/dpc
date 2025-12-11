@@ -6,6 +6,7 @@ import (
 	"time"
 
 	"github.com/mpao/dpc/internal/app"
+	"github.com/mpao/dpc/internal/comuni"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -43,7 +44,7 @@ func TestTopojson(t *testing.T) {
 		url     string
 		content string
 	}{
-		{name: "OK", url: url + "files/topojson/20220101_oggi.json", content: "Firenze"},
+		{name: "OK", url: url + "files/topojson/20251201_oggi.json", content: "Firenze"},
 		{name: "KO", url: "", content: "unsupported protocol scheme"},
 		{name: "Empty", url: "https://go.dev", content: "<!DOCTYPE html>"},
 	}
@@ -70,56 +71,41 @@ func TestExtract(t *testing.T) {
 	url := "https://github.com/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica/raw/master/"
 	n := node{
 		date: time.Now(),
-		url:  url + "files/topojson/20220101_oggi.json",
+		url:  url + "files/topojson/20251209_oggi.json",
 	}
 	b, _ := topojson(n)
 	// _ = os.WriteFile("topo.json", b, 0666)
 	got := extract(b, n.date)
-	assert.Equal(t, 8048, len(got))
+	assert.Equal(t, 10843, len(got))
 }
 
 func TestEvents(t *testing.T) {
 	url := "https://github.com/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica/raw/master/"
-	cases := []struct {
-		name    string
-		date    time.Time
-		file    string
-		allarme string
-	}{
-		{
-			name:    "01012020",
-			date:    time.Date(2022, 1, 1, 0, 0, 0, 0, time.Local),
-			file:    "files/topojson/20220101_oggi.json",
-			allarme: "non rilevanti",
-		},
-		{
-			name:    "13112024",
-			date:    time.Date(2024, 11, 13, 0, 0, 0, 0, time.Local),
-			file:    "files/topojson/20241113_oggi.json",
-			allarme: "Deboli",
-		},
+	n := node{
+		date: time.Date(2025, 12, 4, 0, 0, 0, 0, time.Local),
+		url:  url + "files/topojson/20251204_oggi.json",
 	}
-	for _, test := range cases {
-		t.Run(test.name, func(t *testing.T) {
-			n := node{
-				date: test.date,
-				url:  url + test.file,
-			}
-			out := events(n)
-			var cornercases []event
-			var emptyComuni int
-			for _, v := range out {
-				// controlla correzione lettere accentate, zona alluvionata il 13.11.2024
-				// e un nome con due parole
-				if slices.Contains([]string{"Forlì", "Giarre", "Nocera Umbra"}, v.name) {
-					cornercases = append(cornercases, v)
-				}
-			}
-			assert.Equal(t, 3, len(cornercases))
-			assert.Equal(t, 0, emptyComuni)
-			assert.Contains(t, cornercases[2].Meteo, test.allarme)
-		})
+	out := events(n)
+	// per ogni comune deve esserci uno e un solo evento.
+	// 1. non devo perdermi comuni
+	// 2. comuni possono essere definiti in più zone di intervento
+	length := len(comuni.GetAll())
+	assert.Equal(t, length, len(out))
+	// controllo a campione dei valori trovati
+	// scegli comuni con keys critiche
+	// Rhemes per accenti, Colceresa comune del 2019 che non esiste per DPC
+	var cornercases []event
+	for _, v := range out {
+		if slices.Contains([]string{"Calvera", "Colceresa", "Rhêmes-Notre-Dame"}, v.name) {
+			cornercases = append(cornercases, v)
+		}
 	}
+	index := slices.IndexFunc(cornercases, func(e event) bool {
+		return e.name == "Calvera" // comune con evento atmosferico
+	})
+	assert.Equal(t, 3, len(cornercases))
+	assert.Contains(t, cornercases[index].Meteo, "Deboli")
+
 }
 
 func TestFilterNodes(t *testing.T) {
