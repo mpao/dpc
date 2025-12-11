@@ -8,13 +8,20 @@ env:
   buildversion:
     sh: "git rev-parse --short main"
 tasks:
+  default:
+    desc: "Mostra questo messaggio"
+    cmds:
+      - task --list-all
   test:
+    desc: "Esegue i test per l'applicazione"
     cmds:
       - go test -count=1 ./... -v -cover
   lint:
+    desc: "Esegue il linting del codice"
     cmds:
       - golangci-lint cache clean && golangci-lint run ./...
   linux:
+    desc: "Compila l'applicazione per Linux"
     cmds:
       # multiline command vedi https://github.com/go-task/task/issues/274#issuecomment-565876913
       - |
@@ -22,6 +29,7 @@ tasks:
         -ldflags="-s -w -X main.appVersion={{.version}} -X main.appName={{.name}}" \
         -o bin/{{.name}}-build.{{.buildversion}} ./cmd
   windows:
+    desc: "Compila l'applicazione per Windows"
     cmds:
       # multiline command vedi https://github.com/go-task/task/issues/274#issuecomment-565876913
       - |
@@ -29,19 +37,22 @@ tasks:
         -ldflags="-s -w -X main.appVersion={{.version}} -X main.appName={{.name}}" \
         -o bin/{{.name}}-build.{{.buildversion}}.exe ./cmd
   macos:
+    desc: "Compila l'applicazione per MacOS"
     cmds:
       # multiline command vedi https://github.com/go-task/task/issues/274#issuecomment-565876913
       - |
         GOOS=darwin GOARCH=arm64 go build \
         -ldflags="-s -w -X main.appVersion={{.version}} -X main.appName={{.name}}" \
         -o bin/{{.name}}-build.{{.buildversion}}-arm64 ./cmd
-  build:
+  release:
+    desc: "Compila l'applicazione multi-platform per la distribuzione"
     cmds:
       - task: test
       - task: windows
       - task: linux
       - task: macos
-  release:
+  build:
+    desc: "Compila l'applicazione per il sistema corrente"
     cmds:
       - go mod tidy
       - |
