@@ -28,6 +28,7 @@ import (
 	"net/http"
 	"regexp"
 	"slices"
+	"sort"
 	"strings"
 	"sync"
 	"time"
@@ -37,12 +38,11 @@ import (
 )
 
 const (
-	domain         = "https://api.github.com/repos/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/"
-	fileURL        = "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/"
-	dateLimit      = "01012020"         // data minima per richiesta dati, formato ddmmyyyy
-	utf8Laceholder = "�"                // il dataset utilizza questo carattere come carattere UTF8 non identificato
-	filenameCSV    = "allerte"          // nome del file salvato per i CSV
-	filenameJSON   = "allerte-topojson" // nome del file salvato per i JSON
+	domain       = "https://api.github.com/repos/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/"
+	fileURL      = "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/"
+	dateLimit    = "01012020"         // data minima per richiesta dati, formato ddmmyyyy
+	filenameCSV  = "allerte"          // nome del file salvato per i CSV
+	filenameJSON = "allerte-topojson" // nome del file salvato per i JSON
 )
 
 // Get comando per il download delle allerte DPC
@@ -263,19 +263,16 @@ func events(n node) []event {
 	cities := comuni.GetAll()
 	out := make([]event, 0, len(rawmap))
 	for _, c := range cities {
-		// match con nomi corretti
-		if ev, ok := rawmap[c.Name]; ok {
+		if ev, ok := comuni.FindEvent(c, rawmap); ok {
 			ev.addInfo(c)
 			out = append(out, ev)
-			continue
-		}
-		// match con nomi accenti sbagliati
-		key := comuni.SetWrongUTF8(c.Name, utf8Laceholder)
-		if ev, ok := rawmap[key]; ok {
-			ev.addInfo(c)
-			out = append(out, ev)
+		} else {
+			slog.Info("allerta mancante", "comune", c.Name)
 		}
 	}
+	sort.Slice(out, func(i, j int) bool {
+		return out[i].name < out[j].name
+	})
 	return out
 }
 
@@ -319,7 +316,8 @@ func extract(b []byte, d time.Time) map[string]event {
 		for _, c := range entry.Comuni {
 			// i nomi dei comuni non hanno codifica corretta vedi issue
 			// https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/issues/10
-			events[c] = event{
+			key := comuni.Key(c, entry.NomeZona)
+			events[key] = event{
 				name:          c,
 				zona:          entry.NomeZona,
 				Temporali:     entry.Temporali,

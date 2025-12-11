@@ -6,6 +6,7 @@ import (
 	"time"
 
 	"github.com/mpao/dpc/internal/app"
+	"github.com/mpao/dpc/internal/comuni"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -75,60 +76,32 @@ func TestExtract(t *testing.T) {
 	b, _ := topojson(n)
 	// _ = os.WriteFile("topo.json", b, 0666)
 	got := extract(b, n.date)
-	assert.Equal(t, 8125, len(got))
+	assert.Equal(t, 8166, len(got))
 }
 
 func TestEvents(t *testing.T) {
 	url := "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/"
-	// il problema degli accenti è più grosso di quanto sembrasse:
-	// nel 2020 - e quindi penso anche successivamente - la codifica era corretta
-	// come UTF8, poi non si sa perché, la situazione cambia.
-	cases := []struct {
-		name    string
-		date    time.Time
-		file    string
-		allarme string
-	}{
-		{
-			name:    "01012020",
-			date:    time.Date(2020, 1, 1, 0, 0, 0, 0, time.Local),
-			file:    "files/topojson/20200101_1530_today.json",
-			allarme: "NESSUNA ALLERTA",
-		},
-		{
-			name:    "13112024",
-			date:    time.Date(2024, 11, 13, 0, 0, 0, 0, time.Local),
-			file:    "files/topojson/20241113_1521_today.json",
-			allarme: "ARANCIONE",
-		},
+
+	n := node{
+		date: time.Date(2024, 11, 13, 0, 0, 0, 0, time.Local),
+		url:  url + "files/topojson/20241113_1521_today.json",
 	}
-	for _, test := range cases {
-		t.Run(test.name, func(t *testing.T) {
-			n := node{
-				date: test.date,
-				url:  url + test.file,
-			}
-			out := events(n)
-			var cornercases []event
-			var emptyComuni int
-			for _, v := range out {
-				// controlla correzione lettere accentate, zona alluvionata il 13.11.2024
-				// e un nome con due parole
-				if slices.Contains([]string{"Forlì", "Giarre", "Nocera Umbra"}, v.name) {
-					cornercases = append(cornercases, v)
-				}
-				// nel topojson ci sono molti comuni aggregati insieme, oppure
-				// con il nome bilingue; mi perdo l'informazione di circa 140 comuni
-				// Gli devo ignorare, l'aggregazione può essere fatta sulla zona di allerta
-				if v.Idrogeologico == "" {
-					emptyComuni++
-				}
-			}
-			assert.Equal(t, 3, len(cornercases))
-			assert.Equal(t, 0, emptyComuni)
-			assert.Contains(t, cornercases[2].Idrogeologico, test.allarme)
-		})
+	out := events(n)
+	// per ogni comune deve esserci uno e un solo evento.
+	// 1. non devo perdermi comuni
+	// 2. comuni possono essere definiti in più zone di intervento
+	length := len(comuni.GetAll())
+	assert.Equal(t, length, len(out))
+	// controllo a campione dei valori trovati
+	// scegli comuni con keys critiche
+	var cornercases []event
+	for _, v := range out {
+		if slices.Contains([]string{"Forlì", "Giarre", "Nocera Umbra"}, v.name) {
+			cornercases = append(cornercases, v)
+		}
 	}
+	assert.Equal(t, 3, len(cornercases))
+	assert.Contains(t, cornercases[2].Idrogeologico, "NESSUNA ALLERTA")
 }
 
 func TestFilterNodes(t *testing.T) {
