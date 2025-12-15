@@ -209,7 +209,7 @@ func writeCSV(nodes []node) error {
 		go func(n node) error {
 			defer wg.Done()
 			payload := make([][]string, 0, 8_000)
-			collection := events(n)
+			collection := events(n, topojson)
 			for _, v := range collection {
 				payload = append(payload, v.CSV())
 			}
@@ -238,8 +238,8 @@ func writeCSV(nodes []node) error {
 // events scarica i dati richiesti e li elabora in un formato adatto
 // per essere salvati in un file TSV effettuando la join con i dati
 // dei comuni italiani.
-func events(n node) []event {
-	b, err := topojson(n)
+func events(n node, f func(node) ([]byte, error)) []event {
+	b, err := f(n)
 	if err != nil {
 		return nil
 	}

@@ -1,6 +1,7 @@
 package allerte
 
 import (
+	"os"
 	"slices"
 	"testing"
 	"time"
@@ -80,13 +81,13 @@ func TestExtract(t *testing.T) {
 }
 
 func TestEvents(t *testing.T) {
-	url := "https://github.com/pcm-dpc/DPC-Bollettini-Criticita-Idrogeologica-Idraulica/raw/master/"
-
 	n := node{
 		date: time.Date(2024, 11, 13, 0, 0, 0, 0, time.Local),
-		url:  url + "files/topojson/20241113_1521_today.json",
 	}
-	out := events(n)
+	f := func(n node) ([]byte, error) {
+		return os.ReadFile("../../testdata/allerte.json")
+	}
+	out := events(n, f)
 	// per ogni comune deve esserci uno e un solo evento.
 	// 1. non devo perdermi comuni
 	// 2. comuni possono essere definiti in più zone di intervento
@@ -101,7 +102,9 @@ func TestEvents(t *testing.T) {
 		}
 	}
 	assert.Equal(t, 3, len(cornercases))
-	assert.Contains(t, cornercases[2].Idrogeologico, "NESSUNA ALLERTA")
+	assert.Contains(t, cornercases[0].Idrogeologico, "PURPLE TEST")
+	assert.Contains(t, cornercases[0].Idraulico, "BLU TEST")
+	assert.Contains(t, cornercases[0].Temporali, "BROWN TEST")
 }
 
 func TestFilterNodes(t *testing.T) {

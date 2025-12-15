@@ -1,6 +1,7 @@
 package meteo
 
 import (
+	"os"
 	"slices"
 	"testing"
 	"time"
@@ -80,12 +81,13 @@ func TestExtract(t *testing.T) {
 }
 
 func TestEvents(t *testing.T) {
-	url := "https://github.com/pcm-dpc/DPC-Bollettini-Vigilanza-Meteorologica/raw/master/"
 	n := node{
 		date: time.Date(2025, 12, 4, 0, 0, 0, 0, time.Local),
-		url:  url + "files/topojson/20251204_oggi.json",
 	}
-	out := events(n)
+	f := func(n node) ([]byte, error) {
+		return os.ReadFile("../../testdata/meteo.json")
+	}
+	out := events(n, f)
 	// per ogni comune deve esserci uno e un solo evento.
 	// 1. non devo perdermi comuni
 	// 2. comuni possono essere definiti in più zone di intervento
@@ -96,15 +98,15 @@ func TestEvents(t *testing.T) {
 	// Rhemes per accenti, Colceresa comune del 2019 che non esiste per DPC
 	var cornercases []event
 	for _, v := range out {
-		if slices.Contains([]string{"Calvera", "Colceresa", "Rhêmes-Notre-Dame"}, v.name) {
+		if slices.Contains([]string{"Forlì", "Colceresa", "Rhêmes-Notre-Dame"}, v.name) {
 			cornercases = append(cornercases, v)
 		}
 	}
 	index := slices.IndexFunc(cornercases, func(e event) bool {
-		return e.name == "Calvera" // comune con evento atmosferico
+		return e.name == "Forlì" // comune con evento atmosferico
 	})
 	assert.Equal(t, 3, len(cornercases))
-	assert.Contains(t, cornercases[index].Meteo, "Deboli")
+	assert.Contains(t, cornercases[index].Meteo, "Un botto d'acqua!")
 
 }
 
