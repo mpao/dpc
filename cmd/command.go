@@ -4,6 +4,7 @@ import (
 	_ "embed"
 	"fmt"
 	"log/slog"
+	"strings"
 	"sync"
 	"time"
 
@@ -50,7 +51,7 @@ var alertCmd = &cobra.Command{
 	SilenceErrors: true,
 	SilenceUsage:  true,
 	RunE: func(cmd *cobra.Command, args []string) error {
-		return uxWaitingMessage(allerte.Get)
+		return uxWaitingMessage("allerte", allerte.Get)
 	},
 }
 
@@ -61,7 +62,7 @@ var meteoCmd = &cobra.Command{
 	SilenceErrors: true,
 	SilenceUsage:  true,
 	RunE: func(cmd *cobra.Command, args []string) error {
-		return uxWaitingMessage(meteo.Get)
+		return uxWaitingMessage("meteo", meteo.Get)
 	},
 }
 
@@ -97,8 +98,8 @@ func init() {
 
 // uxWaitingMessage manda in output messaggio di attesa per
 // dare feedback all'utente sul procedere delle operazioni
-func uxWaitingMessage(f func() error) error {
-	defer timer()()
+func uxWaitingMessage(label string, f func() error) error {
+	start := time.Now()
 	var wg sync.WaitGroup
 	done := make(chan struct{})
 	wg.Add(1)
@@ -106,7 +107,14 @@ func uxWaitingMessage(f func() error) error {
 	err := f()
 	close(done)
 	wg.Wait()
-	return err
+	if err != nil {
+		return err
+	}
+	slog.Info(strings.ToUpper(label)+": dati salvati",
+		"comuni", comuni.Amount(),
+		"durata", fmt.Sprintf("%.2f secondi", time.Since(start).Seconds()),
+	)
+	return nil
 }
 
 func spinner(wg *sync.WaitGroup, done chan struct{}) {
@@ -124,15 +132,5 @@ func spinner(wg *sync.WaitGroup, done chan struct{}) {
 			fmt.Printf("\r %c", chars[i])
 			i = (i + 1) % len(chars)
 		}
-	}
-}
-
-func timer() func() {
-	start := time.Now()
-	return func() {
-		slog.Info("fatto! dati salvati",
-			"comuni", comuni.Amount(),
-			"durata", fmt.Sprintf("%.2f secondi", time.Since(start).Seconds()),
-		)
 	}
 }

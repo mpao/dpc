@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io"
 	"log"
+	"log/slog"
 	"os"
 	"time"
 
@@ -28,7 +29,7 @@ func init() {
 
 func main() {
 	if err := root.Execute(); err != nil {
-		fmt.Printf("\rErrore: %v\n", err)
+		slog.Error(":", "message", err.Error())
 		os.Exit(1)
 	}
 }
