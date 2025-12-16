@@ -252,7 +252,7 @@ func events(n node, f func(node) ([]byte, error)) []event {
 			ev.addInfo(c)
 			out = append(out, ev)
 		} else {
-			slog.Info("meteo mancante", "comune", c.Name)
+			slog.Warn("meteo mancante", "comune", c.Name)
 		}
 	}
 	sort.Slice(out, func(i, j int) bool {
