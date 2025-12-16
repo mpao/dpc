@@ -3,10 +3,13 @@ package main
 import (
 	_ "embed"
 	"fmt"
+	"log/slog"
+	"sync"
 	"time"
 
 	"github.com/mpao/dpc/internal/allerte"
 	"github.com/mpao/dpc/internal/app"
+	"github.com/mpao/dpc/internal/comuni"
 	"github.com/mpao/dpc/internal/meteo"
 	"github.com/spf13/cobra"
 )
@@ -95,29 +98,41 @@ func init() {
 // uxWaitingMessage manda in output messaggio di attesa per
 // dare feedback all'utente sul procedere delle operazioni
 func uxWaitingMessage(f func() error) error {
-	s := make(chan error)
-	go func() {
-		go spinner()
-		s <- f()
-	}()
-	if err := <-s; err != nil {
-		return err
-	}
-	fmt.Printf("\rfatto! dati salvati.\n")
-	return nil
+	defer timer()()
+	var wg sync.WaitGroup
+	done := make(chan struct{})
+	wg.Add(1)
+	go spinner(&wg, done)
+	err := f()
+	close(done)
+	wg.Wait()
+	return err
 }
 
-func spinner() {
+func spinner(wg *sync.WaitGroup, done chan struct{}) {
+	defer wg.Done()
+	chars := `-\|/`
+	i := 0
+	ticker := time.NewTicker(70 * time.Millisecond)
+	defer ticker.Stop()
 	for {
-		for _, r := range `-\|/` {
-			// \r, carriage return posiziona il cursore ad inizio riga
-			// e ricomincia a scrivere. Questa operazione simula la riscrittura
-			// degli ultimi caratteri se si utilizza il medesimo prefisso.
-			// prova a eliminare \r per vedere cosa intendo
-			fmt.Printf("\r %c", r)
-			// per dare il senso rotatorio, scrivi i caratteri con
-			// un intervallo di XXms uno dall'altro
-			time.Sleep(70 * time.Millisecond)
+		select {
+		case <-done:
+			fmt.Print("\r \r")
+			return
+		case <-ticker.C:
+			fmt.Printf("\r %c", chars[i])
+			i = (i + 1) % len(chars)
 		}
+	}
+}
+
+func timer() func() {
+	start := time.Now()
+	return func() {
+		slog.Info("fatto! dati salvati",
+			"comuni", comuni.Amount(),
+			"durata", fmt.Sprintf("%.2f secondi", time.Since(start).Seconds()),
+		)
 	}
 }
