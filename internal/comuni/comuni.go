@@ -54,6 +54,16 @@ func Get(id string) (Comune, bool) {
 	return Comune{}, false
 }
 
+// Amount restituisce il numero di comuni italiani definiti nella app
+func Amount() int {
+	var m = make(map[string]Comune)
+	err := json.Unmarshal(comuniData, &m)
+	if err != nil {
+		return 0
+	}
+	return len(m)
+}
+
 // GetAll restituisce la lista di tutti i comuni italiani e i loro attributi
 func GetAll() []Comune {
 	var m = make(map[string]Comune)
